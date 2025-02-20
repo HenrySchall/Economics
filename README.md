@@ -50,3 +50,9 @@ Curva de Phillips -> $πt = α0 + α1πt−1 + α2Etπt+1 + α3ht−1 + α4∆ε
 - πt = Inflação
 - ∆εt = Primeira diferença da taxa de câmbio nominal
 - εt = Choque de oferta
+
+Interest Rate Parity -> $∆εt = φ0 φ1(it − it*) + φ2xt + εt$
+
+- (it − it*) = diferencial de juros
+- xt = prêmio de risco
+- εt = choque externo
