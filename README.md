@@ -37,7 +37,10 @@ Hipóteses do Modelo:
 #### Matematicamente: 
 $Ht = \beta0 - \beta1(it - Etπt+1 - r*) + β2Θt−1 + β3Ψt−1 + εt$
 
-- ht =  hiato do produto
-- Yt = variável exógena 
-- $\alpha$ = constante
-  
+- Ht =  hiato do produto
+- it = taxa de juros nominal
+- Etπt+1 = expectativa em t para a inflação em t + 1
+- r∗ = taxa de juros neutra
+- Θt−1 = taxa de câmbio real
+- Ψt−1 = necessidades de financiamento do setor público
+- εt = choque de demanda
