@@ -56,3 +56,7 @@ Interest Rate Parity -> $∆εt = φ0 φ1(it − it*) + φ2xt + εt$
 - (it − it*) = diferencial de juros
 - xt = prêmio de risco
 - εt = choque externo
+
+Regra de Taylo -> $it = ω0 + ω1it−1 + ω2(Etπt+1 − π∗) + ω3ht + ω4∆εt + εt$
+
+- π∗ = Meta de inflação
