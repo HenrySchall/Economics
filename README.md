@@ -14,7 +14,7 @@ o comportamento dos agentes econômicos dentro do mercado.
 6. Modelo semiestrutural médio (PAGODE)
 7. Modelo microfundamentado de médio porte (SAMBA)
 
-### 1) Modelo Semiestruturais de Pequeno Porte
+### Modelo Semiestruturais de Pequeno Porte
 
 > Em 1990, a teoria macroeconômica passou a se basear na síntese neoclássica ou novo consenso macroeconômico. As
 implicações disso, foram o desenvolvimento de pequenos modelos estruturais, que possibilitaram estimar a defasagens no efeito de mudanças no instrumento da política monetária sobre os preços.
