@@ -35,7 +35,7 @@ Hipóteses do Modelo:
 > Interest Rate Parity ou Condição de paridade descoberta da taxa de juros é um conceito que descreve a relação entre as taxas de juros de dois países e as taxas de câmbio esperadas entre suas moedas. Essa condição é importante para entender como as taxas de juros e as expectativas de câmbio influenciam os fluxos de capital entre os países.
 
 #### Matematicamente: 
-$Ht = \beta0 - \beta1(it - Etπt+1 - r*) + β2Θt−1 + β3Ψt−1 + εt$
+Curva IS -> $Ht = \beta0 - \beta1(it - Etπt+1 - r*) + β2Θt−1 + β3Ψt−1 + εt$
 
 - Ht =  hiato do produto
 - it = taxa de juros nominal
