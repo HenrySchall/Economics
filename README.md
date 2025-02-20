@@ -37,10 +37,16 @@ Hipóteses do Modelo:
 #### Matematicamente: 
 Curva IS -> $Ht = \beta0 - \beta1(it - Etπt+1 - r*) + β2Θt−1 + β3Ψt−1 + εt$
 
-- Ht =  hiato do produto
-- it = taxa de juros nominal
-- Etπt+1 = expectativa em t para a inflação em t + 1
-- r∗ = taxa de juros neutra
-- Θt−1 = taxa de câmbio real
-- Ψt−1 = necessidades de financiamento do setor público
-- εt = choque de demanda
+- Ht = Hiato do produto
+- it = Taxa de juros nominal
+- Etπt+1 = Expectativa em t para a inflação em t + 1
+- r∗ = Taxa de juros neutra
+- Θt−1 = Taxa de câmbio real
+- Ψt−1 = Necessidades de financiamento do setor público
+- εt = Choque de demanda
+
+Curva de Phillips -> $πt = α0 + α1πt−1 + α2Etπt+1 + α3ht−1 + α4∆εt + εt$
+
+- πt = Inflação
+- ∆εt = Primeira diferença da taxa de câmbio nominal
+- εt = Choque de oferta
