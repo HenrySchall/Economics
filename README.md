@@ -12,23 +12,22 @@
 6. Medium semi-structural model (PAGODE)
 7. Medium-sized Micro-Founded Model (SAMBA)
 
-### Modelo Semiestruturais de Pequeno Porte
+### Small-Scale Semi-Structural Models
 
-> Em 1990, a teoria macroeconômica passou a se basear na síntese neoclássica ou novo consenso macroeconômico. As
-implicações disso, foram o desenvolvimento de pequenos modelos estruturais, que possibilitaram estimar a defasagens no efeito de mudanças no instrumento da política monetária sobre os preços.
+> In 1990, macroeconomic theory began to be based on the neoclassical synthesis or new macroeconomic consensus. The implications of this were the development of small structural models, which made it possible to estimate the lags in the effect of changes in the monetary policy instrument on prices.
 
-Hipóteses do Modelo: 
-- Inflação depende da taxa de juros real
-- Taxa de juros básica nominal é o instrumento de política monetária
-- As expectativas dos agentes podem ser do tipo backward-looking (informações passadas) ou forward-looking (expectativas futuras)
-- Existem mecanismos de transmissão nas decisões de política monetária e eles possuem defasagens de transmissão 
+Model Assumptions: 
+- Inflation depends on the real interest rate
+- Nominal base interest rate is the instrument of monetary policy
+- Agents' expectations can be backward-looking (past information) or forward-looking (future expectations)
+- There are transmission mechanisms in monetary policy decisions and they have transmission lags
 
-> O novo consenso ou novo-keynesianismo, admite subequilíbrios de curto prazo, derivados das falhas de mercado, ou seja, o hiato do produto pode ser diferente de zero no curto prazo. Sendo assim os modelos de pequeno porte do BC, buscam a captar os mecanismos de transmissão das decisões de política monetária, bem como as defasagens envolvidas, sendo compostos por:
+> The new consensus or new Keynesianism admits short-term subequilibria, derived from market failures, that is, the output gap may be non-zero in the short term. Therefore, the BC's small-scale models seek to capture the transmission mechanisms of monetary policy decisions, as well as the lags involved, and are composed of:
 
-- Curva IS (Demanda)
-- Curva de Phillips (Oferta)
-- Interest Rate Parity (Contato com o setor externo)
-- Regra de Taylor (Decisões de política monetária)
+- IS Curve (Demand)
+- Phillips Curve (Supply)
+- Interest Rate Parity (Contact with the external sector)
+- Taylor Rule (Monetary Policy Decisions)
 
 > Interest Rate Parity ou Condição de paridade descoberta da taxa de juros é um conceito que descreve a relação entre as taxas de juros de dois países e as taxas de câmbio esperadas entre suas moedas. Essa condição é importante para entender como as taxas de juros e as expectativas de câmbio influenciam os fluxos de capital entre os países.
 
