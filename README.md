@@ -2,17 +2,15 @@
 
 ![Gere uma imagem sobre macroeconometria 20-02-2025 at 06-30-35](https://github.com/user-attachments/assets/99ef8ada-2357-47c9-a2c3-0cf2e57d471a)
 
-> Os macroeconomistas procuram entender fenômenos econômicos específicos por meio da formulação de modelos (representações
-simplificadas da realidade). Esse modelos se baseiam na formulação de hipóteses sobre o funcionamento da economia, ou seja,
-o comportamento dos agentes econômicos dentro do mercado.
+> Macroeconomists seek to understand specific economic phenomena by formulating models (simplified representations of reality). These models are based on the formulation of hypotheses about how the economy works, that is, the behavior of economic agents within the market.
 
-### Modelo Macroeconômicos do Banco Central Brasileiro 
+### Macroeconomic Model of the Brazilian Central Bank 
 
-1. Modelos semiestruturais pequeno porte
-2. Modelos de Vetores Autorregressivos (VAR)
-3. Indicadores antecedentes e núcleos de inflação
-6. Modelo semiestrutural médio (PAGODE)
-7. Modelo microfundamentado de médio porte (SAMBA)
+1. Small-scale semi-structural models
+2. Vector Autoregressive (VAR) Models
+3. Leading and core inflation indicators
+6. Medium semi-structural model (PAGODE)
+7. Medium-sized Micro-Founded Model (SAMBA)
 
 ### Modelo Semiestruturais de Pequeno Porte
 
