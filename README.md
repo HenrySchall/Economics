@@ -61,3 +61,9 @@ Regra de Taylor -> $it = ω0 + ω1it−1 + ω2(Etπt+1 − π∗) + ω3ht + ω4�
 
 - π∗ = Meta de inflação
 - εt = ruído branco
+
+### Apêndice
+
+### Bibliographical References:
+Corporate Finance, by Stephen A. Ross
+Python for Finance: Mastering Data-Driven Finance, by Yves J. Hilpisch
