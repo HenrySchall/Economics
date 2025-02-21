@@ -36,16 +36,16 @@ IS Curve -> $Ht = \beta0 - \beta1(it - Etπt+1 - r*) + β2Θt−1 + β3Ψt−1 +
 
 - Ht = Product gap
 - it = Nominal interest rate
-- Etπt+1 = Expectativa em t para a inflação em t + 1
-- r∗ = Taxa de juros neutra
-- Θt−1 = Taxa de câmbio real
-- Ψt−1 = Necessidades de financiamento do setor público
-- εt = Choque de demanda
+- Etπt+1 = Expectation at t for inflation at t + 1
+- r∗ = Neutral interest rate
+- Θt−1 = Real exchange rate
+- Ψt−1 = Public sector financing needs
+- εt = Demand shock
 
 Phillips Curve -> $πt = α0 + α1πt−1 + α2Etπt+1 + α3ht−1 + α4∆εt + εt$
 
-- πt = Inflação
-- ∆εt = Primeira diferença da taxa de câmbio nominal
+- πt = Inflation
+- ∆εt = First difference of nominal exchange rate
 - εt = Choque de oferta
 
 Interest Rate Parity -> $∆εt = φ0 φ1(it − it*) + φ2xt + εt$
