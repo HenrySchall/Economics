@@ -65,5 +65,10 @@ Regra de Taylor -> $it = ω0 + ω1it−1 + ω2(Etπt+1 − π∗) + ω3ht + ω4�
 ### Apêndice
 
 ### Bibliographical References:
-Corporate Finance, by Stephen A. Ross
-Python for Finance: Mastering Data-Driven Finance, by Yves J. Hilpisch
+ W.H. Greene. Econometric Analysis. Pearson Education, 2003.
+C. A. Sims. Macroeconometrics and reality. Econometrica,
+E. J. A. Lima, F. Araujo, and J. R. Costa e Silva. Previsáo e
+ Modelos Macroeconômicos no banco central do brasil. Dez anos
+ de metas para inflação no Brasil, 2010.
+  J. M. Wooldridge. Introductory Econometrics: A Modern Approach.
+ Editora Cengage, 2013
