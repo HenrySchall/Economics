@@ -1,4 +1,4 @@
-# Macroeconometric
+# Macroeconometrics
 
 ![Gere uma imagem sobre macroeconometria 20-02-2025 at 06-30-35](https://github.com/user-attachments/assets/99ef8ada-2357-47c9-a2c3-0cf2e57d471a)
 
