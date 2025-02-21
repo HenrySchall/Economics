@@ -34,8 +34,8 @@ Model Assumptions:
 #### Mathematically:
 IS Curve -> $Ht = \beta0 - \beta1(it - Etπt+1 - r*) + β2Θt−1 + β3Ψt−1 + εt$
 
-- Ht = Hiato do produto
-- it = Taxa de juros nominal
+- Ht = Product gap
+- it = Nominal interest rate
 - Etπt+1 = Expectativa em t para a inflação em t + 1
 - r∗ = Taxa de juros neutra
 - Θt−1 = Taxa de câmbio real
@@ -58,8 +58,6 @@ Taylor Rule -> $it = ω0 + ω1it−1 + ω2(Etπt+1 − π∗) + ω3ht + ω4∆ε
 
 - π∗ = Meta de inflação
 - εt = ruído branco
-
-### Apêndice
 
 ### Bibliographical References:
 - W.H. Greene. Econometric Analysis. Pearson Education, 2003.
