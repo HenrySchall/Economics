@@ -29,10 +29,10 @@ Model Assumptions:
 - Interest Rate Parity (Contact with the external sector)
 - Taylor Rule (Monetary Policy Decisions)
 
-> Interest Rate Parity ou Condição de paridade descoberta da taxa de juros é um conceito que descreve a relação entre as taxas de juros de dois países e as taxas de câmbio esperadas entre suas moedas. Essa condição é importante para entender como as taxas de juros e as expectativas de câmbio influenciam os fluxos de capital entre os países.
+> Interest Rate Parity or Uncovered Interest Rate Parity Condition is a concept that describes the relationship between the interest rates of two countries and the expected exchange rates between their currencies. This condition is important for understanding how interest rates and exchange rate expectations influence capital flows between countries.
 
-#### Matematicamente: 
-Curva IS -> $Ht = \beta0 - \beta1(it - Etπt+1 - r*) + β2Θt−1 + β3Ψt−1 + εt$
+#### Mathematically:
+IS Curve -> $Ht = \beta0 - \beta1(it - Etπt+1 - r*) + β2Θt−1 + β3Ψt−1 + εt$
 
 - Ht = Hiato do produto
 - it = Taxa de juros nominal
@@ -42,7 +42,7 @@ Curva IS -> $Ht = \beta0 - \beta1(it - Etπt+1 - r*) + β2Θt−1 + β3Ψt−1 +
 - Ψt−1 = Necessidades de financiamento do setor público
 - εt = Choque de demanda
 
-Curva de Phillips -> $πt = α0 + α1πt−1 + α2Etπt+1 + α3ht−1 + α4∆εt + εt$
+Phillips Curve -> $πt = α0 + α1πt−1 + α2Etπt+1 + α3ht−1 + α4∆εt + εt$
 
 - πt = Inflação
 - ∆εt = Primeira diferença da taxa de câmbio nominal
@@ -54,7 +54,7 @@ Interest Rate Parity -> $∆εt = φ0 φ1(it − it*) + φ2xt + εt$
 - xt = prêmio de risco
 - εt = choque externo
 
-Regra de Taylor -> $it = ω0 + ω1it−1 + ω2(Etπt+1 − π∗) + ω3ht + ω4∆εt + εt$
+Taylor Rule -> $it = ω0 + ω1it−1 + ω2(Etπt+1 − π∗) + ω3ht + ω4∆εt + εt$
 
 - π∗ = Meta de inflação
 - εt = ruído branco
@@ -62,10 +62,7 @@ Regra de Taylor -> $it = ω0 + ω1it−1 + ω2(Etπt+1 − π∗) + ω3ht + ω4�
 ### Apêndice
 
 ### Bibliographical References:
- W.H. Greene. Econometric Analysis. Pearson Education, 2003.
-C. A. Sims. Macroeconometrics and reality. Econometrica,
-E. J. A. Lima, F. Araujo, and J. R. Costa e Silva. Previsáo e
- Modelos Macroeconômicos no banco central do brasil. Dez anos
- de metas para inflação no Brasil, 2010.
-  J. M. Wooldridge. Introductory Econometrics: A Modern Approach.
- Editora Cengage, 2013
+- W.H. Greene. Econometric Analysis. Pearson Education, 2003.
+- C. A. Sims. Macroeconometrics and reality. Econometrica,
+- E. J. A. Lima, F. Araujo, and J. R. Costa e Silva. Previsáo e Modelos Macroeconômicos no Banco Central do Brasil. Dez anos de metas para inflação no Brasil, 2010.
+- J. M. Wooldridge. Introductory Econometrics: A Modern Approach. Editora Cengage, 2013
