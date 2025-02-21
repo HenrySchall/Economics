@@ -46,18 +46,18 @@ Phillips Curve -> $πt = α0 + α1πt−1 + α2Etπt+1 + α3ht−1 + α4∆εt +
 
 - πt = Inflation
 - ∆εt = First difference of nominal exchange rate
-- εt = Choque de oferta
+- εt = Supply shock
 
 Interest Rate Parity -> $∆εt = φ0 φ1(it − it*) + φ2xt + εt$
 
-- (it − it*) = diferencial de juros
-- xt = prêmio de risco
-- εt = choque externo
+- (it − it*) = Interest differential
+- xt = Risk premium
+- εt = External shock
 
 Taylor Rule -> $it = ω0 + ω1it−1 + ω2(Etπt+1 − π∗) + ω3ht + ω4∆εt + εt$
 
-- π∗ = Meta de inflação
-- εt = ruído branco
+- π∗ = Inflation target
+- εt = white noise
 
 ### Bibliographical References:
 - W.H. Greene. Econometric Analysis. Pearson Education, 2003.
