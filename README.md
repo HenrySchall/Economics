@@ -63,7 +63,7 @@ Indices
 
 PIB nominal X PIB real
 
-Deflator do PIB
+#### Deflator do PIB
 O deflator do PIB mede o nível atual de preços relativo ao nível de preços do ano-base;
 É um índice de preços com todos os bens e serviços produzidos na economia;
 Serve para obter a parte do aumento do PIB nominal atribuída a um aumento de preços e não por uma aumento nas quantidades produzidas;
@@ -72,8 +72,9 @@ Seu cálculo é bastante simples:
 
 $Deflator do PIB = \frac{PIB Nominal}{PIB Real}× 100$
 
+#### Taxa de Crescimento do PIB
 
-
+![Captura de tela 2025-02-24 050105](https://github.com/user-attachments/assets/115ad00a-c0cf-42c4-9bd5-83b514fbfd7c)
 
 
 
