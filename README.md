@@ -11,8 +11,10 @@
 - Ceteris paribus: "todo o mais é constante", ou seja, nada muda, exceto o fator ou fatores que estão sendo estudados
 - Variável endógena: também chamada de dependente, é a variável cujos valores são determinados no modelo
 - Variável exógena: também chamada de independente, é a variável cujos valores são determinados fora do modelo
-- Preços flexíveis: Suposição de que os preços se ajustam para igualar oferta e demanda
+- Preços flexíveis: Suposição de que os preços se ajustam para igualar oferta e demanda (longo prazo)
 - Preços rígidos: Suposição de que no curto prazo, muitos preços são rígidos, ou seja, se ajustam lentamente em resposta a mudanças na oferta ou na demanda
+- Fluxo: Magnitude econômica de um intervalo de tempo. EX: PIB (taxa mensal)
+- Estoque: Magnitude medida de um determinado ponto específico no tempo. EX: dívida externa do país
 
 ### The Brazilian Central Bank Models
 
