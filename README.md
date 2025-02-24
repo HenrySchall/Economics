@@ -17,15 +17,28 @@
 
 > Quando estamos trabalhando com valores macroeconômicos é normal que eles sofram variações ao longo do tempo. Sendo assim, para termos uma visão realística dos dados, sempre transformamos valores nominais para valores deflacionados (ou reais), ou seja, contabilizando o efeito da variações dos indicadores economicos, geralmente o efeito inflacionário do período. Então para exemplificar, vamos pegar uma série do salário mínimo (IPEADATA) é um índice de preços (Índice Nacional de Preços ao Consumidor Amplo - IPCA), que será nossa variável para deflacionar o salário mínimo, aplicando à fórmula:
 
-$Vreal(xy) = (\frac{Ix}{Iy}) * Vx$
+$Vreal(x,y) = (\frac{Ix}{Iy}) * Vx$
 
 onde: 
-- $Vreal(xy)$ = é o valor real, ou deflacionado, no período x na data-base y
+- $Vreal(x,y)$ = é o valor real, ou deflacionado, no período x na data-base y
 - $Ix$ = é o índice de preços fixado na data-base y
 - $Iy$ = é o índice de preços no período x
 - $Vx$ =  é o valor ou preço nominal no período x
 
+Exemplo: Imagine que queremos o salário mínimo real de julho de 2021 (07/2021) na data-base de dezembro de 2021 (12/2021)
 
+|Data |Salário Minimo|IPCA|
+|---	     |--- |---    |
+|2021-12-01|1100|6330.59|   
+|2021-11-01|1100|6284.71|   
+|2021-10-01|1100|6232.36|   	
+|2021-09-01|1100|6160.89|  
+|2021-08-01|1100|6087.84|  
+|2021-07-01|1100|6034.73|  
+
+$Vreal(x,y) = (\frac{Ix}{Iy}) * Vx$
+
+$Vreal$(07/21,12/21) = $(\frac{6330.59}{6034.73}) * 1100$
 
 
 
