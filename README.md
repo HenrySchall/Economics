@@ -2,10 +2,9 @@
 
 ![Gere uma imagem sobre macroeconometria 20-02-2025 at 06-30-35](https://github.com/user-attachments/assets/99ef8ada-2357-47c9-a2c3-0cf2e57d471a)
 
-
 > A macroeconomia é um ramo da ciência econômica que estuda o comportamento de uma economia como um todo. Dessa forma, os macroeconomistas buscam entender os fenômenos econômicos formulando modelos agredados (representações simplificadas da realidade), eles são agregados, porque parte-se do pressuposto de que o todo é mais complexo do que a soma das partes, não sendo possível descrever uma economia por meio de modelos para todas as empresas e indivíduos. Sendo assim, sua preocupação está em analisar indicadores agregados como PIB, taxa de desemprego e índices de preços.
 
-### Conceitos fundamentais
+### Conceitos Iniciais
 
 - Ceteris paribus -> "todo o mais é constante", ou seja, nada muda, exceto o fator ou fatores que estão sendo estudados
 - Variável endógena ->  também chamada de dependente, é a variável cujos valores são determinados no modelo
@@ -40,8 +39,21 @@ $Vreal(x,y) = (\frac{Ix}{Iy}) * Vx$
 
 $Vreal$(07/21,12/21) = $(\frac{6330.59}{6034.73}) * 1100$
 
+### Sistema de Contas Nacionais
 
+> O Sistema de Contas Nacionais (SCN) é o conjunto padronizado de recomendações internacionalmente acordadas sobre como compilar as medidas de atividade econômica, de acordo com rígidas convenções contábeis baseadas em princípios econômicos. No Brasil o responsável por compilar e divulgar essas estatísticas é o IBGE através do Sistema de Contas Nacionais Trimestrais (SCNT)
 
+Indices 
+- Produto Interno Bruto (PIB) a preços de mercado;
+- Impostos sobre produtos;
+- Valor adicionado a preços básicos;
+- Consumo pessoal;
+- Consumo do governo;
+- Formação bruta de capital fixo (FBCF);
+- Variação de estoques
+- Exportações e importações de bens e serviços.
+
+1) O PIB é a soma de todos os bens e serviços finais produzidos por um país, estado ou cidade, geralmente em um ano. Todos os países calculam o seu PIB nas suas respectivas moedas. Em resumo, o PIB é um indicador que ajuda a compreender a economia como um todo, mas não expressa importantes fatores, como distribuição de renda, qualidade de vida, educação e saúde.
 
 
 
