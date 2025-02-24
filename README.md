@@ -6,10 +6,13 @@
 > A macroeconomia é um ramo da ciência econômica que estuda o comportamento de uma economia como um todo. Dessa forma, os macroeconomistas buscam entender os fenômenos econômicos formulando modelos agredados (representações simplificadas da realidade), eles são agregados, porque parte-se do pressuposto de que o todo é mais complexo do que a soma das partes, não sendo possível descrever uma economia por meio de modelos para todas as empresas e indivíduos. Sendo assim, sua preocupação está em analisar indicadores agregados como PIB, taxa de desemprego e índices de preços.
 
 
+### Conceitos fundamentais
 
-
-
-
+- Ceteris paribus: "todo o mais é constante", ou seja, nada muda, exceto o fator ou fatores que estão sendo estudados
+- Variável endógena: também chamada de dependente, é a variável cujos valores são determinados no modelo
+- Variável exógena: também chamada de independente, é a variável cujos valores são determinados fora do modelo
+- Preços flexíveis: Suposição de que os preços se ajustam para igualar oferta e demanda
+- Preços rígidos: Suposição de que no curto prazo, muitos preços são rígidos, ou seja, se ajustam lentamente em resposta a mudanças na oferta ou na demanda
 
 ### The Brazilian Central Bank Models
 
