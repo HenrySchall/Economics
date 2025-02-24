@@ -2,9 +2,16 @@
 
 ![Gere uma imagem sobre macroeconometria 20-02-2025 at 06-30-35](https://github.com/user-attachments/assets/99ef8ada-2357-47c9-a2c3-0cf2e57d471a)
 
-> Macroeconomists seek to understand specific economic phenomena by formulating models (simplified representations of reality). These models are based on the formulation of hypotheses about how the economy works, that is, the behavior of economic agents within the market.
 
-### Macroeconomic Model of the Brazilian Central Bank 
+> A macroeconomia é um ramo da ciência econômica que estuda o comportamento de uma economia como um todo. Dessa forma, os macroeconomistas buscam entender os fenômenos econômicos formulando modelos agredados (representações simplificadas da realidade), eles são agregados, porque parte-se do pressuposto de que o todo é mais complexo do que a soma das partes, não sendo possível descrever uma economia por meio de modelos para todas as empresas e indivíduos. Sendo assim, sua preocupação está em analisar indicadores agregados como PIB, taxa de desemprego e índices de preços.
+
+
+
+
+
+
+
+### The Brazilian Central Bank Models
 
 1. Small-scale semi-structural models
 2. Vector Autoregressive (VAR) Models
