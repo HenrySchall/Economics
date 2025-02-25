@@ -1,7 +1,8 @@
 library(magrittr)
 library(rio)      
 library(timetk)   
-library(dplyr)    
+library(dplyr) 
+library(tidyverse)   
 library(tidyr)    
 library(ggplot2) 
 library(readr)
@@ -47,8 +48,8 @@ dados <- import(file = "https://analisemacro.com.br/download/38774/",format = "c
 View(dados)
 
 # Criando uma função para operações aritméticas em janelas móveis
-moving <- function(column, fun = sum, period = 4, align = "right", ...) {
-slidify_vec(.x = column,.f = fun,.period = period,.align = align, ...)}
+moving <- function(column, fun = sum, period = 4, align = "right", ...) 
+{slidify_vec(.x = column,.f = fun,.period = period,.align = align, ...)}
 
 # column = coluna de um data frame sobre a qual a operação será realizada
 # fun = recebe uma função aritmética (sum, mean, median, etc.)
@@ -66,21 +67,49 @@ dados <- mutate(dados,var_anual = (moving (num_indice) / moving(lag(x = num_indi
 
 View(dados)
 
-
 # Taxa acumulada ao longo do ano (em relação ao mesmo período do ano anterior)
-taxas <- taxas %>% 
+dados <- dados %>% 
 
-# 1º) Cria uma coluna de ano (YYYY) e agrupa as observações por essa coluna
-group_by(ano = lubridate::year(data)) %>%
+# Cria uma coluna de ano (YYYY) e agrupa as observações por essa coluna
+group_by(ano = year(data)) %>%
 
-  # 2º) Acumula o número índice do PIB ao longo de cada ano em uma nova coluna
-  dplyr::mutate(num_indice_acum = cumsum(num_indice)) %>%
+# Acumula o número índice do PIB ao longo de cada ano em uma nova coluna
+mutate(num_indice_acum = cumsum(num_indice)) %>% 
 
-  # 3º) Desagrupa os dados
-  dplyr::ungroup() %>%
+# Desagrupa os dados
+ungroup() %>%
 
-  # 4º) Calcula a taxa de variação % do índice >acumulado< no ano
-  dplyr::mutate(
-    var_acum_ano = (
-      num_indice_acum / dplyr::lag(x = num_indice_acum, n = 4) - 1) * 100
-  )
+# 4º) Calcula a taxa de variação % do índice acumulado no ano
+mutate(var_acum_ano = (num_indice_acum / lag(x = num_indice_acum, n = 4) - 1) * 100)
+
+View(dados)
+
+# Visualizando dados
+
+# Tratar dados e criar gráficos de linha
+dados %>%
+  # Selecionar e renomear colunas de interesse ("novo_nome" = "nome_antigo")
+  dplyr::select(
+    "Trimeste/Ano"                = "data",
+    "Var. % trimestral"           = "var_trimestral",
+    "Variação % interanual"       = "var_interanual",
+    "Variação % anual"            = "var_anual",
+    "Variação % acumulada no ano" = "var_acum_ano"
+    ) %>%
+  # Pivotar tabela p/ formato "longo" (menos colunas e mais linhas)
+  tidyr::pivot_longer(
+    cols      = 2:5,        # índice das colunas que vou pivotar
+    names_to  = "variavel", # nome da coluna que armazenará os nomes de 2:5
+    values_to = "valor"     # nome da coluna que armazenará os valores de 2:5
+    ) %>%
+  ggplot2::ggplot() +
+  ggplot2::aes(x = `Trimeste/Ano`, y = valor, color = variavel) +
+  ggplot2::geom_line(size = 1) +
+  ggplot2::facet_wrap(facets = ~variavel, scales = "free") + # cria um gráfico para cada linha
+  ggplot2::theme_minimal() + # define um tema padronizado
+  ggplot2::labs(
+    title   = "PIB: taxas de crescimento",
+    y       = NULL,
+    caption = "Dados: IBGE | Elaboração: analisemacro.com.br"
+    ) +
+  ggplot2::theme(legend.position = "none") # remove a legenda do lado direito
