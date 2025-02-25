@@ -11,10 +11,6 @@ library(zoo)
 library(rio) 
 library(timetk)
 
-###########################
-### ANALISANDO OS DADOS ###
-###########################
-
 # Tipo de dados 
 # - ts: série temporal
 # - zoo: objeto zoo 
@@ -48,7 +44,7 @@ dados <- import(file = "https://analisemacro.com.br/download/38774/",format = "c
 View(dados)
 
 # Criando uma função para operações aritméticas em janelas móveis
-rolling <- function(column, fun = sum, period = 4, align = "right", ...) {
+moving <- function(column, fun = sum, period = 4, align = "right", ...) {
 slidify_vec(.x = column,.f = fun,.period = period,.align = align, ...)}
 
 # column = coluna de um data frame sobre a qual a operação será realizada
@@ -63,7 +59,7 @@ dados <- mutate(dados,var_trimestral = (num_indice_sa/lag(x = num_indice_sa, n =
 dados <- mutate(dados,var_interanual = (num_indice/lag(x = num_indice, n = 4) - 1) * 100)
 
 # Taxa acumulada em quatro trimestres (em relação ao mesmo período do ano anterior)
-dados <- mutate(dados,var_anual = (rolling(num_indice) / rolling(lag(x = num_indice, n = 4)) - 1) * 100)
+dados <- mutate(dados,var_anual = (moving (num_indice) / moving(lag(x = num_indice, n = 4)) - 1) * 100)
 
 View(dados)
 
