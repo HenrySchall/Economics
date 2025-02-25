@@ -10,6 +10,9 @@ library(forecast)
 library(zoo)
 library(rio) 
 library(timetk)
+library(lubridate)
+
+# if the packages weren't installed, run the commands in R Terminal -> https://github.com/HenrySchall/Data_Science/blob/main/R/Install_Packages.txt
 
 # Tipo de dados 
 # - ts: série temporal
@@ -63,12 +66,12 @@ dados <- mutate(dados,var_anual = (moving (num_indice) / moving(lag(x = num_indi
 
 View(dados)
 
-# Taxa acumulada ao longo do ano (em relação ao mesmo período do ano anterior)
-taxas <- taxas %>% # o pipe (%>%) pega o output dessa linha e insere como input
-  # na próx. linha, possibilitando operações em cadeia/mais fáceis de serem lidas
 
-  # 1º) Cria uma coluna de ano (YYYY) e agrupa as observações por essa coluna
-  dplyr::group_by(ano = lubridate::year(data)) %>%
+# Taxa acumulada ao longo do ano (em relação ao mesmo período do ano anterior)
+taxas <- taxas %>% 
+
+# 1º) Cria uma coluna de ano (YYYY) e agrupa as observações por essa coluna
+group_by(ano = lubridate::year(data)) %>%
 
   # 2º) Acumula o número índice do PIB ao longo de cada ano em uma nova coluna
   dplyr::mutate(num_indice_acum = cumsum(num_indice)) %>%
