@@ -85,31 +85,17 @@ mutate(var_acum_ano = (num_indice_acum / lag(x = num_indice_acum, n = 4) - 1) * 
 View(dados)
 
 # Visualizando dados
-
-# Tratar dados e criar gráficos de linha
 dados %>%
-  # Selecionar e renomear colunas de interesse ("novo_nome" = "nome_antigo")
-  dplyr::select(
-    "Trimeste/Ano"                = "data",
-    "Var. % trimestral"           = "var_trimestral",
-    "Variação % interanual"       = "var_interanual",
-    "Variação % anual"            = "var_anual",
-    "Variação % acumulada no ano" = "var_acum_ano"
-    ) %>%
-  # Pivotar tabela p/ formato "longo" (menos colunas e mais linhas)
-  tidyr::pivot_longer(
-    cols      = 2:5,        # índice das colunas que vou pivotar
-    names_to  = "variavel", # nome da coluna que armazenará os nomes de 2:5
-    values_to = "valor"     # nome da coluna que armazenará os valores de 2:5
-    ) %>%
-  ggplot2::ggplot() +
-  ggplot2::aes(x = `Trimeste/Ano`, y = valor, color = variavel) +
-  ggplot2::geom_line(size = 1) +
-  ggplot2::facet_wrap(facets = ~variavel, scales = "free") + # cria um gráfico para cada linha
-  ggplot2::theme_minimal() + # define um tema padronizado
-  ggplot2::labs(
-    title   = "PIB: taxas de crescimento",
-    y       = NULL,
-    caption = "Dados: IBGE | Elaboração: analisemacro.com.br"
-    ) +
-  ggplot2::theme(legend.position = "none") # remove a legenda do lado direito
+select("Trimeste/Ano"= "data","Var. % trimestral" = "var_trimestral", "Variação % interanual" = "var_interanual", "Variação % anual" = "var_anual", "Variação % acumulada no ano" = "var_acum_ano") %>%
+pivot_longer(cols = 2:5,names_to  = "variavel", values_to = "valor") %>%
+ 
+# cols = índice das colunas que vou pivotar
+# names_to = nome da coluna que armazenará os nomes de 2:5
+# values_to =  nome da coluna que armazenará os valores de 2:5  
+  
+ggplot() + aes(x = `Trimeste/Ano`, y = valor, color = variavel) +
+geom_line(size = 1) +
+facet_wrap(facets = ~variavel, scales = "free") + # cria um gráfico para cada linha
+theme_minimal() + # define um tema padronizado
+labs(title = "PIB: taxas de crescimento", y = NULL, caption = "Dados: IBGE | Elaboração: analisemacro.com.br") +
+theme(legend.position = "none") # remove a legenda do lado direito
