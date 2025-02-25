@@ -91,11 +91,11 @@ pivot_longer(cols = 2:5,names_to  = "variavel", values_to = "valor") %>%
  
 # cols = índice das colunas que vou pivotar
 # names_to = nome da coluna que armazenará os nomes de 2:5
-# values_to =  nome da coluna que armazenará os valores de 2:5  
+# values_to = nome da coluna que armazenará os valores de 2:5  
   
 ggplot() + aes(x = `Trimeste/Ano`, y = valor, color = variavel) +
 geom_line(size = 1) +
 facet_wrap(facets = ~variavel, scales = "free") + # cria um gráfico para cada linha
 theme_minimal() + # define um tema padronizado
-labs(title = "PIB: taxas de crescimento", y = NULL, caption = "Dados: IBGE | Elaboração: analisemacro.com.br") +
+labs(title = "PIB: taxas de crescimento", y = NULL, caption = "Dados: IBGE") +
 theme(legend.position = "none") # remove a legenda do lado direito
