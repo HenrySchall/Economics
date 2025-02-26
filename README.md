@@ -88,7 +88,7 @@ $Yt = Yp + ht$
 
 > Em outras palavras, no curto prazo o PIB pode crescer mais ou menos do que o PIB potencial, sendo a diferença entre Yt e Yp dada pelo hiato do produto ou ciclo econômico. A dinâmica desse ciclo é determinada em grande medida pela rigidez de preços da economia. Fossem os preços totalmente flexíveis, o ajuste seria imediato, implicando que a diferença (hiato) fosse sempre igual a zero (a economia estaria sempre em equilíbrio). Porém, na prática, isso não acontece
 
-#### Modelos macroeconômicos 
+#### Modelos Macroeconômicos 
 > De forma a entender melhor o ciclo econômico, assim como o grau de abertura do hiato do produto, surgiram diversos modelos macroeconômicos nas últimas décadas — após o que ficou conhecido como novo consenso macroeconômico ou síntese novo-keynesiana. Estes modelos sintetizam relações básicas entre variáveis econômicas, permitindo prever o comportamento da economia e ajustar a política econômica de modo a evitar grandes desvios em relação às metas. No Brasil, a autoridade monetária (BCB), após a adoção do Regime de Metas para Inflação em 1999, vem constantemente utilizando e apresentando modelos macroeconômicos com diferentes abordagens. A seguir, exploramos de forma breve o modelo básico do BCB, descrito em Bogdanski et al. (2000)
 
 
