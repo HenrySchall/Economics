@@ -153,7 +153,11 @@ Paridade da taxa de juros -> $∆εt = φ0 φ1(it − it*) + φ2xt + εt$
 
 Regra de Taylor -> $it = ω0 + ω1it−1 + ω2(Etπt+1 − π∗) + ω3ht + ω4∆εt + εt$
 
+- it = Taxa de juros nominal defasada
+- Etπt+1 = Expectativa em t para a inflação em t+1
 - π∗ = Meta de inflação
+- ht = Hiato do produto
+- ∆εt = Primeira diferença da taxa de câmbio nominal
 - εt = Ruído branco
 
 > O modelo é composto por um sistema de 3 equações, sendo que a Regra de Taylor pode ser considerada, arbitrariamente, como uma identidade. Dessa forma, o modelo é caracterizado como de equações simultâneas, dado que, por exemplo, o hiato do produto é definido pela Curva IS e é uma variável explicativa na Curva de Phillips, que por sua vez explica a inflação, sendo esta uma variável da Regra de Taylor. Sendo assim, não se pode obter a taxa de juros pela Regra de Taylor sem que a inflação pela Curva de Phillips tenha sido estimada, e não se pode estimar a inflação sem que o hiato tenha sido estimado pela Curva IS. Ou seja, dizemos que as variáveis são determinadas "simultaneamente" pelo modelo. A solução para esse tipo de modelo é, geralmente, o uso de um método (algoritmo iterativo) como o de Gauss–Seidel, variações dele ou semelhantes. Em resumo, o método segue estes procedimentos:
