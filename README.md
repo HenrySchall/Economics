@@ -72,13 +72,13 @@ Seu cálculo é bastante simples:
 
 $Deflator do PIB = \frac{PIB Nominal}{PIB Real}× 100$
 
-#### Taxa de Crescimento de Indicadores 
+### Taxa de Crescimento de Indicadores 
 
 
 
-#### Ciclos Econômicos
+### Ciclos Econômicos
 
-> São flutuações recorrentes na atividade econômica agregada de nações ao longo do tempo. Um ciclo consiste em fases de expansão, recessão e recuperação, de forma simultanea em muitas atividades econômicas, as quais se consolidam posteriormente em uma nova fase de expansão, lembrando que essa sequência de mudanças é recorrente, mas não periódica. Podemos pensar os ciclos econômicos 
+> São flutuações recorrentes na atividade econômica agregada de nações ao longo do tempo. Um ciclo consiste em fases de expansão, recessão e recuperação, de forma simultanea em muitas atividades econômicas, as quais se consolidam posteriormente em uma nova fase de expansão, lembrando que essa sequência de mudanças é recorrente, mas não periódica. Podemos pensar os ciclos econômicos de forma análoga às condições meteorológicas, alguns períodos de calor e outros de frio, a ideia é que a atividade econômica se move de um pico para um vale e depois do vale para o pico, buscando um ponto de equilíbrio. 
 
 
 
