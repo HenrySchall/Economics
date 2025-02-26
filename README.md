@@ -74,9 +74,18 @@ $Deflator do PIB = \frac{PIB Nominal}{PIB Real}×100$
 
 
 
-### Ciclos & Modelos Econômicos 
 
-> São flutuações recorrentes na atividade econômica agregada dqw nações ao longo do tempo. Um ciclo consiste em fases de expansão, recessão e recuperação, simultaneamente em muitas setores da atividades econômica, as quais se consolidam posteriormente em uma nova fase de expansã (lembrando que essa sequência de mudanças é recorrente, mas não periódica). Podemos pensar os ciclos econômicos de forma análoga às condições meteorológicas, alguns períodos de calor e outros de frio, a ideia central é que a atividade econômica se move de um topo para um fundo e depois do fundo para o topo, oscilando em torno de um equilíbrio desconhecido. No Brasil a CODACE/FGV períodicamente determina e data os ciclos econômicos, como um comitê independente, ele ssegue os modelos adotados em outros países, como pelo NBER nos Estados Unidos.
+
+
+
+
+
+
+
+
+### Modelos Macroeconômicos 
+
+> Os ciclos econômicos são flutuações recorrentes na atividade econômica agregada dqw nações ao longo do tempo. Um ciclo consiste em fases de expansão, recessão e recuperação, simultaneamente em muitas setores da atividades econômica, as quais se consolidam posteriormente em uma nova fase de expansã (lembrando que essa sequência de mudanças é recorrente, mas não periódica). Podemos pensar os ciclos econômicos de forma análoga às condições meteorológicas, alguns períodos de calor e outros de frio, a ideia central é que a atividade econômica se move de um topo para um fundo e depois do fundo para o topo, oscilando em torno de um equilíbrio desconhecido. No Brasil a CODACE/FGV períodicamente determina e data os ciclos econômicos, como um comitê independente, ele ssegue os modelos adotados em outros países, como pelo NBER nos Estados Unidos.
 
 #####  Decomposição do PIB
 
@@ -86,13 +95,11 @@ $Yt = Yp + Ht$
 - Yp = É o chamado produto potencial (não observável), representa a tendência de longo prazo do PIB, ou seja, reflete condições estruturais da economia como a população em idade ativa, o estoque de capital, qualidade de educação e qualidade das instituições.
 - Ht = É o chamado hiato do produto, representa o componente cíclico, ou seja, reflete condições conjunturais da economia, como choques de demanda/oferta, incentivos de política econômica, condições climáticas, choques externos e incertezas políticas.
 
-> Em outras palavras, no curto prazo o PIB pode crescer mais ou menos do que o PIB potencial, sendo a diferença entre Yt e Yp dada pelo hiato do produto ou ciclo econômico. A dinâmica desse ciclo é determinada em grande medida pela rigidez de preços da economia. Fossem os preços totalmente flexíveis, o ajuste seria imediato, implicando que a diferença (hiato) fosse sempre igual a zero (a economia estaria sempre em equilíbrio). Porém, na prática, isso não acontece
-
-#### Modelos Macroeconômicos 
+> Em outras palavras, no curto prazo o PIB pode crescer mais ou menos do que o PIB potencial, sendo a diferença entre Yt e Yp dada pelo hiato do produto ou ciclo econômico. A dinâmica desse ciclo é determinada em grande medida pela rigidez de preços da economia. Fossem os preços totalmente flexíveis, o ajuste seria imediato, implicando que a diferença (hiato) fosse sempre igual a zero (a economia estaria sempre em equilíbrio). Porém, na prática, isso não acontece.
 
 > Em 1990, a teoria macroeconômica começou a ser baseada na síntese novo-keynesiana ou novo consenso macroeconômico. As implicações disso, foram o desenvolvimento de pequenos modelos estruturais, que buscavam entender melhor o ciclo econômico, assim como o grau de abertura do hiato do produto. Estes modelos sintetizam relações básicas entre as variáveis econômicas, permitindo estimar o comportamento da economia e ajustar a política econômica (efeito de mudanças no instrumento) de modo a evitar grandes desvios em relação às metas. No Brasil, a autoridade monetária (BCB), após a adoção do Regime de Metas para Inflação em 1999, vem constantemente utilizando modelos macroeconômicos com diferentes abordagens para metrificar o efeito da política econômica.
 
-- Modelos do Banco Central Brasileiro (BCB)
+##### Modelos do Banco Central Brasileiro (BCB)
 
 1. Modelo Agregado de Pequeno Porte ou Semi-Estruturais de Pequena Escala
 2. Modelos Vetoriais Autorregressivos (VAR)
@@ -105,7 +112,7 @@ $Yt = Yp + Ht$
 Suposições do modelo:
 - A inflação depende da taxa de juros real
 - A taxa de juros básica nominal é o instrumento da política monetária
-- As expectativas dos agentes podem ser retrospectivas (informações passadas) ou prospectivas (expectativas futuras)
+- As expectativas dos agentes podem ser backward-looking (informações passadas) ou forward-looking (expectativas futuras)
 - Existem mecanismos de transmissão nas decisões de política monetária e eles têm atrasos de transmissão
 
 > O novo consenso ou novo keynesianismo admite subequilíbrios de curto prazo, derivados de falhas de mercado, ou seja, o hiato do produto pode ser diferente de zero no curto prazo. Portanto, os modelo agregado de Pequeno Porte do BC, busca capturar os mecanismos de transmissão das decisões de política monetária, bem como os atrasos envolvidos, ele é descrito em Bogdanski et al. (2000) e é composto por três equaçõese:
@@ -118,32 +125,32 @@ Suposições do modelo:
 > Paridade de Taxa de Juros ou Condição de Paridade de Taxa de Juros Descoberta é um conceito que descreve a relação entre as taxas de juros de dois países e as taxas de câmbio esperadas entre suas moedas. Essa condição é importante para entender como as taxas de juros e as expectativas de taxa de câmbio influenciam os fluxos de capital entre os países.
 
 #### Matematicamente:
-Curva IS -> $Ht = \beta0 - \beta1(it - Etπt+1 - r*) + β2Θt−1 + β3Ψt−1 + εt$
+Curva IS -> $ht = \beta0 - \beta1(it - Etπt+1 - r*) + β2Θt−1 + β3Ψt−1 + εt$
 
-- Ht = log hiato do produto
-- it = Nominal interest rate
-- Etπt+1 = Expectativa em t para inflação em t + 1
-- r∗ = Neutral interest rate
-- Θt−1 = Real exchange rate
-- Ψt−1 = Public sector financing needs
-- εt = Demand shock
+- ht = Hiato do produto (diferença entre o PIB efetivo e o PIB
+ potencial)
+- it = Taxa de juros nominal
+- Etπt+1 = Expectativa em t para a inflação em t +1
+- r∗ = Taxa de juros neutra
+- Θt−1 = Taxa de câmbio real
+- Ψt−1 = Necessidades de financiamento do setor público
+- εt = Choque de demanda
 
 Curva Phillips -> $πt = α0 + α1πt−1 + α2Etπt+1 + α3ht−1 + α4∆εt + εt$
 
-- πt = Inflation
-- ∆εt = First difference of nominal exchange rate
-- εt = Supply shock
+- πt = Inflação
+- ∆εt = Primeira diferença da taxa de câmbio nominal
+- εt = Choque de oferta
 
 Paridade da taxa de juros -> $∆εt = φ0 φ1(it − it*) + φ2xt + εt$
 
-- (it − it*) = Interest differential
-- xt = Risk premium
-- εt = External shock
-
+- (it − it*) = Diferencial de juros
+- xt = Prêmio de risco
+- εt = Choque externo
 Regra de Taylor -> $it = ω0 + ω1it−1 + ω2(Etπt+1 − π∗) + ω3ht + ω4∆εt + εt$
 
-- π∗ = Inflation target
-- εt = white noise
+- π∗ = Meta de inflação
+- εt = Ruído branco
 
 > O modelo é composto por um sistema de 3 equações, sendo que a Regra de Taylor pode ser considerada, arbitrariamente, como uma identidade. Dessa forma, o modelo é caracterizado como de equações simultâneas, dado que, por exemplo, o hiato do produto é definido pela Curva IS e é uma variável explicativa na Curva de Phillips, que por sua vez explica a inflação, sendo esta uma variável da Regra de Taylor. Sendo assim, não se pode obter a taxa de juros pela Regra de Taylor sem que a inflação pela Curva de Phillips tenha sido estimada, e não se pode estimar a inflação sem que o hiato tenha sido estimado pela Curva IS. Ou seja, dizemos que as variáveis são determinadas "simultaneamente" pelo modelo. A solução para esse tipo de modelo é, geralmente, o uso de um método (algoritmo iterativo) como o de Gauss–Seidel, variações dele ou semelhantes. Em resumo, o método segue estes procedimentos:
 
@@ -152,11 +159,23 @@ Regra de Taylor -> $it = ω0 + ω1it−1 + ω2(Etπt+1 − π∗) + ω3ht + ω4�
 3) O passo 2 produz um novo conjunto de valores das variáveis endógenas. Substitua o conjunto inicial por este novo conjunto e resolva as variáveis do lado esquerdo novamente;
 4) Continue substituindo o conjunto anterior de valores pelo novo conjunto até que as diferenças entre o novo conjunto e o conjunto anterior estejam dentro do grau de acurácia definido. Quando a acurácia necessária é alcançada, a "convergência" é alcançada e o modelo é resolvido. Os valores do lado direito são consistentes com os valores calculados do lado esquerdo.
 
+
+> De maneira prática, o modelo pode ser estimado por métodos econométricos como:
+
+Two-Stage Least Squares (2SLS) usando instrumentos;
+Generalized Method of Moments (GMM).
+Ou por técnicas bayesianas, ver Herbst e Schorfheide (2015). Para detalhes sobre o método mais comumente utilizado (2SLS) comece pelo capítulo 16 de Wooldridge (2015).
+
+
+
+
+
 ### Referências bibliográficas:
 - W.H. Greene. Econometric Analysis. Pearson Education, 2003.
-- C. A. Sims. Macroeconometrics and reality. Econometrica,
+- C. A. Sims. Macroeconometrics and reality. Econometrica.
+- P. M. Geraats. Central bank transparency. Economic Journal, 112
+ (39), 2002.
+- J. Hermann. Objeto, metodologia e conceitos básicos da análise macroeconômica: notas de aula. mimeo, 2004
 - E. J. A. Lima, F. Araujo, and J. R. Costa e Silva. Previsáo e Modelos Macroeconômicos no Banco Central do Brasil. Dez anos de metas para inflação no Brasil, 2010.
-- J. M. Wooldridge. Introductory Econometrics: A Modern Approach. Editora Cengage, 2013
-- Bogdanski et al. (2000)
-
-
+- J. M. Wooldridge. Introductory Econometrics: A Modern Approach. Editora Cengage, 2013.
+- J. Bogdanski, A. A. Tombini, and S. R. Werlang. Implementing Inflation Targeting in Brazil. BCB Working Paper 01, 2000.
