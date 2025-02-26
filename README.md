@@ -130,7 +130,7 @@ Curva IS -> $ht = \beta0 - \beta1(it - Etπt+1 - r*) + β2Θt−1 + β3Ψt−1 +
 - ht = Hiato do produto (diferença entre o PIB efetivo e o PIB
  potencial)
 - it = Taxa de juros nominal
-- Etπt+1 = Expectativa em t para a inflação em t +1
+- Etπt+1 = Expectativa em t para a inflação em t+1
 - r∗ = Taxa de juros neutra
 - Θt−1 = Taxa de câmbio real
 - Ψt−1 = Necessidades de financiamento do setor público
@@ -139,6 +139,9 @@ Curva IS -> $ht = \beta0 - \beta1(it - Etπt+1 - r*) + β2Θt−1 + β3Ψt−1 +
 Curva Phillips -> $πt = α0 + α1πt−1 + α2Etπt+1 + α3ht−1 + α4∆εt + εt$
 
 - πt = Inflação
+- πt-1 = Inflação defasada
+- Etπt+1 = Expectativa em t para a inflação em t+1
+- ht-1 = Hiato do produto defasado
 - ∆εt = Primeira diferença da taxa de câmbio nominal
 - εt = Choque de oferta
 
@@ -147,6 +150,7 @@ Paridade da taxa de juros -> $∆εt = φ0 φ1(it − it*) + φ2xt + εt$
 - (it − it*) = Diferencial de juros
 - xt = Prêmio de risco
 - εt = Choque externo
+
 Regra de Taylor -> $it = ω0 + ω1it−1 + ω2(Etπt+1 − π∗) + ω3ht + ω4∆εt + εt$
 
 - π∗ = Meta de inflação
