@@ -68,7 +68,7 @@ Serve para obter a parte do aumento do PIB nominal atribuída a um aumento de pr
 Reflete apenas os preços dos bens e serviços.
 Seu cálculo é bastante simples:     
 
-$Deflator do PIB = \frac{PIB Nominal}{PIB Real}× 100$
+$Deflator do PIB = \frac{PIB Nominal}{PIB Real}×100$
 
 ### Taxa de Crescimento de Indicadores 
 
@@ -78,7 +78,7 @@ $Deflator do PIB = \frac{PIB Nominal}{PIB Real}× 100$
 
 > São flutuações recorrentes na atividade econômica agregada dqw nações ao longo do tempo. Um ciclo consiste em fases de expansão, recessão e recuperação, simultaneamente em muitas setores da atividades econômica, as quais se consolidam posteriormente em uma nova fase de expansã (lembrando que essa sequência de mudanças é recorrente, mas não periódica). Podemos pensar os ciclos econômicos de forma análoga às condições meteorológicas, alguns períodos de calor e outros de frio, a ideia central é que a atividade econômica se move de um topo para um fundo e depois do fundo para o topo, oscilando em torno de um equilíbrio desconhecido. No Brasil a CODACE/FGV períodicamente determina e data os ciclos econômicos, como um comitê independente, ele ssegue os modelos adotados em outros países, como pelo NBER nos Estados Unidos.
 
-- Decomposição do PIB
+####  Decomposição do PIB
 
 $Yt = Yp + ht$
 
