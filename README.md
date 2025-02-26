@@ -53,7 +53,7 @@ Indices
 - Variação de estoques
 - Exportações e importações de bens e serviços.
 
-1) O PIB é a soma de todos os bens e serviços finais produzidos por um país, estado ou cidade, geralmente em um ano. Todos os países calculam o seu PIB nas suas respectivas moedas. Em resumo, o PIB é um indicador que ajuda a compreender a economia como um todo, mas não expressa importantes fatores, como distribuição de renda, qualidade de vida, educação e saúde. O PIB pode ser expresso por três óticas:
+> O PIB é a soma de todos os bens e serviços finais produzidos por um país, estado ou cidade, geralmente em um ano. Todos os países calculam o seu PIB nas suas respectivas moedas. Em resumo, o PIB é um indicador que ajuda a compreender a economia como um todo, mas não expressa importantes fatores, como distribuição de renda, qualidade de vida, educação e saúde. O PIB pode ser expresso por três óticas:
 
 - Oferta (produto): PIB é igual ao valor bruto da produção, a preços básicos, menos o consumo intermediário, a preços de consumidor, mais os impostos, líquidos de subsídios, sobre produtos;
 - Demanda (despesa): PIB é igual a despesa de consumo das famílias, mais o consumo do governo, mais o consumo das instituições sem fins de lucro a serviço das famílias (consumo final), mais a formação bruta de capital fixo, mais a variação de estoques, mais as exportações de bens e serviços, menos as importações de bens e serviços;
@@ -80,11 +80,11 @@ $Deflator do PIB = \frac{PIB Nominal}{PIB Real}×100$
 
 #####  Decomposição do PIB
 
-$Yt = Yp + ht$
+$Yt = Yp + Ht$
 
 - Yt = Produto Interno Bruto (PIB)
 - Yp = É o chamado produto potencial (não observável), representa a tendência de longo prazo do PIB, ou seja, reflete condições estruturais da economia como a população em idade ativa, o estoque de capital, qualidade de educação e qualidade das instituições.
-- ht = É o chamado hiato do produto, representa o componente cíclico, ou seja, reflete condições conjunturais da economia, como choques de demanda/oferta, incentivos de política econômica, condições climáticas, choques externos e incertezas políticas.
+- Ht = É o chamado hiato do produto, representa o componente cíclico, ou seja, reflete condições conjunturais da economia, como choques de demanda/oferta, incentivos de política econômica, condições climáticas, choques externos e incertezas políticas.
 
 > Em outras palavras, no curto prazo o PIB pode crescer mais ou menos do que o PIB potencial, sendo a diferença entre Yt e Yp dada pelo hiato do produto ou ciclo econômico. A dinâmica desse ciclo é determinada em grande medida pela rigidez de preços da economia. Fossem os preços totalmente flexíveis, o ajuste seria imediato, implicando que a diferença (hiato) fosse sempre igual a zero (a economia estaria sempre em equilíbrio). Porém, na prática, isso não acontece
 
@@ -92,7 +92,7 @@ $Yt = Yp + ht$
 
 > Em 1990, a teoria macroeconômica começou a ser baseada na síntese novo-keynesiana ou novo consenso macroeconômico. As implicações disso, foram o desenvolvimento de pequenos modelos estruturais, que buscavam entender melhor o ciclo econômico, assim como o grau de abertura do hiato do produto. Estes modelos sintetizam relações básicas entre as variáveis econômicas, permitindo estimar o comportamento da economia e ajustar a política econômica (efeito de mudanças no instrumento) de modo a evitar grandes desvios em relação às metas. No Brasil, a autoridade monetária (BCB), após a adoção do Regime de Metas para Inflação em 1999, vem constantemente utilizando modelos macroeconômicos com diferentes abordagens para metrificar o efeito da política econômica.
 
-##### Os Modelos do Banco Central Brasileiro
+- Modelos do Banco Central Brasileiro (BCB)
 
 1. Modelo Agregado de Pequeno Porte ou Semi-Estruturais de Pequena Escala
 2. Modelos Vetoriais Autorregressivos (VAR)
@@ -100,7 +100,7 @@ $Yt = Yp + ht$
 6. Modelo semiestrutural médio (PAGODE)
 7. Modelo Microfundado de médio porte (SAMBA)
 
-### Modelo Agregado de Pequeno Porte
+#### 1) Modelo Agregado de Pequeno Porte
 
 Suposições do modelo:
 - A inflação depende da taxa de juros real
@@ -120,9 +120,9 @@ Suposições do modelo:
 #### Matematicamente:
 Curva IS -> $Ht = \beta0 - \beta1(it - Etπt+1 - r*) + β2Θt−1 + β3Ψt−1 + εt$
 
-- Ht = Product gap
+- Ht = log hiato do produto
 - it = Nominal interest rate
-- Etπt+1 = Expectation at t for inflation at t + 1
+- Etπt+1 = Expectativa em t para inflação em t + 1
 - r∗ = Neutral interest rate
 - Θt−1 = Real exchange rate
 - Ψt−1 = Public sector financing needs
