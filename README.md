@@ -1,4 +1,4 @@
-# Macroeconometrics
+# Macroeconometria
 
 ![Gere uma imagem sobre macroeconometria 20-02-2025 at 06-30-35](https://github.com/user-attachments/assets/99ef8ada-2357-47c9-a2c3-0cf2e57d471a)
 
@@ -72,9 +72,13 @@ Seu cálculo é bastante simples:
 
 $Deflator do PIB = \frac{PIB Nominal}{PIB Real}× 100$
 
-#### Taxa de Crescimento do PIB
+#### Taxa de Crescimento de Indicadores 
 
-![Captura de tela 2025-02-24 050105](https://github.com/user-attachments/assets/115ad00a-c0cf-42c4-9bd5-83b514fbfd7c)
+
+
+#### Ciclos Econômicos
+
+> São flutuações recorrentes na atividade econômica agregada de nações ao longo do tempo. Um ciclo consiste em fases de expansão, recessão e recuperação, de forma simultanea em muitas atividades econômicas, as quais se consolidam posteriormente em uma nova fase de expansão, lembrando que essa sequência de mudanças é recorrente, mas não periódica. Podemos pensar os ciclos econômicos 
 
 
 
