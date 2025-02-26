@@ -78,7 +78,7 @@ $Deflator do PIB = \frac{PIB Nominal}{PIB Real}×100$
 
 > São flutuações recorrentes na atividade econômica agregada dqw nações ao longo do tempo. Um ciclo consiste em fases de expansão, recessão e recuperação, simultaneamente em muitas setores da atividades econômica, as quais se consolidam posteriormente em uma nova fase de expansã (lembrando que essa sequência de mudanças é recorrente, mas não periódica). Podemos pensar os ciclos econômicos de forma análoga às condições meteorológicas, alguns períodos de calor e outros de frio, a ideia central é que a atividade econômica se move de um topo para um fundo e depois do fundo para o topo, oscilando em torno de um equilíbrio desconhecido. No Brasil a CODACE/FGV períodicamente determina e data os ciclos econômicos, como um comitê independente, ele ssegue os modelos adotados em outros países, como pelo NBER nos Estados Unidos.
 
-####  Decomposição do PIB
+#####  Decomposição do PIB
 
 $Yt = Yp + ht$
 
@@ -92,15 +92,15 @@ $Yt = Yp + ht$
 
 > Em 1990, a teoria macroeconômica começou a ser baseada na síntese novo-keynesiana ou novo consenso macroeconômico. As implicações disso, foram o desenvolvimento de pequenos modelos estruturais, que buscavam entender melhor o ciclo econômico, assim como o grau de abertura do hiato do produto. Estes modelos sintetizam relações básicas entre as variáveis econômicas, permitindo estimar o comportamento da economia e ajustar a política econômica (efeito de mudanças no instrumento) de modo a evitar grandes desvios em relação às metas. No Brasil, a autoridade monetária (BCB), após a adoção do Regime de Metas para Inflação em 1999, vem constantemente utilizando modelos macroeconômicos com diferentes abordagens para metrificar o efeito da política econômica.
 
-#### Os Modelos do Banco Central Brasileiro
+##### Os Modelos do Banco Central Brasileiro
 
-1. Modelos semiestruturais de pequena escala
+1. Modelo Agregado de Pequeno Porte ou Semi-Estruturais de Pequena Escala
 2. Modelos Vetoriais Autorregressivos (VAR)
 3. Indicadores de inflação antecedentes e de núcleo
 6. Modelo semiestrutural médio (PAGODE)
 7. Modelo Microfundado de médio porte (SAMBA)
 
-### Modelos Semi-Estruturais de Pequena Escala
+### Modelo Agregado de Pequeno Porte
 
 Suposições do modelo:
 - A inflação depende da taxa de juros real
@@ -108,12 +108,18 @@ Suposições do modelo:
 - As expectativas dos agentes podem ser retrospectivas (informações passadas) ou prospectivas (expectativas futuras)
 - Existem mecanismos de transmissão nas decisões de política monetária e eles têm atrasos de transmissão
 
-> The new consensus or new Keynesianism admits short-term subequilibria, derived from market failures, that is, the output gap may be non-zero in the short term. Therefore, the BC's small-scale models seek to capture the transmission mechanisms of monetary policy decisions, as well as the lags involved, and are composed of:
+> O novo consenso ou novo keynesianismo admite subequilíbrios de curto prazo, derivados de falhas de mercado, ou seja, o hiato do produto pode ser diferente de zero no curto prazo. Portanto, os modelo agregado de Pequeno Porte do BC, busca capturar os mecanismos de transmissão das decisões de política monetária, bem como os atrasos envolvidos, ele é descrito em Bogdanski et al. (2000) e é composto por três equaçõese:
 
-- IS Curve (Demand)
-- Phillips Curve (Supply)
-- Interest Rate Parity (Contact with the external sector)
-- Taylor Rule (Monetary Policy Decisions)
+- Curva IS (Demanda)
+- Curva Phillips (Oferta)
+- Paridade da Taxa de Juros (Contato com o setor externo)
+- Regra de Taylor (Decisões de Política Monetária)
+
+
+
+
+
+
 
 > Interest Rate Parity or Uncovered Interest Rate Parity Condition is a concept that describes the relationship between the interest rates of two countries and the expected exchange rates between their currencies. This condition is important for understanding how interest rates and exchange rate expectations influence capital flows between countries.
 
