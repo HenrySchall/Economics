@@ -167,22 +167,14 @@ Regra de Taylor -> $it = ω0 + ω1it−1 + ω2(Etπt+1 − π∗) + ω3ht + ω4�
 3) O passo 2 produz um novo conjunto de valores das variáveis endógenas. Substitua o conjunto inicial por este novo conjunto e resolva as variáveis do lado esquerdo novamente;
 4) Continue substituindo o conjunto anterior de valores pelo novo conjunto até que as diferenças entre o novo conjunto e o conjunto anterior estejam dentro do grau de acurácia definido. Quando a acurácia necessária é alcançada, a "convergência" é alcançada e o modelo é resolvido. Os valores do lado direito são consistentes com os valores calculados do lado esquerdo.
 
-
-> De maneira prática, o modelo pode ser estimado por métodos econométricos como:
-
-Two-Stage Least Squares (2SLS) usando instrumentos;
-Generalized Method of Moments (GMM).
-Ou por técnicas bayesianas, ver Herbst e Schorfheide (2015). Para detalhes sobre o método mais comumente utilizado (2SLS) comece pelo capítulo 16 de Wooldridge (2015).
-
-
-
-
+> De maneira prática, o modelo pode ser estimado por métodos econométricos como: Mínimos Quadrados de Dois Estágios (2SLS) usando variáveis instrumentas e Método dos Momentos Generalizado (GMM). Também é possível o uso de técnicas bayesianas, como demonstrado por Herbst e Schorfheide (2015).
 
 ### Referências bibliográficas:
 - W.H. Greene. Econometric Analysis. Pearson Education, 2003.
 - C. A. Sims. Macroeconometrics and reality. Econometrica.
 - P. M. Geraats. Central bank transparency. Economic Journal, 112
  (39), 2002.
+- Herbst, E. P., & Schorfheide, F. (2015). Bayesian estimation of DSGE models. In Bayesian Estimation of DSGE Models. Princeton University Press.
 - J. Hermann. Objeto, metodologia e conceitos básicos da análise macroeconômica: notas de aula. mimeo, 2004
 - E. J. A. Lima, F. Araujo, and J. R. Costa e Silva. Previsáo e Modelos Macroeconômicos no Banco Central do Brasil. Dez anos de metas para inflação no Brasil, 2010.
 - J. M. Wooldridge. Introductory Econometrics: A Modern Approach. Editora Cengage, 2013.
