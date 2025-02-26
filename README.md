@@ -115,16 +115,10 @@ Suposições do modelo:
 - Paridade da Taxa de Juros (Contato com o setor externo)
 - Regra de Taylor (Decisões de Política Monetária)
 
+> Paridade de Taxa de Juros ou Condição de Paridade de Taxa de Juros Descoberta é um conceito que descreve a relação entre as taxas de juros de dois países e as taxas de câmbio esperadas entre suas moedas. Essa condição é importante para entender como as taxas de juros e as expectativas de taxa de câmbio influenciam os fluxos de capital entre os países.
 
-
-
-
-
-
-> Interest Rate Parity or Uncovered Interest Rate Parity Condition is a concept that describes the relationship between the interest rates of two countries and the expected exchange rates between their currencies. This condition is important for understanding how interest rates and exchange rate expectations influence capital flows between countries.
-
-#### Mathematically:
-IS Curve -> $Ht = \beta0 - \beta1(it - Etπt+1 - r*) + β2Θt−1 + β3Ψt−1 + εt$
+#### Matematicamente:
+Curva IS -> $Ht = \beta0 - \beta1(it - Etπt+1 - r*) + β2Θt−1 + β3Ψt−1 + εt$
 
 - Ht = Product gap
 - it = Nominal interest rate
@@ -134,22 +128,25 @@ IS Curve -> $Ht = \beta0 - \beta1(it - Etπt+1 - r*) + β2Θt−1 + β3Ψt−1 +
 - Ψt−1 = Public sector financing needs
 - εt = Demand shock
 
-Phillips Curve -> $πt = α0 + α1πt−1 + α2Etπt+1 + α3ht−1 + α4∆εt + εt$
+Curva Phillips -> $πt = α0 + α1πt−1 + α2Etπt+1 + α3ht−1 + α4∆εt + εt$
 
 - πt = Inflation
 - ∆εt = First difference of nominal exchange rate
 - εt = Supply shock
 
-Interest Rate Parity -> $∆εt = φ0 φ1(it − it*) + φ2xt + εt$
+Paridade da taxa de juros -> $∆εt = φ0 φ1(it − it*) + φ2xt + εt$
 
 - (it − it*) = Interest differential
 - xt = Risk premium
 - εt = External shock
 
-Taylor Rule -> $it = ω0 + ω1it−1 + ω2(Etπt+1 − π∗) + ω3ht + ω4∆εt + εt$
+Regra de Taylor -> $it = ω0 + ω1it−1 + ω2(Etπt+1 − π∗) + ω3ht + ω4∆εt + εt$
 
 - π∗ = Inflation target
 - εt = white noise
+
+
+
 
 ### Bibliographical References:
 - W.H. Greene. Econometric Analysis. Pearson Education, 2003.
@@ -157,56 +154,5 @@ Taylor Rule -> $it = ω0 + ω1it−1 + ω2(Etπt+1 − π∗) + ω3ht + ω4∆ε
 - E. J. A. Lima, F. Araujo, and J. R. Costa e Silva. Previsáo e Modelos Macroeconômicos no Banco Central do Brasil. Dez anos de metas para inflação no Brasil, 2010.
 - J. M. Wooldridge. Introductory Econometrics: A Modern Approach. Editora Cengage, 2013
 - Bogdanski et al. (2000)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
