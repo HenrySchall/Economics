@@ -74,7 +74,7 @@ $Deflator do PIB = \frac{PIB Nominal}{PIB Real}×100$
 
 
 
-### Ciclos Econômicos
+### Ciclos & Modelos Econômicos 
 
 > São flutuações recorrentes na atividade econômica agregada dqw nações ao longo do tempo. Um ciclo consiste em fases de expansão, recessão e recuperação, simultaneamente em muitas setores da atividades econômica, as quais se consolidam posteriormente em uma nova fase de expansã (lembrando que essa sequência de mudanças é recorrente, mas não periódica). Podemos pensar os ciclos econômicos de forma análoga às condições meteorológicas, alguns períodos de calor e outros de frio, a ideia central é que a atividade econômica se move de um topo para um fundo e depois do fundo para o topo, oscilando em torno de um equilíbrio desconhecido. No Brasil a CODACE/FGV períodicamente determina e data os ciclos econômicos, como um comitê independente, ele ssegue os modelos adotados em outros países, como pelo NBER nos Estados Unidos.
 
@@ -89,8 +89,68 @@ $Yt = Yp + ht$
 > Em outras palavras, no curto prazo o PIB pode crescer mais ou menos do que o PIB potencial, sendo a diferença entre Yt e Yp dada pelo hiato do produto ou ciclo econômico. A dinâmica desse ciclo é determinada em grande medida pela rigidez de preços da economia. Fossem os preços totalmente flexíveis, o ajuste seria imediato, implicando que a diferença (hiato) fosse sempre igual a zero (a economia estaria sempre em equilíbrio). Porém, na prática, isso não acontece
 
 #### Modelos Macroeconômicos 
-> De forma a entender melhor o ciclo econômico, assim como o grau de abertura do hiato do produto, surgiram diversos modelos macroeconômicos nas últimas décadas — após o que ficou conhecido como novo consenso macroeconômico ou síntese novo-keynesiana. Estes modelos sintetizam relações básicas entre variáveis econômicas, permitindo prever o comportamento da economia e ajustar a política econômica de modo a evitar grandes desvios em relação às metas. No Brasil, a autoridade monetária (BCB), após a adoção do Regime de Metas para Inflação em 1999, vem constantemente utilizando e apresentando modelos macroeconômicos com diferentes abordagens. A seguir, exploramos de forma breve o modelo básico do BCB, descrito em Bogdanski et al. (2000)
 
+> Em 1990, a teoria macroeconômica começou a ser baseada na síntese novo-keynesiana ou novo consenso macroeconômico. As implicações disso, foram o desenvolvimento de pequenos modelos estruturais, que buscavam entender melhor o ciclo econômico, assim como o grau de abertura do hiato do produto. Estes modelos sintetizam relações básicas entre as variáveis econômicas, permitindo estimar o comportamento da economia e ajustar a política econômica (efeito de mudanças no instrumento) de modo a evitar grandes desvios em relação às metas. No Brasil, a autoridade monetária (BCB), após a adoção do Regime de Metas para Inflação em 1999, vem constantemente utilizando modelos macroeconômicos com diferentes abordagens para metrificar o efeito da política econômica.
+
+#### Os Modelos do Banco Central Brasileiro
+
+1. Modelos semiestruturais de pequena escala
+2. Modelos Vetoriais Autorregressivos (VAR)
+3. Indicadores de inflação antecedentes e de núcleo
+6. Modelo semiestrutural médio (PAGODE)
+7. Modelo Microfundado de médio porte (SAMBA)
+
+### Modelos Semi-Estruturais de Pequena Escala
+
+Suposições do modelo:
+- A inflação depende da taxa de juros real
+- A taxa de juros básica nominal é o instrumento da política monetária
+- As expectativas dos agentes podem ser retrospectivas (informações passadas) ou prospectivas (expectativas futuras)
+- Existem mecanismos de transmissão nas decisões de política monetária e eles têm atrasos de transmissão
+
+> The new consensus or new Keynesianism admits short-term subequilibria, derived from market failures, that is, the output gap may be non-zero in the short term. Therefore, the BC's small-scale models seek to capture the transmission mechanisms of monetary policy decisions, as well as the lags involved, and are composed of:
+
+- IS Curve (Demand)
+- Phillips Curve (Supply)
+- Interest Rate Parity (Contact with the external sector)
+- Taylor Rule (Monetary Policy Decisions)
+
+> Interest Rate Parity or Uncovered Interest Rate Parity Condition is a concept that describes the relationship between the interest rates of two countries and the expected exchange rates between their currencies. This condition is important for understanding how interest rates and exchange rate expectations influence capital flows between countries.
+
+#### Mathematically:
+IS Curve -> $Ht = \beta0 - \beta1(it - Etπt+1 - r*) + β2Θt−1 + β3Ψt−1 + εt$
+
+- Ht = Product gap
+- it = Nominal interest rate
+- Etπt+1 = Expectation at t for inflation at t + 1
+- r∗ = Neutral interest rate
+- Θt−1 = Real exchange rate
+- Ψt−1 = Public sector financing needs
+- εt = Demand shock
+
+Phillips Curve -> $πt = α0 + α1πt−1 + α2Etπt+1 + α3ht−1 + α4∆εt + εt$
+
+- πt = Inflation
+- ∆εt = First difference of nominal exchange rate
+- εt = Supply shock
+
+Interest Rate Parity -> $∆εt = φ0 φ1(it − it*) + φ2xt + εt$
+
+- (it − it*) = Interest differential
+- xt = Risk premium
+- εt = External shock
+
+Taylor Rule -> $it = ω0 + ω1it−1 + ω2(Etπt+1 − π∗) + ω3ht + ω4∆εt + εt$
+
+- π∗ = Inflation target
+- εt = white noise
+
+### Bibliographical References:
+- W.H. Greene. Econometric Analysis. Pearson Education, 2003.
+- C. A. Sims. Macroeconometrics and reality. Econometrica,
+- E. J. A. Lima, F. Araujo, and J. R. Costa e Silva. Previsáo e Modelos Macroeconômicos no Banco Central do Brasil. Dez anos de metas para inflação no Brasil, 2010.
+- J. M. Wooldridge. Introductory Econometrics: A Modern Approach. Editora Cengage, 2013
+- Bogdanski et al. (2000)
 
 
 
