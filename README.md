@@ -82,7 +82,7 @@ $Deflator do PIB = \frac{PIB Nominal}{PIB Real}×100$
 
 $Yt = Yp + ht$
 
-- Yt = PIB
+- Yt = Produto Interno Bruto (PIB)
 - Yp = É o chamado produto potencial (não observável), representa a tendência de longo prazo do PIB, ou seja, reflete condições estruturais da economia como a população em idade ativa, o estoque de capital, qualidade de educação e qualidade das instituições.
 - ht = É o chamado hiato do produto, representa o componente cíclico, ou seja, reflete condições conjunturais da economia, como choques de demanda/oferta, incentivos de política econômica, condições climáticas, choques externos e incertezas políticas.
 
