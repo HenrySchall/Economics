@@ -27,7 +27,7 @@ onde:
 Exemplo: Imagine que queremos o salário mínimo real de julho de 2021 (07/2021) na data-base de dezembro de 2021 (12/2021)
 
 |Data |Salário Minimo|IPCA|
-|---	     |--- |---    |
+|---	      |--- |---    |
 |2021-12-01|1100|6330.59|   
 |2021-11-01|1100|6284.71|   
 |2021-10-01|1100|6232.36|   	
@@ -102,6 +102,12 @@ $Yt = Yp + Ht$
 - Função de produção, Silva Filho (2002)
 
 É importante destacar que nenhum método é perfeito, mas alguns são úteis para o próposito em questão ("All models are wrong, but some are useful" - George Box). Pontua-se que, dentre as possibilidades, os filtros multivariados têm se destacado como uma das metodologias mais utilizadas pelo BCB.
+
+##### Filtros Hodrick e Prescott (HP)
+
+> O filtro HP separa uma série temporal Yt em dois componentes: tendência Gt (também chamado de crescimento) e ciclo Ct, ou seja, Yt = Gt + Ct, para t = 1,2,..., n. Dessa forma, Hodrick e Prescott (1997) propõem uma forma de isolar Ct de Yt através da minimização de Gt, matematicamente falando:
+
+![Captura de tela 2025-02-27 080922](https://github.com/user-attachments/assets/0041cb7c-7037-4cab-a730-daa0d04973b2)
 
 
 ### Referências bibliográficas:
