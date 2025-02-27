@@ -110,10 +110,16 @@ $Yt = Yp + Ht$
 
 > O filtro HP separa uma série temporal Yt em dois componentes: tendência Gt (também chamado de crescimento) e ciclo Ct, ou seja, Yt = Gt + Ct, para t = 1,2,..., n. Dessa forma, Hodrick e Prescott (1997) propõem uma forma de isolar Ct de Yt através da minimização de Gt, matematicamente falando:
 
-![Captura de tela 2025-02-27 080922](https://github.com/user-attachments/assets/0041cb7c-7037-4cab-a730-daa0d04973b2)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7eb2d45b-82d4-47dd-8f2f-8171908b4acf"/>
+</p>
 
 > O primeiro termo desse problema de minimização é a soma dos desvios quadrados, que penaliza o componente cíclico. O segundo termo é um múltiplo de λ da soma dos quadrados das segundas diferenças do componente de tendência, que penaliza variações da taxa de crescimento do componente de tendência. O parâmetro λ é um número positivo, quanto maior for o valor de λ mais suave será a série de tendência. Na literatura sugere-se λ = 1600 como um valor para séries temporais de frequência trimestral.
 
 #### Filtros de Hamilton (2017)
 
 > Aplicação de uma especificação de um modelo de regressão linear (MQO) para extrair componentes de tendência e ciclo de uma série temporal, proposto por Hamilton (2017) como uma alternativa ao filtro HP. Estima-se um modelo MQO para uma série temporal Yt deslocada por h períodos a frente e regredida contra x séries  defasadas da própria série Yt, ou seja, uma específicação de modelo AR(X) modificada. Com h = 8 e x = 4, sendo representado como:
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b86c9dc6-c04b-4c74-8ef5-6f8b2f42f2f6"/>
+</p>
