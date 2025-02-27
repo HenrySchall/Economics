@@ -104,7 +104,14 @@ $Yt = Yp + Ht$
 É importante destacar que nenhum método é perfeito, mas alguns são úteis para o próposito em questão ("All models are wrong, but some are useful" - George Box). Pontua-se que, dentre as possibilidades, os filtros multivariados têm se destacado como uma das metodologias mais utilizadas pelo BCB.
 
 #### Filtros de Kalman
+O filtro de Kalman é um algoritmo recursivo que permite usar uma série temporal observável para estimar uma série não observável, chamada de variável de "estado", sendo construído na forma de "estado-espaço". Em termos simples, o "estado" da variável no momento t é relacionado com o "estado" da variável no momento t-1, caracterizando uma relação dinâmica. Há dois grupos de equações nas que fornecem "palpites" sobre o verdadeiro valor da variável de interesse:
 
+Equação de estado: descreve como o sistema evolui de um ponto no tempo para o próximo (primeiro palpite);
+Equação de medida (observação): combina ao estado atual uma nova informação (observação) com alguma incerteza (ruído), para finalidade de refinar a estimativa (segundo palpite).
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/79b1653f-a72b-43b4-8a4f-bd676e1a7b6d"/>
+</p>
 
 #### Filtros de Hodrick e Prescott (HP)
 
