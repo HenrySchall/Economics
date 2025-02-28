@@ -1,7 +1,5 @@
 # Modelos Macroeconômicos 
 
-### Modelos Macroeconômicos 
-
 > Os modelos macroeconômicos são representações matemáticas e teóricas que buscam descrever e explicar o comportamento da economia como um todo. Esses modelos são utilizados para analisar as interações entre diferentes variáveis macroeconômicas, como o Produto Interno Bruto (PIB), inflação, desemprego, taxas de juros, consumo, investimento e comércio exterior. Eles ajudam economistas e formuladores de políticas a entender como as políticas econômicas e choques externos podem afetar a economia.
 
 #### Tipos de Modelos Macroeconômicos
