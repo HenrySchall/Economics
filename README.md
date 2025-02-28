@@ -14,63 +14,102 @@
 - Fluxo -> Magnitude econômica de um intervalo de tempo. EX: PIB (taxa mensal)
 - Estoque -> Magnitude medida de um determinado ponto específico no tempo. EX: dívida externa do país
 
-> Quando estamos trabalhando com valores macroeconômicos é normal que eles sofram variações ao longo do tempo. Sendo assim, para termos uma visão realística dos dados, sempre transformamos valores nominais para valores deflacionados (ou reais), ou seja, contabilizando o efeito da variações dos indicadores economicos, geralmente o efeito inflacionário do período. Então para exemplificar, vamos pegar uma série do salário mínimo (IPEADATA) é um índice de preços (Índice Nacional de Preços ao Consumidor Amplo - IPCA) ou (Índice Nacional de Preços ao Consumidor - INPC) ou (Índice Geral de Preços de Mercado - IGPM), que será nossa variável para deflacionar o salário mínimo, aplicando à fórmula:
+- Teoria Econômica & Econometria
+> Por meio da Econometria é possível avaliar empiricamente a teoria econômica e explicar fatos passados, testar hipóteses, prever resultados de políticas ou eventos futuros e estimar relações entre variáveis econômicas. Isso é viável porque, em geral, há relações de equilíbrio de longo prazo entre variáveis econômicas.
 
-$Vreal(x,y) = (\frac{Ix}{Iy}) * Vx$
+Exemplos de campos da econometria:
 
-onde: 
-- $Vreal(x,y)$ = é o valor real, ou deflacionado, no período x na data-base y
-- $Ix$ = é o índice de preços fixado na data-base y
-- $Iy$ = é o índice de preços no período x
-- $Vx$ =  é o valor ou preço nominal no período x
+Econometria básica (regressão linear múltipla, …)
+Econometria de séries temporais (AR, MA, ARMA, ARIMA, ARCH, GARCH, VAR, VEC, …)
+Econometria não-paramétrica (regressão não-paramétrica, ….)
+Microeconometria (dados em painel, …)
+- Macroeconometria (DSGE, DSGE-VAR, VAR, VEC, …)
 
-Exemplo: Imagine que queremos o salário mínimo real de julho de 2021 (07/2021) na data-base de dezembro de 2021 (12/2021)
+2. Estrutura dos dados econômicos
 
-|Data |Salário Minimo|IPCA|
-|---	      |--- |---    |
-|2021-12-01|1100|6330.59|   
-|2021-11-01|1100|6284.71|   
-|2021-10-01|1100|6232.36|   	
-|2021-09-01|1100|6160.89|  
-|2021-08-01|1100|6087.84|  
-|2021-07-01|1100|6034.73|  
+> Os dados econômicos apresentam-se em uma variedade de tipos. Embora alguns métodos econométricos possam ser aplicados com pouca ou nenhuma modificação para muitos tipos de informações, as características especiais de alguns dados devem ser consideradas ou deveriam ser exploradas. Descreveremos a seguir as estruturas de dados mais importantes encontradas nos trabalhos aplicados.
 
-$Vreal(x,y) = (\frac{ Ix }{ Iy }) * Vx$
+Corte Transversal: Um conjunto de dados de corte transversal consiste em uma amostra de indivíduos, consumidores, empresas, cidades, estados, países ou uma variedade de outras unidades, tomada em um determinado ponto no tempo, sendo assim não podemos considerar que eles foram obtidos por uma amostra aleatória, os dados das unidades não precisam corresponder ao mesmo período e a ordenação dos dados não importa para a análise econométrica.
+Série Temporal: Um conjunto de séries temporais consiste em observações sobre uma variável ou muitas variáveis ao longo do tempo. Exemplos de dados de séries temporais incluem preços de ações, oferta de moeda, índice de preços ao consumidor, produto interno bruto, taxas anuais de homicídios e números de automóveis vendidos. Sendo assim, podemos considerar que eventos passados podem influenciar eventos futuros e a ordenação cronológica das observações transmite informações importantes.
+Dados em Painel: Um conjunto de dados em painel consiste em uma série temporal para cada registro de corte transversal. Como exemplo, suponha que tenhamos o histórico de salário, educação e emprego para um conjunto de indivíduos ao longo de um período de dez anos. Sendo assim, as mesmas unidades de corte transversal são acompanhadas ao longo de um determinado período e a ordenação no corte transversal de um conjunto de dados em painel não é importante.
+3. Estatística
 
-$Vreal$(07/21,12/21) = $(\frac{6330.59}{6034.73}) * 1100$
+> A estatística é definda como a ciência que objetiva coletar, organizar, analisar e interpretar dados. Ela é dividida em 3 partes:
 
-### Sistema de Contas Nacionais
+Descritiva é aquela relacionada a descrição dos dados, representada pelas medidas de: centralidade (Média, moda e mediana), posição (Amplitude e Quartis), dispersão (Variância e Desvio Padrão).
+Probabilistica é aquela relacionada a conceitos de probabilidades (espaço amostral, eventos) e distribuições de probabilidade discretas e contínuas (Binomial, Poisson, Exponencial e Normal).
+Inferencial é aquela relacionada a estimação de parâmetros, intervalo de confiança e testes de hipóteses.
+> Outro ponto importante é são as chamadas Técnicas de Amostragem, que são sub-divididas em 4 grupos:
 
-> O Sistema de Contas Nacionais (SCN) é o conjunto padronizado de recomendações internacionalmente acordadas sobre como compilar as medidas de atividade econômica, de acordo com rígidas convenções contábeis baseadas em princípios econômicos. No Brasil o responsável por compilar e divulgar essas estatísticas é o IBGE através do Sistema de Contas Nacionais Trimestrais (SCNT)
+Aleatória Simples: Seleção executada por meio de sorteio, sem nenhum filtro.
+Estratificada: Divisão da população em grupos e seleção aleatória de uma amostra de cada grupo. (Ex: divisão por região, classe social, religião…).
+Conglomerado (Agrupamento): Divisão da população em grupos com características similares, porém heterogêneas, e seleção aleatória de alguns grupos para analisar todos os elementos destes grupos. (Ex.: Divisão da população de escolas estaduais por região, enfermeiros de uma rede de hospitais… ).
+Sistemática: Membros da população são ordenados numericamente e são selecionados aleatoriamente, obedecendo uma sequência numérica. (Ex.: criação de números para cada amostra e seleção obedecendo uma ordem numérica).
+3) Testes de hipóteses
 
-Indices 
-- Produto Interno Bruto (PIB) a preços de mercado;
-- Impostos sobre produtos;
-- Valor adicionado a preços básicos;
-- Consumo pessoal;
-- Consumo do governo;
-- Formação bruta de capital fixo (FBCF);
-- Variação de estoques
-- Exportações e importações de bens e serviços.
+> São testes de afirmações sobre um parâmetro. Processo que utiliza estatísticas amostrais para testar uma hipótese (afirmação original) e aceitá-la ou rejeitá-la.
 
-> O PIB é a soma de todos os bens e serviços finais produzidos por um país, estado ou cidade, geralmente em um ano. Todos os países calculam o seu PIB nas suas respectivas moedas. Em resumo, o PIB é um indicador que ajuda a compreender a economia como um todo, mas não expressa importantes fatores, como distribuição de renda, qualidade de vida, educação e saúde. O PIB pode ser expresso por três óticas:
+Existem duas hipóteses:
 
-- Oferta (produto): PIB é igual ao valor bruto da produção, a preços básicos, menos o consumo intermediário, a preços de consumidor, mais os impostos, líquidos de subsídios, sobre produtos;
-- Demanda (despesa): PIB é igual a despesa de consumo das famílias, mais o consumo do governo, mais o consumo das instituições sem fins de lucro a serviço das famílias (consumo final), mais a formação bruta de capital fixo, mais a variação de estoques, mais as exportações de bens e serviços, menos as importações de bens e serviços;
-- Renda: PIB é igual à remuneração dos empregados, mais o total dos impostos, líquidos de subsídios, sobre a produção e a importação, mais o rendimento misto bruto, mais o excedente operacional bruto.
+- Hipótese nula (H0)
 
-PIB nominal X PIB real
+- Hipótese alternativa (H1):
 
-#### Deflator do PIB
-O deflator do PIB mede o nível atual de preços relativo ao nível de preços do ano-base;
-É um índice de preços com todos os bens e serviços produzidos na economia;
-Serve para obter a parte do aumento do PIB nominal atribuída a um aumento de preços e não por uma aumento nas quantidades produzidas;
-Reflete apenas os preços dos bens e serviços.
-Seu cálculo é bastante simples:     
+Tipos de erro
 
-$Deflator do PIB = \frac{PIB Nominal}{PIB Real}×100$
+- Erro tipo I: hipótese nula rejeitada quando ela for verdadeira
 
-### Taxa de Crescimento de Indicadores 
+Erro tipo II: aceita a hipótese nula (não rejeita) sendo ela falsa.
+#### Intervalo de confiança
+
+- Intervalo de confiança: Probabilidade de que o parâmetro populacional estimado, esteja no intervalo selecionado.
+
+- Nível de significância: Probabilidade máxima permitida para cometer o erro tipo I.
+
+#### Métricas de Desempenho
+
+Erro absoluto médio (MAE)
+
+![Captura de tela 2023–12–23 220021](https://github.com/HenrySchall/R/assets/96027335/f5bcb70b-8869-46b5-819c-11266879e2b1)
+
+- Oi = valores observados
+
+- Pi = valores previstos
+
+Raiz do erro quadrático médio (RMSE)
+
+#### Outliers
+
+São dados discrepantes, isto é, são dados muito diferentes dos demais dados pertencentes à variável em análise. A relevância deles deve ser analisada para definir se continuarão no dataset ou se devem ser tratados (corrigidos, excluídos ou substituídos), pois se não forem relevantes, podem interferir significativamente nos resultados das análises.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Mínimos Quadrados Ordinários (MQO): Este é o método mais comum de estimativa em regressão linear. O MQO busca minimizar a soma dos quadrados das diferenças entre os valores observados e os valores previstos pelo modelo.
+
+Mínimos Quadrados Generalizados (MQG): Este método é uma extensão do MQO que é utilizado quando as suposições de homocedasticidade (variância constante dos erros) não são atendidas. O MQG leva em conta a estrutura de variância dos erros.
+
+Regressão de Mínimos Quadrados Pesados: Utiliza pesos diferentes para as observações, o que pode ser útil em situações onde algumas observações são mais confiáveis do que outras
+
+Máxima Verossimilha (MV)
+
+
+
+
+
+
 
 
 
