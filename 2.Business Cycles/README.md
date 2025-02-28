@@ -2,7 +2,7 @@
 
 > Os ciclos econômicos são flutuações recorrentes na atividade econômica agregada das nações ao longo do tempo. Um ciclo consiste em fases de expansão, recessão e recuperação, simultaneamente em muitas setores da atividades econômica, as quais se consolidam posteriormente em uma nova fase de expansão (lembrando que essa sequência de mudanças é recorrente, mas não periódica). A ideia central é que a atividade econômica se move de um topo para um fundo e depois do fundo para o topo, oscilando em torno de um equilíbrio desconhecido, o ciclo econômico desempenha um papel importante para as decisões de política econômica e de empresas, sendo um importante indicador para a política monetária, possibilitando a atuação do Banco Central para estabilizar as flutuações da economia. No Brasil a CODACE/FGV períodicamente determina e data os ciclos econômicos, como um comitê independente, ele ssegue os modelos adotados em outros países, como pelo NBER nos Estados Unidos.
 
-![userlmn_11b28909693848f194a27ba565fd7274](https://github.com/user-attachments/assets/e463e472-376a-4028-bb03-4b5e47135935)
+![userlmn_11b28909693848f194a27ba565fd7274](https://github.com/user-attachments/assets/2206d68f-7344-4548-9d4a-b3a96a85e6ee)
 
 - Pico (A): é o ponto de virada quando a expansão transita para a fase de recessão;
 - Vale (C): é o ponto de virada quando a recessão transita para a fase de expansão/recuperação;
