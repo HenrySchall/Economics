@@ -9,7 +9,7 @@
 - Duração (AB): é o número de trimestres entre o pico e o vale;
 - Amplitude (BC): é a distância entre o pico e o vale ou altura do triângulo.
 
-#### Modelo de Harding e Pagan
+### Modelo de Harding e Pagan
 
 > Há diveros trabalhos que investigam a questão da datação de ciclos econômicos, o mais utilizado é o Modelo de Harding e Pagan (2002), que utiiliza-se do conceito de ciclos econômicos de Burns e Mitchell (1946)
 
