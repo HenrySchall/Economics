@@ -1,7 +1,7 @@
 # Ciclos Econômicos
 
 ### Referências bibliográficas:
-- Robet Lucas, Models of Business Cycle, 1991
+- Robet E Lucas, Models of Business Cycle, 1991
 - W.H. Greene. Econometric Analysis. Pearson Education, 2003.
 - C. A. Sims. Macroeconometrics and reality. Econometrica.
 - P. M. Geraats. Central bank transparency. Economic Journal, 112
