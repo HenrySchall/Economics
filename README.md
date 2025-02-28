@@ -100,6 +100,7 @@ $Yt = Yp + Ht$
 - Filtros de Kalman (1960)
 - Filtros de Hodrick e Prescott (1997)
 - Filtros de Hamilton (2017)
+-  Funcao de producao Orair e Baciotti (2018)
 
 É importante destacar que nenhum método é perfeito, mas alguns são úteis para o próposito em questão ("All models are wrong, but some are useful" - George Box). Pontua-se que, dentre as possibilidades, os filtros multivariados têm se destacado como uma das metodologias mais utilizadas pelo BCB.
 
@@ -130,3 +131,7 @@ Equação de medida (observação): combina ao estado atual uma nova informaçã
 <p align="center">
   <img src="https://github.com/user-attachments/assets/b86c9dc6-c04b-4c74-8ef5-6f8b2f42f2f6"/>
 </p>
+
+#### Filtros de Hamilton (2017)
+
+
