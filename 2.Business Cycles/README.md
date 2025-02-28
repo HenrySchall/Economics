@@ -22,6 +22,20 @@ Conforme Harding e Pagan (2002), os pontos de virada da série acontecem quando:
 <p align="center">
   <img src="https://github.com/user-attachments/assets/31b82548-adf1-4cae-80c9-9521f873ed97"/>
 
+> O usual e recomendado pelos autores, para séries trimestrais, é definir k = 2 para encontrar esses pontos máximos e mínimos locais.
+
+Em seguida, define-se as fases de expansão, recessão e o ciclo completo:
+
+Recessão: o período compreendido entre um pico e um vale;
+Expansão: o período compreendido entre um vale e um pico;
+Ciclo completo: pode ser mensurado como a duração das fases de recessão e expansão somadas.
+Para tal, é necessário impor algumas "regras de censura", que são restrições adicionais para eliminar/manter os pontos de virada identificados. Isso passa por definir uma duração mínima das fases de recessão/expansão entre picos/vales, geralmente utilizando-se 2 trimestres (inspirado no NBER). Além disso, restringe-se também a duração mínima do ciclo completo como 5 trimestres.
+
+Em resumo:
+
+Recessão/Expansão: duram, no mínimo, 2 trimestres;
+Ciclo completo: dura, no mínimo, 5 trimestres.
+
 ### Referências bibliográficas:
 - Robet E. Lucas, Models of Business Cycle, 1991
 - W.H. Greene. Econometric Analysis. Pearson Education, 2003.
