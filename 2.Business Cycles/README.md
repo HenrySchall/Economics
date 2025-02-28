@@ -11,8 +11,16 @@
 
 ### Modelo de Harding e Pagan
 
-> Há diveros trabalhos que investigam a questão da datação de ciclos econômicos, o mais utilizado é o Modelo de Harding e Pagan (2002), que utiiliza-se do conceito de ciclos econômicos de Burns e Mitchell (1946)
+> Há diveros trabalhos que investigam que buscam modelar a datação de ciclos econômicos, todavia o mais utilizado é o Modelo de Harding e Pagan (2002), que segue a definição de Burns e Mitchell (1946). Partindo de uma série Yt em frequência trimestral, representativa da atividade econômica (PIB) e usualmente transformada como Yt = ln (Yt), a datação do ciclo econômico deve compreender as seguintes etapas:
 
+1) Determinação de um conjunto potencial de pontos de virada, ou seja, os picos e vales em uma série Yt.
+2) Um procedimento para garantir que os picos e os vales se alternem.
+3) Um conjunto de regras que recombinam os pontos de virada estabelecidos após os passos 1) e 2) para satisfazer critérios pré-determinados relativos à duração e amplitude das fases e ciclos completos (isso é chamado de "regras de censura").
+
+Conforme Harding e Pagan (2002), os pontos de virada da série acontecem quando:
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/31b82548-adf1-4cae-80c9-9521f873ed97"/>
 
 ### Referências bibliográficas:
 - Robet E. Lucas, Models of Business Cycle, 1991
