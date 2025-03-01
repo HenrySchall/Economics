@@ -9,23 +9,15 @@ library(readr)
 library(readxl)
 library(forecast)
 library(zoo)
-library(rio) 
-library(timetk)
 library(lubridate)
+library(ipeadatar) 
+library(sidrar)
+library(GetBCBData) 
 
 # if the packages weren't installed, run the commands in R Terminal -> https://github.com/HenrySchall/Data_Science/blob/main/R/Install_Packages.txt
 
-# Tipo de dados 
-# - ts: série temporal
-# - zoo: objeto zoo 
-# - xts: no formato xts
-# - timeSeries: série financeira
-
-dados <- import(file="https://analisemacro.com.br/download/38675/",format = "csv",setclass = "tbl_df")
+dados <- import(file=" https://drive.google.com/uc?export=download&id=1rNo07TaQrh7237k7h_MEvMytza19mRHv",format = "csv",setclass = "tbl_df")
 View(dados)
-
-class(dados)
-str(dados)
 
 ###########################
 ### Deflacionando Dados ###
