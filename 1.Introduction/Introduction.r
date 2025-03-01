@@ -14,7 +14,7 @@ library(ipeadatar)
 library(sidrar)
 library(GetBCBData) 
 
-# if the packages weren't installed, run the commands in R Terminal -> https://github.com/HenrySchall/Data_Science/blob/main/R/Install_Packages.txt
+# if some packages weren't installed, run the commands in R Terminal -> https://github.com/HenrySchall/Data_Science/blob/main/R/Arquivos/Install_packages.r
 
 dados <- import(file=" https://drive.google.com/uc?export=download&id=1rNo07TaQrh7237k7h_MEvMytza19mRHv",format = "csv",setclass = "tbl_df")
 View(dados)

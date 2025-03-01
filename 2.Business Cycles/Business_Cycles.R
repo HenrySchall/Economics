@@ -14,7 +14,7 @@ library(ipeadatar)
 library(sidrar)
 library(GetBCBData)
 
-# if some packages weren't installed, run the commands in R Terminal -> https://github.com/HenrySchall/Data_Science/blob/main/R/Install_Packages.txt
+# if some packages weren't installed, run the commands in R Terminal -> https://github.com/HenrySchall/Data_Science/blob/main/R/Arquivos/Install_packages.r
 
 dados <- import(file= "https://drive.google.com/uc?export=download&id=1vJ1l_1hi3OT5jCi7_d8rD5ItlVthEVte", format = "csv", class = "tibble") %>% mutate(pib_log = log(pib))
 View(dados)
@@ -22,8 +22,7 @@ View(dados)
 # Nesse caso estamos utilizando uma Série do PIB Real em frequência trimestral e ajustada sazonalmente, esse ajuste sazonal é um processo 
 # utilizado para remover as variações sazonais (feriados, estações do ano, etc.), de modo a identificar a tendência de longo prazo e os ciclos econômicos. 
 # O método mais comum para ajustar sazonalmente é o programa X-13ARIMA-SEATS (https://www.census.gov/data/software/x13as.html), para encontrar o código para 
-# sazonalinar séries, ir no link -> 
-
+# sazonalinar séries, ir no link -> https://github.com/HenrySchall/Data_Science/blob/main/Python/Arquivos/X-13ARIMA-SEATS.py
 
 # Tipo de dados 
 # - ts: série temporal
