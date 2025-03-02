@@ -145,14 +145,3 @@ Outro canal importante de transmissão da política monetária é o da taxa de c
 Há também, dentre outros, o canal do crédito: ao aumentar a taxa de juros, o BC estimula que as taxas cobradas por empréstimos bancários também subam, diminuindo o volume de empréstimos a pessoas e empresas, desestimulando o consumo e o investimento.
 
 O BCB estima que o efeito de mudanças na Selic sobre a inflação demora, em média, de 6 a 9 meses se concretizar.
-
-### Referências bibliográficas:
-- W.H. Greene. Econometric Analysis. Pearson Education, 2003.
-- C. A. Sims. Macroeconometrics and reality. Econometrica.
-- P. M. Geraats. Central bank transparency. Economic Journal, 112
- (39), 2002.
-- Herbst, E. P., & Schorfheide, F. (2015). Bayesian estimation of DSGE models. In Bayesian Estimation of DSGE Models. Princeton University Press.
-- J. Hermann. Objeto, metodologia e conceitos básicos da análise macroeconômica: notas de aula. mimeo, 2004
-- E. J. A. Lima, F. Araujo, and J. R. Costa e Silva. Previsáo e Modelos Macroeconômicos no Banco Central do Brasil. Dez anos de metas para inflação no Brasil, 2010.
-- J. M. Wooldridge. Introductory Econometrics: A Modern Approach. Editora Cengage, 2013.
-- J. Bogdanski, A. A. Tombini, and S. R. Werlang. Implementing Inflation Targeting in Brazil. BCB Working Paper 01, 2000.
