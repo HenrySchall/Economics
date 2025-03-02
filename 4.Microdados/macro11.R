@@ -41,6 +41,8 @@ dados <- get_pnadc(year = 2022, quarter = 1, vars = c("VD4020"), savedir = "data
 list.files("data")
 
 # Conectar os dados com o Visual Studio Code
+setwd("C:/Users/henri/Documentos/data")
+
 dadosPNADc <- read_pnadc(microdata="PNADC_012022.txt", input_txt="input_PNADC_trimestral.txt")
 
 dadosPNADc <- pnadc_labeller(data_pnadc=dadosPNADc, dictionary.file="dicionario_PNADC_microdados_trimestral.xls")
