@@ -32,7 +32,45 @@ instrumentos: um fiscal, representado por G e outro monetário,
 representado por M. Essa economia, ademais, pode ser
 representada por
 
+
+Suponha agora que o ponto de partida é dado por Y = Y∗
+e por π = 2%, isto é, a economia encontra-se no pleno emprego e a
+inflação está em 2%. O objetivo do policymaker é então reduzir a
+inflação em dois pontos percentuais, sem perda sobre o produto.
+Para abordar esse problema, primeiro, vamos reescrever 2 em termos
+de desvios da base, isto é
+
 Formula
 
 onde os parâmetros a1, a2, b1 e b2 medem o efeito quantitativo de
 G e M sobre Y e π.
+
+
+O resultado depende diretamente de a1/b1 ≠ a2/b2 de modo que o
+determinante da matriz dos parâmetros A seja diferente de zero,
+possibilitanto que a inversa de A exista. Ou, em outras palavras,
+que os efeitos da política fiscal e monetária sejam linearmente
+independentes sobre o PIB e a inflação Certamente, essa é uma premissa bastante forte. Para ilustrar,
+vamos supor que a inflação seja determinada pela Curva de Phillips,
+de modo que a política monetária e a fiscal atuem sobre o PIB e o
+PIB afete a inflação. Algo como
+
+Y = a1G + a2M
+π = gY
+
+A Curva de Phillips criou uma dependência linear entre os
+instrumentos, impedindo que haja uma solução para o problema de
+política. Em outras palavras, se a única forma pela qual a política
+monetária e a política fiscal podem influenciar a inflação é através
+do efeito sobre o PIB, então, visar tanto Y
+∗ quanto π∗será impossível
+
+
+Se não existe solução no sentido proposto por Tinbergen [1952], é
+possível abordar o problema de uma forma diferente. Theil [1957]
+propôs uma forma alternativa, baseada na ideia de que o objetivo
+básico do policymaker não seja o de alcançar o valor exato da meta,
+mas que os valores dos instrumentos sejam calibrados de modo a
+minimizar a distância entre o valor observado da variável de
+interesse e sua meta. Isto é,
+
