@@ -40,7 +40,7 @@ dados <- get_pnadc(year = 2022, quarter = 1, vars = c("VD4020"), savedir = "data
 # Listar arquivos baixados na pasta "data"
 list.files("data")
 
-# Conectar os dados com o Visual Studio Code
+# Conectar os dados com a IDE
 setwd("C:/Users/henri/Documentos/data")
 
 dadosPNADc <- read_pnadc(microdata="PNADC_012022.txt", input_txt="input_PNADC_trimestral.txt")
@@ -64,9 +64,7 @@ dados$variables <- mutate(dados$variables, VD4020_real = VD4020 * Efetivo)
 # dados$variables = Tabela com as variáveis importadas
 # VD4020_real = Coluna que será criada (nominal * deflator do IBGE)
 
-# Observação: os valores resultantes dos comandos abaixo são estimativas sobre
-# a população.
-View(dados[["variables"]])
+
 # |-- Estatísticas descritivas ----
 
 # Renda média
