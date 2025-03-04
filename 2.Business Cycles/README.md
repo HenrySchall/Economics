@@ -35,5 +35,3 @@ Em resumo:
 
 Recessão/Expansão: duram, no mínimo, 2 trimestres;
 Ciclo completo: dura, no mínimo, 5 trimestres.
-
-### Referências bibliográficas:
