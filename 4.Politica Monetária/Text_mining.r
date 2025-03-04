@@ -20,6 +20,9 @@ library(scales)
 ### Web Scraping ###
 ####################
 
+# 
+gc()
+
 # URL JSON 
 url_json <- "https://www.bcb.gov.br/api/servico/sitebcb/copomminutes/ultimas?quantidade=2000&filtro="
 
@@ -45,8 +48,6 @@ atas_texto <- fromJSON(txt = url_json) %>%
     ) %>%
   drop_na(ata) %>%  # remove linhas com NA (coluna ata)
   as_tibble()
-
-gc()
 
 # extract2("conteudo") -> extrai o elemento da lista
 # mutate -> cria e trata colunas de interesse
