@@ -1,3 +1,4 @@
+library(httpgd)
 library(jsonlite)  
 library(curl)     
 library(magrittr)   
@@ -10,33 +11,42 @@ library(tm)
 library(tidytext)   
 library(textdata)   
 library(ggplot2)    
-library(scales)     
+library(scales)    
 
-# if some packages weren't installed, run the commands in R Terminal -> https://github.com/HenrySchall/Data_Science/blob/main/R/Arquivos/Install_packages.r
+# if some packages weren't installed, run the commands in R Terminal -> https://github.com/HenrySchall/Data_Science/blob/main/R/Install_Packages.txt
 # Link das Atas -> https://www.bcb.gov.br/en/publications/copomminutes/cronologicos
 
-###################
-### Text Mining ###
-###################
+####################
+### Web Scraping ###
+####################
 
-# URL JSON (Web scraping)
+# URL JSON 
 url_json <- "https://www.bcb.gov.br/api/servico/sitebcb/copomminutes/ultimas?quantidade=2000&filtro="
 
 # Importar JSON e usar links para importar textos das atas (formato tabular)
-atas_texto <- jfromJSON(txt = url_json) %>% 
+atas_texto <- fromJSON(txt = url_json) %>%
+  extract2("conteudo") %>% # extrai o elemento da lista
+  mutate(  # cria e trata colunas de interesse
 
-extract2("conteudo") %>%
+    # expressão regular (regex) para extrair os primeiros 2 ou 3 números da coluna Titulo
+    ata = stringr::str_extract(string = Titulo, pattern = "^[[:digit:]]{2,3}") %>%
+      as.numeric(),
 
-mutate(ata = str_extract(string = Titulo, pattern = "^[[:digit:]]{2,3}") %>% as.numeric(),
+    # constrói link p/ cada ata
+    link = paste0("https://www.bcb.gov.br", Url) %>% URLencode(),
 
-link = paste0("https://www.bcb.gov.br", Url) %>% URLencode(),
+    # importar textos das atas a partir dos links (for-loop)
+    texto = map_chr(
+      .x = link,
+      .f = ~paste0(pdf_text(.x), collapse = "\n")),
 
-texto = map_chr(.x = link, .f = ~paste0(pdf_text(.x), collapse = "\n")),.keep = "none") %>%
+     .keep = "none"  # mantém somente colunas criadas
 
-drop_na(ata) %>% 
-as_tibble()
+    ) %>%
+  drop_na(ata) %>%  # remove linhas com NA (coluna ata)
+  as_tibble()
 
-View(atas_texto)
+gc()
 
 # extract2("conteudo") -> extrai o elemento da lista
 # mutate -> cria e trata colunas de interesse
@@ -49,94 +59,83 @@ View(atas_texto)
 ### Tratamento de dados ###
 ###########################
 
-# Termos a serem arbitrariamente removidos
+# Termos sem interesse a serem arbitrariamente removidos
 termos_rm <- c("th","Minutes of the Meeting","Monetary Policy Committee","Copom","bcb.gov.br","BCB","Headquarters",
 "meeting rooms","floor","Brasilia","Brasília","DF","Brazil","Department","Banking","Operations","Deputy",
 "Governor","Committee","Banco Central do Brasil","banco central  brasil","Meeting","Office","Minutes","rd","st",
 "nd","Central Bank","pp","govbr","bcbgovbr", month.name, month.abb)
 
-month.name, # constante do R com nome de meses por extenso
-  month.abb # abreviados
-
 # Remover stop words, pontuações, números, aplicar stemming e criar tokens
 atas_token <- atas_texto %>%
-  # Remove atas antes da nº 62 por problemas de codificação de caracters
-  dplyr::filter(ata >= 62) %>%  # alternativa: ler essas atas com pdftools::pdf_ocr_text()
-  dplyr::select(-"link") %>%
-  dplyr::mutate(
+  
+# Remove atas antes da nº 62 por problemas de codificação de caracters
+  filter(ata >= 62) %>%  # alternativa: ler essas atas com pdftools::pdf_ocr_text()
+  select(-"link") %>%
+  mutate(
+    
     # Transforma para minúsculo
-    texto = stringr::str_to_lower(texto) %>%
-      # Remove "stop words"
-      tm::removeWords(words = tm::stopwords(kind = "english")) %>%
-      tm::removeWords(words = tm::stopwords(kind = "portuguese")) %>%
-      # Remove pontuações e números
-      tm::removePunctuation() %>%
-      tm::removeNumbers() %>%
-      # Remove termos "indesejados"
-      tm::removeWords(words = stringr::str_to_lower(termos_rm)) %>%
-      stringr::str_replace_all(pattern = "\\n|\\r|\\–|\\'|\\’|\\“|\\”", replacement = "") %>%
-      # Stemming
-      tm::stemDocument(language = "english")
-    ) %>%
+    texto = str_to_lower(texto) %>%
+    
+    # Remove "stop words"
+    removeWords(words = stopwords(kind = "english")) %>%
+    removeWords(words = stopwords(kind = "portuguese")) %>%
+    
+    # Remove pontuações e números
+    removePunctuation() %>%
+    removeNumbers() %>%
+    
+    # Remove termos "indesejados"
+    removeWords(words = str_to_lower(termos_rm)) %>%
+    str_replace_all(pattern = "\\n|\\r|\\–|\\'|\\’|\\“|\\”", replacement = "") %>%
+    
+    # Stemming
+    stemDocument(language = "english")  
+  
+  ) %>%
+    
   # Criar tokens por palavras
-  tidytext::unnest_tokens(output = "token", input = "texto", token = "words")
+  unnest_tokens(output = "token", input = "texto", token = "words")   
 
+###################
+### Text Mining ###
+###################
 
-
-# Etapa 3: classificação de sentimentos -----------------------------------
-
-# Objetivo: cruzar tabelas (tokens/dicionário) e contabilizar sentimento por ata
-
+# Analisando sentimentos das Atas do COPOM (Comitê de Política Monetária)
 
 # Conjunto de dados do dicionário Loughran-McDonald
-dicionario <- textdata::lexicon_loughran() %>%
-  dplyr::mutate(
-    token      = tm::stemDocument(x = word, language = "english"), # stemming
-    sentimento = sentiment,
-    .keep      = "none"
-    ) %>%
-  dplyr::group_by(token) %>%       # dado aplicação de stemming, surgiram palavras
-  dplyr::distinct(sentimento) %>%  # duplicadas, aqui mantemos somente palavras únicas
-  dplyr::ungroup() %>%
-  dplyr::filter(sentimento %in% c("positive", "negative"))
+dicionario <- lexicon_loughran() %>%
+  mutate(token = stemDocument(x = word, language = "english"), sentimento = sentiment,.keep = "none") %>%
+  
+group_by(token) %>%       
+distinct(sentimento) %>%  
+ungroup() %>%
+filter(sentimento %in% c("positive", "negative"))
 
 # Cruzar Tokens das atas com Dicionário e contar palavras por sentimento
-atas_sentimento <- dplyr::inner_join( # cruza mantendo linhas com chave em comum
-  x  = atas_token,
-  y  = dicionario,
-  by = "token"
-  ) %>%
-  # conta por ata e sentimento (positivo/negativo) quantas palavras existem (mais técnicamente, quantas linhas existem na tabela)
-  dplyr::count(ata, sentimento)
+atas_sentimento <- inner_join(x = atas_token, ny = dicionario, by = "token") %>%
+count(ata, sentimento)
+#inner_join ->  cruza mantendo linhas com chave em comum
 
-
-# Etapa 4: índice de sentimentos ------------------------------------------
-
-# Objetivo: calcular índice entre nº palavras positivas e negativas
-
+#############
+### Index ###
+#############
 
 # Transforma dados e calcula o índice
 indice <- atas_sentimento %>%
-  tidyr::pivot_wider( # transforma para formato long (mais colunas e menos linhas)
+  pivot_wider( # transforma para formato long (mais colunas e menos linhas)
     id_cols     = "ata",
     names_from  = "sentimento",
     values_from = "n"
     ) %>%
-  dplyr::mutate(indice = positive - negative) # calcula o índice
+  mutate(indice = positive - negative) # calcula o índice
 
 
 # Visualização de dados (gráfico de colunas)
 indice %>%
-  ggplot2::ggplot() +
-  ggplot2::aes(x = ata, y = indice, fill = indice > 0) +
-  ggplot2::geom_col(show.legend = FALSE) +
-  ggplot2::scale_fill_manual(values = c("#b22200", "#282f6b")) +
-  ggplot2::scale_x_continuous(breaks = scales::breaks_extended(n = 10)) +
-  ggplot2::theme_light() +
-  ggplot2::labs(
-    title    = "COPOM: análise de sentimentos das atas",
-    subtitle = "Sentimento = nº palavras positivas - nº palavras negativas, conforme dicionário de Loughran-McDonald",
-    x        = "Nº da Reunião",
-    y        = "Sentimento",
-    caption  = "Dados: BCB | Elaboração: analisemacro.com.br"
-  )
+ggplot() + aes(x = ata, y = indice, fill = indice > 0) +
+geom_col(show.legend = FALSE) +
+scale_fill_manual(values = c("#b22200", "#282f6b")) +
+scale_x_continuous(breaks = scales::breaks_extended(n = 10)) +
+theme_light() +
+labs(title = "COPOM: análise de sentimentos das atas", subtitle = "Sentimento = nº palavras positivas - nº palavras negativas, conforme dicionário de Loughran-McDonald",
+x  = "Nº da Reunião", y = "Sentimento", caption = "Dados: BCB | Elaboração: analisemacro.com.br")
