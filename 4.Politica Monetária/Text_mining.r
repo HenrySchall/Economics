@@ -13,7 +13,7 @@ library(ggplot2)
 library(scales)     
 
 # if some packages weren't installed, run the commands in R Terminal -> https://github.com/HenrySchall/Data_Science/blob/main/R/Arquivos/Install_packages.r
-# Link -> https://www.bcb.gov.br/en/publications/copomminutes/cronologicos
+# Link das Atas -> https://www.bcb.gov.br/en/publications/copomminutes/cronologicos
 
 ###################
 ### Text Mining ###
@@ -23,75 +23,40 @@ library(scales)
 url_json <- "https://www.bcb.gov.br/api/servico/sitebcb/copomminutes/ultimas?quantidade=2000&filtro="
 
 # Importar JSON e usar links para importar textos das atas (formato tabular)
-atas_texto <- fromJSON(txt = url_json) %>%
-extract2("conteudo") %>% 
-mutate(  
+atas_texto <- jfromJSON(txt = url_json) %>% 
 
-  magrittr::extract2("conteudo") %>% # extrai o elemento da lista
-  dplyr::mutate(  # cria e trata colunas de interesse
+extract2("conteudo") %>%
 
+mutate(ata = str_extract(string = Titulo, pattern = "^[[:digit:]]{2,3}") %>% as.numeric(),
 
-    # expressão regular (regex) para extrair os primeiros 2 ou 3 números da coluna Titulo
-    ata = stringr::str_extract(string = Titulo, pattern = "^[[:digit:]]{2,3}") %>%
-      as.numeric(),
+link = paste0("https://www.bcb.gov.br", Url) %>% URLencode(),
 
-    # constrói link p/ cada ata
-    link = paste0("https://www.bcb.gov.br", Url) %>% URLencode(),
+texto = map_chr(.x = link, .f = ~paste0(pdf_text(.x), collapse = "\n")),.keep = "none") %>%
 
-    # importar textos das atas a partir dos links (for-loop)
-    texto = purrr::map_chr(
-      .x = link,
-      .f = ~paste0(pdftools::pdf_text(.x), collapse = "\n")
-      ),
+drop_na(ata) %>% 
+as_tibble()
 
-    .keep = "none"  # mantém somente colunas criadas
+View(atas_texto)
 
-    ) %>%
-  tidyr::drop_na(ata) %>%  # remove linhas com NA (coluna ata)
-  dplyr::as_tibble()
+# extract2("conteudo") -> extrai o elemento da lista
+# mutate -> cria e trata colunas de interesse
+# ata = str_extract(string = Titulo, pattern = "^[[:digit:]]{2,3}") as.numeric() -> extrair os primeiros 2 ou 3 números da coluna titulo (https://stringr.tidyverse.org/)
+# link = paste0("https://www.bcb.gov.br", Url) %>% URLencode() -> cria um link para cada ata   
+# texto = map_chr(.x = link, .f = ~paste0(pdf_text(.x), collapse = "\n")), .keep = "none") -> importar textos das atas a partir dos links e mantem apenas as colunas criadas
+# drop_na(ata) %>% -> remove linhas com NA (coluna ata)
 
-# Sobre regex, ver o pacote {stringr}: https://stringr.tidyverse.org/
-
-
-# |-- Tratamento de dados ----
+###########################
+### Tratamento de dados ###
+###########################
 
 # Termos a serem arbitrariamente removidos
-termos_rm <- c(
-  "th",
-  "Minutes of the Meeting",
-  "Monetary Policy Committee",
-  "Copom",
-  "bcb.gov.br",
-  "BCB",
-  "Headquarters",
-  "meeting rooms",
-  "floor",
-  "Brasilia",
-  "Brasília",
-  "DF",
-  "Brazil",
-  "Department",
-  "Banking",
-  "Operations",
-  "Deputy",
-  "Governor",
-  "Committee",
-  "Banco Central do Brasil",
-  "banco central  brasil",
-  "Meeting",
-  "Office",
-  "Minutes",
-  "rd",
-  "st",
-  "nd",
-  "Central Bank",
-  "pp",
-  "govbr",
-  "bcbgovbr",
-  month.name, # constante do R com nome de meses por extenso
-  month.abb # abreviados
-  )
+termos_rm <- c("th","Minutes of the Meeting","Monetary Policy Committee","Copom","bcb.gov.br","BCB","Headquarters",
+"meeting rooms","floor","Brasilia","Brasília","DF","Brazil","Department","Banking","Operations","Deputy",
+"Governor","Committee","Banco Central do Brasil","banco central  brasil","Meeting","Office","Minutes","rd","st",
+"nd","Central Bank","pp","govbr","bcbgovbr", month.name, month.abb)
 
+month.name, # constante do R com nome de meses por extenso
+  month.abb # abreviados
 
 # Remover stop words, pontuações, números, aplicar stemming e criar tokens
 atas_token <- atas_texto %>%
