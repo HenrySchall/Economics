@@ -4,7 +4,8 @@
 
 > Quando estamos trabalhando com valores macroeconômicos é normal que eles sofram variações ao longo do tempo. Sendo assim, para termos uma visão realística dos dados, sempre transformamos valores nominais para valores deflacionados (ou reais), ou seja, contabilizando o efeito da variações dos indicadores economicos, geralmente o efeito inflacionário do período. Então para exemplificar, vamos pegar uma série do salário mínimo (IPEADATA) é um índice de preços (Índice Nacional de Preços ao Consumidor Amplo - IPCA) ou (Índice Nacional de Preços ao Consumidor - INPC) ou (Índice Geral de Preços de Mercado - IGPM), que será nossa variável para deflacionar o salário mínimo, aplicando à fórmula:
 
-$Vreal(x,y) = (\frac{Ix}{Iy}) * Vx$
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/de68566f-1eff-4727-8940-4b12c093975a"/>
 
 onde: 
 - $Vreal(x,y)$ = é o valor real, ou deflacionado, no período x na data-base y
@@ -24,8 +25,8 @@ Exemplo: Imagine que queremos o salário mínimo real de julho de 2021 (07/2021)
 |2021-07-01|1100|6034.73|  
 
 <p align="left">
-  <img src="https://github.com/user-attachments/assets/e15217ea-4062-49eb-9cf8-496d5ddbdba4"/>
-
+  <img src="https://github.com/user-attachments/assets/28a0f679-3268-4200-bfc6-6a1ec37793dd"/>
+  
 ### Sistema de Contas Nacionais
 
 > O Sistema de Contas Nacionais (SCN) é o conjunto padronizado de recomendações internacionalmente acordadas sobre como compilar as medidas de atividade econômica, de acordo com rígidas convenções contábeis baseadas em princípios econômicos. No Brasil o responsável por compilar e divulgar essas estatísticas é o IBGE através do Sistema de Contas Nacionais Trimestrais (SCNT)
@@ -55,7 +56,8 @@ Serve para obter a parte do aumento do PIB nominal atribuída a um aumento de pr
 Reflete apenas os preços dos bens e serviços.
 Seu cálculo é bastante simples:     
 
-$Deflator do PIB = \frac{PIB Nominal}{PIB Real}×100$
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/69c1815b-64c1-4474-9c91-2e9611491c63"/>
 
 ### Taxa de Crescimento de Indicadores 
 
