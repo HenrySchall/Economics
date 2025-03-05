@@ -23,9 +23,8 @@ Exemplo: Imagine que queremos o salário mínimo real de julho de 2021 (07/2021)
 |2021-08-01|1100|6087.84|  
 |2021-07-01|1100|6034.73|  
 
-$Vreal(x,y) = (\frac{ Ix }{ Iy }) * Vx$
-
-$Vreal$(07/21,12/21) = $(\frac{6330.59}{6034.73}) * 1100$
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/e15217ea-4062-49eb-9cf8-496d5ddbdba4"/>
 
 ### Sistema de Contas Nacionais
 
@@ -60,7 +59,7 @@ $Deflator do PIB = \frac{PIB Nominal}{PIB Real}×100$
 
 ### Taxa de Crescimento de Indicadores 
 
-### X-13ARIMA-SEATS 
+### Software X-13ARIMA-SEATS 
 
 > É um programa desenvolvido pelo U.S. Census Bureau para ajuste sazonal de séries temporais. Ele combina dois métodos clássicos de ajuste sazonal:
 
