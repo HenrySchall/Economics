@@ -59,3 +59,10 @@ Seu cálculo é bastante simples:
 $Deflator do PIB = \frac{PIB Nominal}{PIB Real}×100$
 
 ### Taxa de Crescimento de Indicadores 
+
+### X-13ARIMA-SEATS 
+
+> É um programa desenvolvido pelo U.S. Census Bureau para ajuste sazonal de séries temporais. Ele combina dois métodos clássicos de ajuste sazonal:
+
+- X-11/X-12-ARIMA –> Método baseado em médias móveis iterativas, amplamente utilizado para ajustar séries econômicas e estatísticas oficiais.
+- SEATS (Signal Extraction in ARIMA Time Series) -> Modelo estatístico baseado na decomposição da série em componentes estruturais (tendência, sazonalidade, ciclo e erro).
