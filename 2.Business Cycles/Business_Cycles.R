@@ -16,7 +16,8 @@ library(GetBCBData)
 
 # if some packages weren't installed, run the commands in R Terminal -> https://github.com/HenrySchall/Data_Science/blob/main/R/Arquivos/Install_packages.r
 
-dados <- import(file= "https://drive.google.com/uc?export=download&id=1vJ1l_1hi3OT5jCi7_d8rD5ItlVthEVte", format = "csv", class = "tibble") %>% mutate(pib_log = log(pib))
+dados <- import(file = "https://drive.google.com/uc?export=download&id=1vJ1l_1hi3OT5jCi7_d8rD5ItlVthEVte", format = "csv", class = "tibble") %>% 
+mutate(pib_log = log(pib))
 View(dados)
 
 # Nesse caso estamos utilizando uma Série do PIB Real em frequência trimestral e ajustada sazonalmente, esse ajuste sazonal é um processo 

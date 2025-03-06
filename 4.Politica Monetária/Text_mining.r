@@ -104,8 +104,9 @@ atas_token <- atas_texto %>%
 # Analisando sentimentos das Atas do COPOM (Comitê de Política Monetária)
 
 # Conjunto de dados do dicionário Loughran-McDonald
-dicionario <- lexicon_loughran() %>%
-  mutate(token = stemDocument(x = word, language = "english"), sentimento = sentiment,.keep = "none") %>%
+
+dicionario <- import(file = "https://drive.google.com/uc?export=download&id=1VX_2Bm_cbh1ECIjOY9jpyfV32ObOY3Hg", format = "csv", class = "tibble") %>%
+mutate(token = stemDocument(x = word, language = "english"), sentimento = sentiment,.keep = "none") %>%
   
 group_by(token) %>%       
 distinct(sentimento) %>%  
@@ -140,3 +141,5 @@ scale_x_continuous(breaks = scales::breaks_extended(n = 10)) +
 theme_light() +
 labs(title = "COPOM: análise de sentimentos das atas", subtitle = "Sentimento = nº palavras positivas - nº palavras negativas, conforme dicionário de Loughran-McDonald",
 x  = "Nº da Reunião", y = "Sentimento", caption = "Dados: BCB | Elaboração: analisemacro.com.br")
+
+
