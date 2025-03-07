@@ -1,6 +1,7 @@
 # Macroeconometria
 
-![Macroeconomia](https://github.com/user-attachments/assets/643f55de-c7c0-46dd-85ce-ed9b830eecae)
+![Macroeconomia](https://github.com/user-attachments/assets/c8b70add-e0c8-41df-99e2-31297301d269)
+
 
 ### Conceitos Iniciais
 - Ceteris paribus -> "todo o mais é constante", ou seja, nada muda, exceto o fator ou fatores que estão sendo estudados
