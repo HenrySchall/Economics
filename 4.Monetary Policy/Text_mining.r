@@ -14,14 +14,15 @@ library(ggplot2)
 library(scales)    
 
 # if some packages weren't installed, run the commands in R Terminal -> https://github.com/HenrySchall/Data_Science/blob/main/R/Install_Packages.txt
-# Link das Atas -> https://www.bcb.gov.br/en/publications/copomminutes/cronologicos
+
+# Text Mining (ou Mineração de Texto) é o processo de extrair informações úteis de textos não estruturados. Esse processo envolve técnicas de Processamento de 
+# Linguagem Natural (PLN), estatísticas e aprendizado de máquina para analisar grandes volumes de texto,  nesse código o foco será a análise do otimismo das 
+# Atas do COPOM, que podem ser econtradas no link: https://www.bcb.gov.br/en/publications/copomminutes/cronologicos
 
 ####################
 ### Web Scraping ###
 ####################
 
-# 
-gc()
 
 # URL JSON 
 url_json <- "https://www.bcb.gov.br/api/servico/sitebcb/copomminutes/ultimas?quantidade=2000&filtro="
@@ -140,6 +141,6 @@ scale_fill_manual(values = c("#b22200", "#282f6b")) +
 scale_x_continuous(breaks = scales::breaks_extended(n = 10)) +
 theme_light() +
 labs(title = "COPOM: análise de sentimentos das atas", subtitle = "Sentimento = nº palavras positivas - nº palavras negativas, conforme dicionário de Loughran-McDonald",
-x  = "Nº da Reunião", y = "Sentimento", caption = "Dados: BCB | Elaboração: analisemacro.com.br")
+x  = "Nº da Reunião", y = "Sentimento", caption = "Dados: BCB")
 
 
