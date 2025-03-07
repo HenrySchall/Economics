@@ -61,6 +61,20 @@ Seu cálculo é bastante simples:
 
 ### Taxa de Crescimento de Indicadores 
 
+> Sendo It o número índice do período (trimestre) t, onde t = 1,2,...,n, podemos obter algumas métricas de crescimento PIB como:
+
+- Taxa trimestre contra trimestre imediatamente anterior (t contra t-1): 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/234b2198-8a1a-43c0-84ac-03fe37bfadb8"/>
+
+- Taxa trimestre contra mesmo trimestre do ano anterior (t contra t-4)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a90ed934-a87d-4e42-bef0-9b4c68cfa1af"/>
+
+- Taxa acumulada em quatro trimestres (em relação ao mesmo período do ano anterior):
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d5de14e7-2d26-4752-8409-7c2c56b4aaac"/>
+
 ### Software X-13ARIMA-SEATS 
 
 > É um programa desenvolvido pelo U.S. Census Bureau para ajuste sazonal de séries temporais. Ele combina dois métodos clássicos de ajuste sazonal:
