@@ -5,7 +5,7 @@
 > Quando estamos trabalhando com valores macroeconômicos é normal que eles sofram variações ao longo do tempo. Sendo assim, para termos uma visão realística dos dados, sempre transformamos valores nominais para valores deflacionados (ou reais), ou seja, contabilizando o efeito da variações dos indicadores economicos, geralmente o efeito inflacionário do período. Então para exemplificar, vamos pegar uma série do salário mínimo (IPEADATA) é um índice de preços (Índice Nacional de Preços ao Consumidor Amplo - IPCA) ou (Índice Nacional de Preços ao Consumidor - INPC) ou (Índice Geral de Preços de Mercado - IGPM), que será nossa variável para deflacionar o salário mínimo, aplicando à fórmula:
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/de68566f-1eff-4727-8940-4b12c093975a"/>
+  <img src="https://github.com/user-attachments/assets/106f2a08-da07-4639-94a6-39406b0caec6"/>
 
 onde: 
 - $Vreal(x,y)$ = é o valor real, ou deflacionado, no período x na data-base y
@@ -57,7 +57,7 @@ Reflete apenas os preços dos bens e serviços.
 Seu cálculo é bastante simples:     
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/69c1815b-64c1-4474-9c91-2e9611491c63"/>
+  <img src="https://github.com/user-attachments/assets/8c361c92-69d2-4d1b-9ea1-2973542a5cbc"/>
 
 ### Taxa de Crescimento de Indicadores 
 
