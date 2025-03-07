@@ -25,8 +25,8 @@ Exemplo: Imagine que queremos o salário mínimo real de julho de 2021 (07/2021)
 |2021-07-01|1100|6034.73|  
 
 <p align="left">
-  <img src="https://github.com/user-attachments/assets/28a0f679-3268-4200-bfc6-6a1ec37793dd"/>
-  
+  <img src="https://github.com/user-attachments/assets/43dcffa5-7148-43d7-8d1e-2381b3fec7d4"/>
+
 ### Sistema de Contas Nacionais
 
 > O Sistema de Contas Nacionais (SCN) é o conjunto padronizado de recomendações internacionalmente acordadas sobre como compilar as medidas de atividade econômica, de acordo com rígidas convenções contábeis baseadas em princípios econômicos. No Brasil o responsável por compilar e divulgar essas estatísticas é o IBGE através do Sistema de Contas Nacionais Trimestrais (SCNT)
