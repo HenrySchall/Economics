@@ -20,7 +20,13 @@ library(GetBCBData)
 ### Calcular taxa de crescimento ###
 ####################################
 
-dados <- import(file = "https://analisemacro.com.br/download/38774/",format = "csv",setclass = "tibble")
+# Tabelas do SIDRA
+# 1846 - Valores a preços correntes
+# 6612 - Valores encadeados a preços de 1995
+# 1620 - Série encadeada do índice de volume trimestral (Base: média 1995 = 100)
+# 1621 - Série encadeada do índice de volume trimestral com ajuste sazonal (Base: média 1995 = 100)
+
+dados <- import(file=" https://drive.google.com/uc?export=download&id=1tLPIlaFw4t7jUv6Zu3BzY-qQVjbsMqdU",format = "csv",setclass = "tbl_df")
 View(dados)
 
 # Criando uma função para operações aritméticas em janelas móveis
