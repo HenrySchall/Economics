@@ -76,7 +76,7 @@ Seu cálculo é bastante simples:
   <img src="https://github.com/user-attachments/assets/d5de14e7-2d26-4752-8409-7c2c56b4aaac"/>
 
 #### Exemplo 
-> A tabela abaixo apresenta uma amostra das séries encadeadas do PIB, índice de volume trimestral, e são provenientes das tabelas 1620 e 1621 do SIDRA/IBGE.
+> A tabela abaixo apresenta uma amostra das séries encadeadas do PIB, índice de volume trimestral, e são provenientes das tabelas 1620 e 1621 do SIDRA.
 
 |Período          |Nº Índice|Nº Índice com Ajuste Sazonal|
 |---	            |---      |---                         |
@@ -130,13 +130,6 @@ $[ (173,96 + 175,46 + 171,38 + 170,53) / (171,46 + 168,37 + 152,48 + 167,60) - 1
 |4º trimestre 2019|172,03   |6034.73                     |0,82%                 |  -                   | -                         |
 |4º trimestre 2020|171,46   |6034.73                     |3,70%                 |-0,33%                | -                         |
 |4º trimestre 2021|173,96   |6034.73                     |1,16%                 |1,46%                 |4,76%                      |
-
-* Variação % Anual
-
-$[ (171,38 + 170,53 + 171,46 + 168,37) / (152,48 + 167,60 + 172,03 + 173,64) - 1 ] * 100 = 2,40%$
-$[ (175,46 + 171,38 + 170,53 + 171,46) / (168,37 + 152,48 + 167,60 + 172,03) - 1 ] * 100 = 4,29%$
-$[ (173,96 + 175,46 + 171,38 + 170,53) / (171,46 + 168,37 + 152,48 + 167,60) - 1 ] * 100 = 4,76%$
-
 
 ### Software X-13ARIMA-SEATS 
 
