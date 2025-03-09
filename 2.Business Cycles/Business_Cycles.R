@@ -13,6 +13,7 @@ library(lubridate)
 library(ipeadatar) 
 library(sidrar)
 library(GetBCBData)
+library(BCDating)
 
 # if some packages weren't installed, run the commands in R Terminal -> https://github.com/HenrySchall/Data_Science/blob/main/R/Arquivos/Install_packages.r
 
