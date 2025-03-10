@@ -2,7 +2,6 @@
 
 ![Macroeconomia](https://github.com/user-attachments/assets/c8b70add-e0c8-41df-99e2-31297301d269)
 
-
 ### Conceitos Iniciais
 - Ceteris paribus -> "todo o mais é constante", ou seja, nada muda, exceto o fator ou fatores que estão sendo estudados
 - Variável endógena ->  também chamada de dependente, é a variável cujos valores são determinados no modelo
