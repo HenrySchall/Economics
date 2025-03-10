@@ -1,3 +1,8 @@
+if(!require(magrittr)){install.packages("magrittr")}
+if(!require(mFilter)){install.packages("mFilter")}
+if(!require(rio)){install.packages("rio")}
+if(!require(BCDating)){install.packages("BCDating")}
+
 library(magrittr)
 library(rio)      
 library(timetk)   
@@ -16,52 +21,24 @@ library(sidrar)
 library(GetBCBData)
 library(BCDating)
 
-# if some packages weren't installed, run the commands in R Terminal -> https://github.com/HenrySchall/Data_Science/blob/main/R/Arquivos/Install_packages.r
+# if some packages weren't installed, run the commands in R Terminal -> https://github.com/HenrySchall/Data_Science/blob/main/R/Install_Packages.txt
 
-###########################
-### Decomposição do PIB ###
-###########################
+############################
+### Modelos de Filtragem ###
+############################
 
+dados <- import(file = "https://drive.google.com/uc?export=download&id=1vJ1l_1hi3OT5jCi7_d8rD5ItlVthEVte", format   = "csv", setclass = "tibble") %>%
+mutate(ln_pib = log(pib), tempo  = row_number())
 
-# Importar dados:
-# PIB - Preços de mercado - Série encadeada s.a. - Índice (média 1995 = 100)
-dados <- rio::import(
-  file     = "https://analisemacro.com.br/download/39167/",
-  format   = "csv",
-  setclass = "tibble"
-  ) %>%
-  # Cria novas colunas auxiliares para o exercício
-  dplyr::mutate(
-    # Transformação logarítmica do PIB
-    ln_pib = log(pib),
-    # Vetor de 1 até T indicando ordenação tempora das observações
-    tempo  = dplyr::row_number()
-    )
+# Vetor de cores
+cores <- c( "#282f6b","#b22200","#eace3f","#224f20")
+g1 <- dados %>% ggplot() + aes(x = data, y = pib, color = "PIB") +  # especificação de eixos e título da série
+geom_line(size = 1) +                    # adiciona linha com observações
+scale_color_manual(values = cores) +     # define cor da(s) linha(s)
+theme(legend.position = "bottom") +      # posiciona a legenda embaixo
+labs(title = "PIB do Brasil", subtitle = "Preços de mercado, nº índice sazonalmente ajustado (média de 1995 = 100)", y = "Índice", x = NULL, color = NULL, caption  = "Dados: IBGE | Elaboração: analisemacro.com.br")
 
-
-# Gráfico de linha do PIB
-cores <- c( # vetor com códigos de cores
-  "#282f6b",
-  "#b22200",
-  "#eace3f",
-  "#224f20"
-  )
-g1 <- dados %>%                                     # tabela de dados
-  ggplot2::ggplot() +                               # camada inicial
-  ggplot2::aes(x = data, y = pib, color = "PIB") +  # especificação de eixos e título da série
-  ggplot2::geom_line(size = 1) +                    # adiciona linha com observações
-  ggplot2::scale_color_manual(values = cores) +     # define cor da(s) linha(s)
-  ggplot2::theme(legend.position = "bottom") +      # posiciona a legenda embaixo
-  ggplot2::labs(                                    # textos de informação do gráfico
-    title    = "PIB do Brasil",
-    subtitle = "Preços de mercado, nº índice sazonalmente ajustado (média de 1995 = 100)",
-    y        = "Índice",
-    x        = NULL,
-    color    = NULL,
-    caption  = "Dados: IBGE | Elaboração: analisemacro.com.br"
-    )
-g1  # plota o gráfico
-
+Plot(g1) 
 
 
 # Tendência linear --------------------------------------------------------
