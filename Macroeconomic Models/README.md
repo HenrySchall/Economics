@@ -56,7 +56,7 @@ Equação de medida (observação): combina ao estado atual uma nova informaçã
 
 #### Filtros de Hamilton (2017)
 
-> Aplicação de uma especificação de um modelo de regressão linear (MQO) para extrair componentes de tendência e ciclo de uma série temporal, proposto por Hamilton (2017) como uma alternativa ao filtro HP. Estima-se um modelo MQO para uma série temporal Yt deslocada por h períodos a frente e regredida contra x séries  defasadas da própria série Yt, ou seja, uma específicação de modelo AR(X) modificada. Com h = 8 e x = 4, sendo representado como:
+> Aplicação de uma especificação de um modelo de regressão linear (MQO) para extrair componentes de tendência e ciclo de uma série temporal, proposto por Hamilton (2017) como uma alternativa ao filtro HP. Estima-se um modelo MQO para uma série temporal Yt deslocada por h períodos a frente e regredida contra x séries defasadas da própria série Yt, ou seja, uma específicação de modelo AR(X) modificada. Com exemplificação, vamos considerar h = 8 e x = 4, matemáticamente:
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/b86c9dc6-c04b-4c74-8ef5-6f8b2f42f2f6"/>
