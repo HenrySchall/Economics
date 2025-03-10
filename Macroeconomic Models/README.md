@@ -134,6 +134,4 @@ onde:
 - α = qualquer número entre 0 e 1
 
 <p align="center">
-  <img src=""/>
-
-
+  <img src="https://github.com/user-attachments/assets/e4f3f472-896e-44b9-8c7c-41cf4e8b9c35"/>
