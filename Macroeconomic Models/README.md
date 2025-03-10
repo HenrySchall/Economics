@@ -104,3 +104,6 @@ Conforme Harding e Pagan (2002), os pontos de virada da série acontecem quando:
 
 - Recessão/Expansão: dura, no mínimo, 2 trimestres
 - Ciclo completo: dura, no mínimo, 5 trimestres
+
+## Modelo de Sollow
+> Os economistas Roy Harrod e Evsey Domar desenvolveram um modelo de crescimento que enfatizava a necessidade de um equilíbrio exato entre a taxa de poupança e o crescimento da economia, para evitar crises econômmicas. No entanto, esse modelo não explicava de forma clara o porque da estabilidade do crescimento econômico no longo prazo, já observada empiricamente. Nesse contexto, Robert Solow em seu artigo de 1956 "A Contribution to the Theory of Economic Growth", apresentou um modelo alternativo que introduzia o progresso tecnológico exógeno e o acúmulo de capital como fatores centrais do crescimento econômico, buscando entender o porquê alguns países são tão ricos e outros tão pobres.
