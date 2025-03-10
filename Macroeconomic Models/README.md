@@ -106,4 +106,21 @@ Conforme Harding e Pagan (2002), os pontos de virada da série acontecem quando:
 - Ciclo completo: dura, no mínimo, 5 trimestres
 
 ## Modelo de Sollow
-> Os economistas Roy Harrod e Evsey Domar desenvolveram um modelo de crescimento que enfatizava a necessidade de um equilíbrio exato entre a taxa de poupança e o crescimento da economia, para evitar crises econômmicas. No entanto, esse modelo não explicava de forma clara o porque da estabilidade do crescimento econômico no longo prazo, já observada empiricamente. Nesse contexto, Robert Solow em seu artigo de 1956 "A Contribution to the Theory of Economic Growth", apresentou um modelo alternativo que introduzia o progresso tecnológico exógeno e o acúmulo de capital como fatores centrais do crescimento econômico, buscando entender o porquê alguns países são tão ricos e outros tão pobres.
+> Os economistas Roy Harrod e Evsey Domar desenvolveram um modelo de crescimento que enfatizava a necessidade de um equilíbrio exato entre a taxa de poupança e o crescimento da economia, para evitar crises econômmicas. No entanto, esse modelo não explicava de forma clara o porque da estabilidade do crescimento econômico no longo prazo, já observada empiricamente. Nesse contexto, Robert Solow em seu artigo de 1956 "A Contribution to the Theory of Economic Growth" - Nobel 1987, apresentou um modelo alternativo que introduzia o progresso tecnológico exógeno e o acúmulo de capital como fatores centrais do crescimento econômico, buscando entender o porquê alguns países são tão ricos e outros tão pobres.
+
+> Antes de apresentar o modelo proposto por Sollow, é preciso conceituar os Fatos Estilizados, esses são definidos como padrões gerais ou regularidades empíricas observadas na economia ao longo do tempo, não havendo uma comprovação matmática para a ocorrencia deles.
+
+- Fato 1: há grande variação entre as rendas per capita das economias. Os países mais pobres têm rendas per capita que são inferiores a 5% da renda per capita dos países mais ricos.
+- Fato 2: as taxas de crescimento econômico variam substancialmente entre um país e outro.
+- Fato 3: as taxas de crescimento não são necessariamente constantes ao longo do tempo.
+- Fato 4: a posição relativa de um país na distribuição mundial da renda per capita nao é imutável. Os países podem passar de "pobres" a "ricos" e vice-versa.
+  
+Hipóteses simplificadoras:
+- O mundo é formado por países que produzem e consomem um único bem homogêneo (produto, unidades do PIB);
+- Não há comércio internacional no modelo (economia fechada);
+- A tecnologia é exógena (i.e. P&D não afeta a tecnologia existente);
+- As pessoas poupam uma fração constante da sua renda e investimento = poupança;
+- As pessoas gastam uma fração constante de tempo acumulando qualificações;
+- Toda a população da economia faz parte da força de trabalho (todas as pessoas trabalham).
+
+> O modelo é construído em torno de duas equações. A primeira delas descreve como insumos de capital (escavadeiras, semicondutores, etc.) e de trabalho (operários, engenheiros, etc.) se combinam para gerar produto.
