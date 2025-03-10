@@ -25,14 +25,12 @@ library(BCDating)
 dados <- import(file = "https://drive.google.com/uc?export=download&id=1vJ1l_1hi3OT5jCi7_d8rD5ItlVthEVte", format   = "csv", setclass = "tibble") %>%
 mutate(ln_pib = log(pib), tempo  = row_number())
 
-# Vetor de cores
-cores <- c( "#a70b2d","#e5ff00","#11c1ce")
+cores <- c( "#a70b2d","#0044ff","#058f27")
 g1 <- dados %>% ggplot() + aes(x = data, y = pib, color = "PIB") +  
 geom_line(size = 1) +               
 scale_color_manual(values = cores) + # define cor da(s) linha(s)
 theme(legend.position = "bottom", panel.background = element_rect(fill = "white"), plot.background = element_rect(fill = "gray")) +
 labs(title = "PIB do Brasil", subtitle = "Preços de mercado, nº índice sazonalmente ajustado (média de 1995 = 100)", y = "Índice", x = NULL, color = NULL, caption  = "Dados: IBGE")
-
 plot(g1)
 
 ########################
@@ -63,23 +61,23 @@ dados_ts <- ts(data  = dados$ln_pib, start = c(year(min(dados$data)), quarter(mi
 filtro_hp <- hpfilter(x = dados_ts, type = "lambda", freq = 1600)
 potencial_hp <- filtro_hp %>% fitted() %>% exp() %>% as.vector()
 
-g1 + geom_line(mapping = ggplot2::aes(y = potencial_hp, color = "Tendência de Hodrick e Prescott HP"), size = 1)
+g1 + geom_line(mapping = aes(y = potencial_hp, color = "Tendência de Hodrick/Prescott"), size = 1)
 
 ##########################
 ### Filtro de Hamilton ###
 ##########################
 
 # Regressão linear aplicando a especificação de Hamilton
-reg3 <- lm(formula   = ln_pib ~ lag(ln_pib, 8) + lag(ln_pib, 9) + lag(ln_pib, 10) + lag(ln_pib, 11), data = dados, na.action = na.omit)
+reg2 <- lm(formula = ln_pib ~ lag(ln_pib, 8) + lag(ln_pib, 9) + lag(ln_pib, 10) + lag(ln_pib, 11), data = dados, na.action = na.omit)
 # na.action = na.omit -> omite os NAs criados pela função lag()
 
-potencial_h <- reg3 %>% fitted() %>% exp()
+potencial_h <- reg2 %>% fitted() %>% exp()
 
 # Adiciona 11 NAs no início da série para corresponder ao tamanho do vetor do PIB
 potencial_h <- c(rep(NA, 11), potencial_h)
 
 # Atualiza gráfico base com nova linha da tendência
-g1 + geom_line(mapping = aes(y = potencial_h, color = "Tendência deHamilton"), size = 1)
+g1 + geom_line(mapping = aes(y = potencial_h, color = "Tendência de Hamilton"), size = 1)
 
 #####################################
 ### Calculando o hiato do produto ### 
@@ -87,8 +85,8 @@ g1 + geom_line(mapping = aes(y = potencial_h, color = "Tendência deHamilton"), 
 
 # Cálculo do hiato do produto
 hiato <- dados %>% select("data", "pib") %>% 
-mutate(`Tendência Linear` = (pib / potencial_tl - 1) * 100, `Filtro HP` = (pib / potencial_hp - 1) * 100, `Filtro de Hamilton`= (pib / potencial_h - 1) * 100) %>%
-pivot_longer(cols = 3:6,names_to = "variavel", values_to = "valor")
+mutate(`Tendência Linear` = (pib / potencial_tl - 1) * 100, `Filtro HP` = (pib / potencial_hp - 1) * 100, 
+`Filtro de Hamilton`= (pib / potencial_h - 1) * 100) %>% pivot_longer(cols = 3:5,names_to = "variavel", values_to = "valor")
 
 # pivot_longer -> transforma a tabela pro formato "longo" (mais linhas e menos colunas)
 # cols -> colunas a serem transformadas
@@ -97,11 +95,20 @@ pivot_longer(cols = 3:6,names_to = "variavel", values_to = "valor")
 
 # Visualização de dados: gráfico de linha dos hiatos estimados
 hiato %>% ggplot() + aes(x = data, y = valor, color = variavel) +
-geom_hline(yintercept = 0, linetype = "dashed") + # gera uma linha horizontal quando y = 0
+geom_hline(yintercept = 0, linetype = "dashed") +
 geom_line(size = 1) +
 scale_color_manual(values = cores) +
-theme(legend.position = "top") +
-labs(title = "Hiato do Produto - Brasil", subtitle = "Cálculos do autor a partir do PIB encadeado dessazonalidado (média 1995 = 100)", y = "%", x = NULL, color = NULL,
+
+theme(
+legend.position = "bottom", 
+legend.text = element_text(size = 12), 
+legend.title = element_text(size = 14, face = "bold"), 
+plot.title = element_text(size = 20, face = "bold", hjust = 0.5), 
+panel.background = element_rect(fill = "lightgray", color = NA),
+plot.background = element_rect(fill = "white", color = NA)
+) +
+
+labs(title = "Hiato do Produto", subtitle = "", y = "%", x = NULL, color = NULL, 
 caption = "Nota: hiato medido como a diferença % do PIB efetivo em relação ao potencial")
 
 ######################
