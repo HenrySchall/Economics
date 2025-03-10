@@ -19,7 +19,7 @@
 ## Filtros Econômicos
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/e299075d-7621-4035-985c-97c1e7a31bdb"/>
+  <img src="https://github.com/user-attachments/assets/529abd70-77aa-4fe5-b9c7-7a1dc9bdf3e9"/>
 </p>
 
 - Yt = Produto Interno Bruto (PIB)
