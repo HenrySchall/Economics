@@ -26,7 +26,7 @@ dados <- import(file = "https://drive.google.com/uc?export=download&id=1vJ1l_1hi
 mutate(ln_pib = log(pib), tempo  = row_number())
 
 # Vetor de cores
-cores <- c( "#0ba773","#b22200","#eace3f","#11c1ce")
+cores <- c( "#0ba773","#b22200","#11c1ce")
 g1 <- dados %>% ggplot() + aes(x = data, y = pib, color = "PIB") +  
 geom_line(size = 1) +               
 scale_color_manual(values = cores) + # define cor da(s) linha(s)
@@ -69,17 +69,10 @@ g1 + geom_line(mapping = ggplot2::aes(y = potencial_hp, color = "Tendência HP")
 ### Filtro de Hamilton ###
 ##########################
 
-# Regressão linear aplicando a especificação de Hamilton
-reg3 <- lm(
-  formula   = ln_pib ~ lag(ln_pib, 8) + lag(ln_pib, 9) + lag(ln_pib, 10) + lag(ln_pib, 11),
-  data      = dados,
-  na.action = na.omit  # omite os NAs criados pela função lag()
-  )
+reg3 <- lm(formula   = ln_pib ~ lag(ln_pib, 8) + lag(ln_pib, 9) + lag(ln_pib, 10) + lag(ln_pib, 11), data = dados, na.action = na.omit)
+# na.action = na.omit -> omite os NAs criados pela função lag()
 
-# Salva a tendência estimada
-potencial_h <- reg3 %>%
-  fitted() %>% # extrai os valores estimados
-  exp()        # reverte a transformação logarítmica
+potencial_h <- reg3 %>% fitted() %>% exp()
 
 # Adiciona 11 NAs no início da série para corresponder ao tamanho do vetor do PIB
 potencial_h <- c(rep(NA, 11), potencial_h)
