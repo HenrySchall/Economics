@@ -13,7 +13,7 @@ library(textdata)
 library(ggplot2)    
 library(scales)    
 
-# if some packages weren't installed, run the commands in R Terminal -> https://github.com/HenrySchall/Data_Science/blob/main/R/Install_Packages.txt
+# if some packages weren't installed, run the commands in the repository -> https://github.com/HenrySchall/Data_Science/blob/main/R/Install_Packages.txt
 
 # Text Mining (ou Mineração de Texto) é o processo de extrair informações úteis de textos não estruturados. Esse processo envolve técnicas de Processamento de 
 # Linguagem Natural (PLN), estatísticas e aprendizado de máquina para analisar grandes volumes de texto,  nesse código o foco será a análise do sentimento das 
