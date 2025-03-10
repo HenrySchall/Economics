@@ -16,7 +16,9 @@
 
 6) Modelos de Expectativas Racionais: Consideram que os agentes econômicos formam suas expectativas sobre o futuro de maneira racional, utilizando toda a informação disponível. Esses modelos são frequentemente usados em análises de política monetária.
 
-####  Decomposição do PIB
+## Filtros Econômicos
+
+- Decomposição do PIB
 
 $Yt = Yp + Ht$
 
