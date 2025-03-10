@@ -124,3 +124,12 @@ Hipóteses simplificadoras:
 - Toda a população da economia faz parte da força de trabalho (todas as pessoas trabalham).
 
 > O modelo é construído em torno de duas equações. A primeira delas descreve como insumos de capital (escavadeiras, semicondutores, etc.) e de trabalho (operários, engenheiros, etc.) se combinam para gerar produto.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8c36a51b-2e1d-4586-8aab-2ecb73129fe9"/>
+
+onde:
+- Y = produto;
+- K = insumos de capital;
+- L = insumos de trabalho;
+- α = qualquer número entre 0 e 1
