@@ -123,10 +123,7 @@ Hipóteses simplificadoras:
 > O modelo é construído em torno de duas equações. A primeira delas descreve como insumos de capital (escavadeiras, semicondutores, etc.) e de trabalho (operários, engenheiros, etc.) se combinam para gerar produto.
 
 <p align="center">
-  <img 
-  height="500"
-  src="https://github.com/user-attachments/assets/0764577d-db5e-4581-b38c-087c6e19cbd0"/>
-
+  <img src="https://github.com/user-attachments/assets/43dc3cfa-d782-40b0-838c-12a86ed797d0"/>
 
 onde:
 - Y = produto;
