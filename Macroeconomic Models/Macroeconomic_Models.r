@@ -16,7 +16,7 @@ library(sidrar)
 library(GetBCBData)
 library(BCDating)
 
-# if some packages weren't installed, run the commands in R Terminal -> https://github.com/HenrySchall/Data_Science/blob/main/R/Install_Packages.txt
+# if some packages weren't installed, run the commands in the repository -> https://github.com/HenrySchall/Data_Science/blob/main/R/Install_Packages.txt
 
 ############################
 ### Modelos de Filtragem ###
@@ -53,30 +53,17 @@ g1 + geom_line(mapping = aes(y = potencial_tl, color = "Tendência linear"), siz
 ######################################
 
 # Converte dados para classe ts
-dados_ts <- ts(                         # função para criar um objeto de classe ts
-  data  = dados$ln_pib,                 # vetor da série do PIB
-  start = c(                            # vetor com dois elementos: ano e trimestre de início da série
-    lubridate::year(min(dados$data)),   # ano (formato AAAA)
-    lubridate::quarter(min(dados$data)) # trimestre (formato T)
-    ),
-  frequency = 4                         # frequência da série (trimestral = 4)
-  )
+dados_ts <- ts(data  = dados$ln_pib, start = c(year(min(dados$data)), quarter(min(dados$data))), frequency = 4)
 
-# Calcula o filtro HP
-filtro_hp <- mFilter::hpfilter(x = dados_ts, type = "lambda", freq = 1600)
+# data  = dados$ln_pib -> vetor da série do PIB
+# year(min(dados$data)) ->ano (formato AAAA)
+# quarter(min(dados$data)) -> trimestre (formato T)
+# frequency = 4 -> frequência da série (trimestral = 4))
 
-# Salva a tendência calculada
-potencial_hp <- filtro_hp %>%
-  fitted() %>% # extrai os valores estimados
-  exp() %>%    # reverte a transformação logarítmica
-  as.vector()  # converte de classe ts para vetor numérico
+filtro_hp <- hpfilter(x = dados_ts, type = "lambda", freq = 1600)
+potencial_hp <- filtro_hp %>% fitted() %>% exp() %>% as.vector()
 
-# Atualiza gráfico base com nova linha da tendência
-g1 +
-  ggplot2::geom_line(
-    mapping = ggplot2::aes(y = potencial_hp, color = "Tendência HP"),
-    size    = 1
-    )
+g1 + geom_line(mapping = ggplot2::aes(y = potencial_hp, color = "Tendência HP"), size = 1)
 
 ##########################
 ### Filtro de Hamilton ###
