@@ -10,6 +10,7 @@ library(readxl)
 library(forecast)
 library(zoo)
 library(lubridate)
+library(mFilter)
 library(ipeadatar) 
 library(sidrar)
 library(GetBCBData)
@@ -20,6 +21,176 @@ library(BCDating)
 ###########################
 ### Decomposição do PIB ###
 ###########################
+
+
+# Importar dados:
+# PIB - Preços de mercado - Série encadeada s.a. - Índice (média 1995 = 100)
+dados <- rio::import(
+  file     = "https://analisemacro.com.br/download/39167/",
+  format   = "csv",
+  setclass = "tibble"
+  ) %>%
+  # Cria novas colunas auxiliares para o exercício
+  dplyr::mutate(
+    # Transformação logarítmica do PIB
+    ln_pib = log(pib),
+    # Vetor de 1 até T indicando ordenação tempora das observações
+    tempo  = dplyr::row_number()
+    )
+
+
+# Gráfico de linha do PIB
+cores <- c( # vetor com códigos de cores
+  "#282f6b",
+  "#b22200",
+  "#eace3f",
+  "#224f20"
+  )
+g1 <- dados %>%                                     # tabela de dados
+  ggplot2::ggplot() +                               # camada inicial
+  ggplot2::aes(x = data, y = pib, color = "PIB") +  # especificação de eixos e título da série
+  ggplot2::geom_line(size = 1) +                    # adiciona linha com observações
+  ggplot2::scale_color_manual(values = cores) +     # define cor da(s) linha(s)
+  ggplot2::theme(legend.position = "bottom") +      # posiciona a legenda embaixo
+  ggplot2::labs(                                    # textos de informação do gráfico
+    title    = "PIB do Brasil",
+    subtitle = "Preços de mercado, nº índice sazonalmente ajustado (média de 1995 = 100)",
+    y        = "Índice",
+    x        = NULL,
+    color    = NULL,
+    caption  = "Dados: IBGE | Elaboração: analisemacro.com.br"
+    )
+g1  # plota o gráfico
+
+
+
+# Tendência linear --------------------------------------------------------
+
+# Regressão linear do PIB contra o tempo
+reg1 <- lm(
+  formula = ln_pib ~ tempo,   # especificação do modelo no formato de fórmula
+  data    = dados             # fonte dos dados
+  )
+
+# Salva a tendência estimada
+potencial_tl <- reg1 %>%
+  fitted() %>% # extrai os valores estimados
+  exp()        # reverte a transformação logarítmica
+
+# Atualiza gráfico base com nova linha da tendência
+g1 +
+  ggplot2::geom_line(
+    mapping = ggplot2::aes(y = potencial_tl, color = "Tendência linear"),
+    size    = 1
+    )
+
+
+# Tendência quadrática ----------------------------------------------------
+
+# Regressão linear do PIB contra o tempo + tempo^2  (veja help de I)
+reg2 <- lm(formula = ln_pib ~ tempo + I(tempo^2), data = dados)
+
+# Salva a tendência estimada
+potencial_tq <- reg2 %>%
+  fitted() %>% # extrai os valores estimados
+  exp()        # reverte a transformação logarítmica
+
+# Atualiza gráfico base com nova linha da tendência
+g1 +
+  ggplot2::geom_line(
+    mapping = ggplot2::aes(y = potencial_tq, color = "Tendência quadrática"),
+    size    = 1
+    )
+
+
+# Filtro HP ---------------------------------------------------------------
+
+# Converte dados para classe ts
+dados_ts <- ts(                         # função para criar um objeto de classe ts
+  data  = dados$ln_pib,                 # vetor da série do PIB
+  start = c(                            # vetor com dois elementos: ano e trimestre de início da série
+    lubridate::year(min(dados$data)),   # ano (formato AAAA)
+    lubridate::quarter(min(dados$data)) # trimestre (formato T)
+    ),
+  frequency = 4                         # frequência da série (trimestral = 4)
+  )
+
+# Calcula o filtro HP
+filtro_hp <- mFilter::hpfilter(x = dados_ts, type = "lambda", freq = 1600)
+
+# Salva a tendência calculada
+potencial_hp <- filtro_hp %>%
+  fitted() %>% # extrai os valores estimados
+  exp() %>%    # reverte a transformação logarítmica
+  as.vector()  # converte de classe ts para vetor numérico
+
+# Atualiza gráfico base com nova linha da tendência
+g1 +
+  ggplot2::geom_line(
+    mapping = ggplot2::aes(y = potencial_hp, color = "Tendência HP"),
+    size    = 1
+    )
+
+
+# Filtro de Hamilton ------------------------------------------------------
+
+# Regressão linear aplicando a especificação de Hamilton
+reg3 <- lm(
+  formula   = ln_pib ~ lag(ln_pib, 8) + lag(ln_pib, 9) + lag(ln_pib, 10) + lag(ln_pib, 11),
+  data      = dados,
+  na.action = na.omit  # omite os NAs criados pela função lag()
+  )
+
+# Salva a tendência estimada
+potencial_h <- reg3 %>%
+  fitted() %>% # extrai os valores estimados
+  exp()        # reverte a transformação logarítmica
+
+# Adiciona 11 NAs no início da série para corresponder ao tamanho do vetor do PIB
+potencial_h <- c(rep(NA, 11), potencial_h)
+
+# Atualiza gráfico base com nova linha da tendência
+g1 +
+  ggplot2::geom_line(
+    mapping = ggplot2::aes(y = potencial_h, color = "Tendência Hamilton"),
+    size    = 1
+    )
+
+
+
+# Calculando o hiato ------------------------------------------------------
+
+# Cálculo do hiato do produto
+hiato <- dados %>%
+  dplyr::select("data", "pib") %>% # seleciona colunas de interesse
+  dplyr::mutate(                   # cria novas colunas com cálculo do hiato
+    `Tendência Linear`     = (pib / potencial_tl - 1) * 100,
+    `Tendência Quadrática` = (pib / potencial_tq - 1) * 100,
+    `Filtro HP`            = (pib / potencial_hp - 1) * 100,
+    `Filtro de Hamilton`   = (pib / potencial_h - 1) * 100
+    ) %>%
+  tidyr::pivot_longer(             # transforma a tabela pro formato "longo" (mais linhas e menos colunas)
+    cols      = 3:6,               # colunas a serem transformadas
+    names_to  = "variavel",        # nome da coluna que armazenará os nomes das colunas 3:6
+    values_to = "valor"            # nome da coluna que armazenará os valores das colunas 3:6
+    )
+
+# Visualização de dados: gráfico de linha dos hiatos estimados
+hiato %>%
+  ggplot2::ggplot() +
+  ggplot2::aes(x = data, y = valor, color = variavel) +
+  ggplot2::geom_hline(yintercept = 0, linetype = "dashed") + # gera uma linha horizontal quando y = 0
+  ggplot2::geom_line(size = 1) +
+  ggplot2::scale_color_manual(values = cores) +
+  ggplot2::theme(legend.position = "top") +
+  ggplot2::labs(
+    title    = "Hiato do Produto - Brasil",
+    subtitle = "Cálculos do autor a partir do PIB encadeado dessazonalidado (média 1995 = 100)",
+    y        = "%",
+    x        = NULL,
+    color    = NULL,
+    caption  = "Elaboração: analisemacro.com.br \n Nota: hiato medido como a diferença % do PIB efetivo em relação ao potencial."
+    )
 
 ######################
 ### Businees Cycle ###
