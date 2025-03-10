@@ -56,7 +56,7 @@ Equação de medida (observação): combina ao estado atual uma nova informaçã
 
 #### Filtros de Hamilton (2017)
 
-> Aplicação de uma especificação de um modelo de regressão linear (MQO) para extrair componentes de tendência e ciclo de uma série temporal, proposto por Hamilton (2017) como uma alternativa ao filtro HP. Estima-se um modelo MQO para uma série temporal Yt deslocada por h períodos a frente e regredida contra x séries  defasadas da própria série Yt, ou seja, uma específicação de modelo AR(X) modificada. Com h = 8 e x = 4, sendo representado como:
+> Aplicação de uma especificação de um modelo de regressão linear (MQO) para extrair componentes de tendência e ciclo de uma série temporal, proposto por Hamilton (2017) como uma alternativa ao filtro HP. Estima-se um modelo MQO para uma série temporal Yt deslocada por h períodos a frente e regredida contra x séries defasadas da própria série Yt, ou seja, uma específicação de modelo AR(X) modificada. Com exemplificação, vamos considerar h = 8 e x = 4, matemáticamente:
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/b86c9dc6-c04b-4c74-8ef5-6f8b2f42f2f6"/>
@@ -125,15 +125,28 @@ Hipóteses simplificadoras:
 > O modelo é construído em torno de duas equações. A primeira delas descreve como insumos de capital (escavadeiras, semicondutores, etc.) e de trabalho (operários, engenheiros, etc.) se combinam para gerar produto.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/f86e59e3-e7e5-4a39-bdaf-c862331fd3a4"/>
+  <img 
+  height="500"
+  src="https://github.com/user-attachments/assets/0764577d-db5e-4581-b38c-087c6e19cbd0"/>
+
 
 onde:
 - Y = produto;
 - K = insumos de capital;
 - L = insumos de trabalho;
 - α = qualquer número entre 0 e 1
+- Função de retornos constantes e descrescente de escala (Com mais capital por trabalhador, as empresas dessa economia geram mais produto por trabalhador)
+
+O interesse aqui é na evolução do produto por trabalhador ou per capita. Sendo assim, podemos reescrever a função de produção como:
 
 <p align="center">
-  <img src=""/>
+  <img src="https://github.com/user-attachments/assets/e930186e-31b4-4b04-8716-b6f088289bbd"/>
 
+Graficamente: 
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/148714ab-e516-47d0-b99a-8de29611d089"/>
+
+- Com mais capital por trabalhador, as empresas dessa economia geram mais produto por trabalhador
+- Com α = 0,25, há retornos decrescentes ao capital por trabalhador (cada unidade adicional de capital dada ao trabalhador faz o produto crescer menos e menos).
+  
