@@ -11,27 +11,23 @@
 
 ### Modelo de Harding e Pagan
 
-> Há diveros trabalhos que investigam que buscam modelar a datação de ciclos econômicos, todavia o mais utilizado é o Modelo de Harding e Pagan (2002), que segue a definição de Burns e Mitchell (1946). Partindo de uma série Yt em frequência trimestral, representativa da atividade econômica (PIB) e usualmente transformada como Yt = ln (Yt), a datação do ciclo econômico deve compreender as seguintes etapas:
+> Há diveros trabalhos que investigam que buscam modelar a datação de ciclos econômicos, todavia o mais utilizado é o Modelo de Harding e Pagan (2002), que segue a definição de Burns e Mitchell (1946). Partindo de uma série Yt em frequência trimestral, representativa da atividade econômica (PIB) e usualmente transformada como Yt = ln (Yt). Sendo assim, a datação do ciclo econômico deve compreender as seguintes etapas:
 
 1) Determinação de um conjunto potencial de pontos de virada, ou seja, os picos e vales em uma série Yt.
 2) Um procedimento para garantir que os picos e os vales se alternem.
-3) Um conjunto de regras que recombinam os pontos de virada estabelecidos após os passos 1) e 2) para satisfazer critérios pré-determinados relativos à duração e amplitude das fases e ciclos completos (isso é chamado de "regras de censura").
+3) Um conjunto de regras que recombinam os pontos de virada estabelecidos após os passos 1) e 2) para satisfazer critérios pré-determinados relativos à duração e amplitude das fases e ciclos completos (regras de censura).
 
 Conforme Harding e Pagan (2002), os pontos de virada da série acontecem quando:
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/31b82548-adf1-4cae-80c9-9521f873ed97"/>
 
-> O usual e recomendado pelos autores, para séries trimestrais, é definir k = 2 para encontrar esses pontos máximos e mínimos locais.
+#### Fases de um Ciclo
+- Recessão: Período compreendido entre um pico e um vale;
+- Expansão: Período compreendido entre um vale e um pico;
+- Ciclo completo: Duração das fases de recessão e expansão somadas.
 
-Em seguida, define-se as fases de expansão, recessão e o ciclo completo:
+> Todavia, é necessário definir algumas "regras de censura", que são restrições adicionais para eliminar/manter os pontos de virada identificados ajustados. Isso passa por definir uma duração mínima das fases de recessão/expansão entre picos/vales, o usual e recomendado pela literatura (inspirado no NBER), no caso de séries trimestrais, é definir k = 2 para encontrar esses pontos máximos e mínimos locais e t = 5 para se ter um ciclo completo, ou seja:
 
-Recessão: o período compreendido entre um pico e um vale;
-Expansão: o período compreendido entre um vale e um pico;
-Ciclo completo: pode ser mensurado como a duração das fases de recessão e expansão somadas.
-Para tal, é necessário impor algumas "regras de censura", que são restrições adicionais para eliminar/manter os pontos de virada identificados. Isso passa por definir uma duração mínima das fases de recessão/expansão entre picos/vales, geralmente utilizando-se 2 trimestres (inspirado no NBER). Além disso, restringe-se também a duração mínima do ciclo completo como 5 trimestres.
-
-Em resumo:
-
-Recessão/Expansão: duram, no mínimo, 2 trimestres;
-Ciclo completo: dura, no mínimo, 5 trimestres.
+- Recessão/Expansão: dura, no mínimo, 2 trimestres
+- Ciclo completo: dura, no mínimo, 5 trimestres
