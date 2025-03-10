@@ -133,3 +133,8 @@ onde:
 - K = insumos de capital;
 - L = insumos de trabalho;
 - α = qualquer número entre 0 e 1
+
+<p align="center">
+  <img src=""/>
+
+
