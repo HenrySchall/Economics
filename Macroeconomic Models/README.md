@@ -134,9 +134,17 @@ onde:
 - α = qualquer número entre 0 e 1
 - Função de retornos constantes à escala
 
-> O interesse aqui é na evolução do produto por trabalhador ou per capita. Sendo assim, podemos reescrever a FP como:
+O interesse aqui é na evolução do produto por trabalhador ou per capita. Sendo assim, podemos reescrever a função de produção como:
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/e930186e-31b4-4b04-8716-b6f088289bbd"/>
+
+Graficamente: 
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9dda0c9b-bb9a-42f3-b7c0-3de91cbfb732"/>
+
+- Com mais capital por trabalhador, as empresas dessa economia geram mais produto por trabalhador
+- Com α = 0,25, há retornos decrescentes ao capital por trabalhador (cada unidade adicional de capital dada ao trabalhador faz o produto crescer menos e menos).
 
   
