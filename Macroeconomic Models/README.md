@@ -125,14 +125,17 @@ Hipóteses simplificadoras:
 > O modelo é construído em torno de duas equações. A primeira delas descreve como insumos de capital (escavadeiras, semicondutores, etc.) e de trabalho (operários, engenheiros, etc.) se combinam para gerar produto.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/f86e59e3-e7e5-4a39-bdaf-c862331fd3a4"/>
+  <img 
+  height="500"
+  src="https://github.com/user-attachments/assets/0764577d-db5e-4581-b38c-087c6e19cbd0"/>
+
 
 onde:
 - Y = produto;
 - K = insumos de capital;
 - L = insumos de trabalho;
 - α = qualquer número entre 0 e 1
-- Função de retornos constantes à escala
+- Função de retornos constantes e descrescente de escala (Com mais capital por trabalhador, as empresas dessa economia geram mais produto por trabalhador)
 
 O interesse aqui é na evolução do produto por trabalhador ou per capita. Sendo assim, podemos reescrever a função de produção como:
 
@@ -142,9 +145,8 @@ O interesse aqui é na evolução do produto por trabalhador ou per capita. Send
 Graficamente: 
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/9dda0c9b-bb9a-42f3-b7c0-3de91cbfb732"/>
+  <img src="https://github.com/user-attachments/assets/148714ab-e516-47d0-b99a-8de29611d089"/>
 
 - Com mais capital por trabalhador, as empresas dessa economia geram mais produto por trabalhador
 - Com α = 0,25, há retornos decrescentes ao capital por trabalhador (cada unidade adicional de capital dada ao trabalhador faz o produto crescer menos e menos).
-
   
