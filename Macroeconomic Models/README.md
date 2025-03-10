@@ -132,6 +132,9 @@ onde:
 - K = insumos de capital;
 - L = insumos de trabalho;
 - α = qualquer número entre 0 e 1
+- Função de retornos constantes à escala
+
+> O interesse aqui é na evolução do produto por trabalhador ou per capita. Sendo assim, podemos reescrever a FP como:
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/e930186e-31b4-4b04-8716-b6f088289bbd"/>
