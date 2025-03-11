@@ -10,6 +10,8 @@
 - Preços rígidos ->  Suposição de que no curto prazo, muitos preços são rígidos, ou seja, se ajustam lentamente em resposta a mudanças na oferta ou na demanda
 - Fluxo -> Magnitude econômica de um intervalo de tempo. EX: PIB (taxa mensal)
 - Estoque -> Magnitude medida de um determinado ponto específico no tempo. EX: dívida externa do país
+- Variável Exógena ->
+- Variável Endógena ->
 
 > Os economistas, por meio da chamada econométria (teoria econômica + matemática estatística) desenvolvem modelos econométricos para estudar os fenômenos econômico, buscando quantificar, testar hipóteses e prever comportamentos econômicos. Os dados econômicos utilizados para esses modelos apresentam-se em uma variedade de tipos, podendo ser:
 
