@@ -16,7 +16,7 @@
 
 6) Modelos de Expectativas Racionais: Consideram que os agentes econômicos formam suas expectativas sobre o futuro de maneira racional, utilizando toda a informação disponível. Esses modelos são frequentemente usados em análises de política monetária.
 
-### Filtros Econômicos
+## Filtros Econômicos
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/529abd70-77aa-4fe5-b9c7-7a1dc9bdf3e9"/>
@@ -68,7 +68,7 @@ Há também, dentre outros, o canal do crédito: ao aumentar a taxa de juros, o 
 
 O BCB estima que o efeito de mudanças na Selic sobre a inflação demora, em média, de 6 a 9 meses se concretizar.
 
-### Ciclos Econômicos
+## Ciclos Econômicos
 
 > Os ciclos econômicos são flutuações recorrentes na atividade econômica agregada das nações ao longo do tempo. Um ciclo consiste em fases de expansão, recessão e recuperação, simultaneamente em muitas setores da atividades econômica, as quais se consolidam posteriormente em uma nova fase de expansão (lembrando que essa sequência de mudanças é recorrente, mas não periódica). A ideia central é que a atividade econômica se move de um topo para um fundo e depois do fundo para o topo, oscilando em torno de um equilíbrio desconhecido, o ciclo econômico desempenha um papel importante para as decisões de política econômica e de empresas, sendo um importante indicador para a política monetária, possibilitando a atuação do Banco Central para estabilizar as flutuações da economia. No Brasil a CODACE/FGV períodicamente determina e data os ciclos econômicos, como um comitê independente, ele ssegue os modelos adotados em outros países, como pelo NBER nos Estados Unidos.
 
