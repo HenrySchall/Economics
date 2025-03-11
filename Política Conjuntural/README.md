@@ -41,7 +41,7 @@ Variação percentual acumulada anual -> Variação em relação ao mesmo perío
 
 <p align="center">
   <img 
-    height="67"
+    height="65"
     src="https://github.com/user-attachments/assets/21548169-b449-4be1-acdb-420f0ca00088"/>
 
 Lembrete: 
