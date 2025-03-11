@@ -1,3 +1,23 @@
+library(magrittr)
+library(rio)      
+library(timetk)   
+library(dplyr) 
+library(tidyverse)   
+library(tidyr)    
+library(ggplot2) 
+library(readr)
+library(readxl)
+library(forecast)
+library(zoo)
+library(lubridate)
+library(mFilter)
+library(ipeadatar) 
+library(sidrar)
+library(GetBCBData)
+library(BCDating)
+
+# if some packages weren't installed, run the commands in the repository -> https://github.com/HenrySchall/Data_Science/blob/main/R/Install_Packages.txt
+
 library(httpgd)
 library(jsonlite)  
 library(curl)     
@@ -14,6 +34,17 @@ library(ggplot2)
 library(scales)    
 
 # if some packages weren't installed, run the commands in the repository -> https://github.com/HenrySchall/Data_Science/blob/main/R/Install_Packages.txt
+
+
+###########################
+### Conjunctural Policy ###
+###########################
+
+
+#######################
+### Monetary Policy ###
+#######################
+
 
 # Text Mining (ou Mineração de Texto) é o processo de extrair informações úteis de textos não estruturados. Esse processo envolve técnicas de Processamento de 
 # Linguagem Natural (PLN), estatísticas e aprendizado de máquina para analisar grandes volumes de texto,  nesse código o foco será a análise do sentimento das 
