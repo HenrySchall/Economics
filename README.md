@@ -24,6 +24,14 @@
 > Nesse repositório o foco principal será a macroeconomia, essa que é um ramo da ciência econômica que estuda o comportamento de uma economia como um todo. Dessa forma, os macroeconomistas buscam entender os fenômenos econômicos formulando modelos agredados (representações simplificadas da realidade), eles são agregados, porque parte-se do pressuposto de que o todo é mais complexo do que a soma das partes, não sendo possível descrever uma economia por meio de modelos para todas as empresas e indivíduos inseridos nela. Sendo assim, sua preocupação sempre será em analisar indicadores agregados, como: PIB, taxa de desemprego, índices de preços e entre outros.
 
 ### Referências bibliográficas do Repositório:
+- BCB - BANCO CENTRAL DO BRASIL. Índices de Preços. Diretoria de Política Econômica. Brasília, 2006. (Série Perguntas Mais Frequentes)
+- Hyndman, R. J., & Athanasopoulos, G. (2021) Forecasting: principles and practice, 3rd edition, OTexts: Melbourne, Australia. OTexts.com/fpp3. Accessed on 2022-04-01.
+- Shikida, C. D., Monasterio, L., & Nery, P. F. (2021). Guia brasileiro de análise de dados: armadilhas & soluções.
+
+
+
+
+
 - Robet E. Lucas, Models of Business Cycle, 1991
 - W.H. Greene. Econometric Analysis. Pearson Education, 2003.
 - C. A. Sims. Macroeconometrics and reality. Econometrica.
