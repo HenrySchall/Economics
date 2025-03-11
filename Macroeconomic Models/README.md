@@ -64,11 +64,9 @@ Equação de medida (observação): combina ao estado atual uma nova informaçã
 
 #### Filtros de Hamilton (2017)
 
-
 Há também, dentre outros, o canal do crédito: ao aumentar a taxa de juros, o BC estimula que as taxas cobradas por empréstimos bancários também subam, diminuindo o volume de empréstimos a pessoas e empresas, desestimulando o consumo e o investimento.
 
 O BCB estima que o efeito de mudanças na Selic sobre a inflação demora, em média, de 6 a 9 meses se concretizar.
-
 
 ## Ciclos Econômicos
 
@@ -125,15 +123,12 @@ Hipóteses simplificadoras:
 > O modelo é construído em torno de duas equações. A primeira delas descreve como insumos de capital (escavadeiras, semicondutores, etc.) e de trabalho (operários, engenheiros, etc.) se combinam para gerar produto.
 
 <p align="center">
-  <img 
-  height="500"
-  src="https://github.com/user-attachments/assets/0764577d-db5e-4581-b38c-087c6e19cbd0"/>
-
+  <img src="https://github.com/user-attachments/assets/43dc3cfa-d782-40b0-838c-12a86ed797d0"/>
 
 onde:
 - Y = produto;
-- K = insumos de capital;
-- L = insumos de trabalho;
+- K = insumos de capital
+- L = insumos de trabalho
 - α = qualquer número entre 0 e 1
 - Função de retornos constantes e descrescente de escala (Com mais capital por trabalhador, as empresas dessa economia geram mais produto por trabalhador)
 
@@ -147,6 +142,5 @@ Graficamente:
 <p align="center">
   <img src="https://github.com/user-attachments/assets/148714ab-e516-47d0-b99a-8de29611d089"/>
 
-- Com mais capital por trabalhador, as empresas dessa economia geram mais produto por trabalhador
-- Com α = 0,25, há retornos decrescentes ao capital por trabalhador (cada unidade adicional de capital dada ao trabalhador faz o produto crescer menos e menos).
+> A segunda equação do modelo de Solow descreve como o capital se acumula: aumenta com investimento e diminui com a depreciação no processo produtivo.
   

@@ -74,7 +74,6 @@ mas que os valores dos instrumentos sejam calibrados de modo a
 minimizar a distância entre o valor observado da variável de
 interesse e sua meta. Isto é,
 
-
 ### Modelos do Banco Central Brasileiro (BCB)
 
 1. Modelo Agregado de Pequeno Porte ou Semi-Estruturais de Pequena Escala
@@ -150,4 +149,6 @@ Dado este modelo básico, suponha que o Banco Central aumente a taxa básica de 
 Um aumento da taxa de juros nominal implica em taxas reais de juros mais elevadas, que por sua vez, pode levar à diminuição de investimentos pelas empresas e à diminuição de consumo por parte das famílias – o que, por sua vez, tende a reduzir a demanda por bens e serviços da economia, contribuindo para a redução da inflação. Em resumo, neste caso a autoridade monetária está buscando conter o aquecimento da economia pelo lado da demanda agrega, ou seja, tentando atenuar um hiato do produto positivo. Isso é feito pelos chamados canais de transmissão da política monetária, nesse caso o canal da Curva IS.
 
 Outro canal importante de transmissão da política monetária é o da taxa de câmbio. Quando a taxa de juros sobe, a moeda doméstica tende a se valorizar, barateando bens comercializáveis internacionalmente. A taxa de câmbio afeta a inflação por meio da diminuição dos preços produtos importados, desincentivando a exportação e estimulando a importação, dessa forma reduzindo a pressão sobre o nível de preços. Note que no modelo exposto este contato com o exterior não está incluso.
+
+# Política Conjuntural
 
