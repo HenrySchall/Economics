@@ -29,7 +29,7 @@
 - Shikida, C. D., Monasterio, L., & Nery, P. F. (2021). Guia brasileiro de análise de dados: armadilhas & soluções.
 
 
-
+---------
 
 
 - Robet E. Lucas, Models of Business Cycle, 1991
