@@ -127,8 +127,8 @@ Hipóteses simplificadoras:
 
 onde:
 - Y = produto;
-- K = insumos de capital;
-- L = insumos de trabalho;
+- K = insumos de capital
+- L = insumos de trabalho
 - α = qualquer número entre 0 e 1
 - Função de retornos constantes e descrescente de escala (Com mais capital por trabalhador, as empresas dessa economia geram mais produto por trabalhador)
 
@@ -142,6 +142,5 @@ Graficamente:
 <p align="center">
   <img src="https://github.com/user-attachments/assets/148714ab-e516-47d0-b99a-8de29611d089"/>
 
-- Com mais capital por trabalhador, as empresas dessa economia geram mais produto por trabalhador
-- Com α = 0,25, há retornos decrescentes ao capital por trabalhador (cada unidade adicional de capital dada ao trabalhador faz o produto crescer menos e menos).
+> A segunda equação do modelo de Solow descreve como o capital se acumula: aumenta com investimento e diminui com a depreciação no processo produtivo.
   
