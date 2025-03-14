@@ -1,3 +1,6 @@
+library(httpgd)
+library(languageserver)
+library(purrr)
 library(magrittr)
 library(rio)      
 library(timetk)   
