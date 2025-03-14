@@ -10,6 +10,8 @@
 - Preços rígidos ->  Suposição de que no curto prazo, muitos preços são rígidos, ou seja, se ajustam lentamente em resposta a mudanças na oferta ou na demanda
 - Fluxo -> Magnitude econômica de um intervalo de tempo. EX: PIB (taxa mensal)
 - Estoque -> Magnitude medida de um determinado ponto específico no tempo. EX: dívida externa do país
+- Variável Exógena -> O valor é determinado fora do modelo, ou seja, não é influenciada pelas variáveis do próprio modelo (independente). Exemplo: Num modelo de oferta e demanda, o preço de um insumo importado é uma variável exógena, porque é determinado por externos,  e não fatores internos. 
+- Variável Endógena -> O valor é determinado dentro do próprio modelo, ou seja, é influenciada por outras variáveis do sistema. Exemplo: Num modelo de oferta e demanda, o preço de equilíbrio é uma variável endógena porque é determinada pelas interações do modelo.
 
 > Os economistas, por meio da chamada econométria (teoria econômica + matemática estatística) desenvolvem modelos econométricos para estudar os fenômenos econômico, buscando quantificar, testar hipóteses e prever comportamentos econômicos. Os dados econômicos utilizados para esses modelos apresentam-se em uma variedade de tipos, podendo ser:
 
@@ -22,6 +24,14 @@
 > Nesse repositório o foco principal será a macroeconomia, essa que é um ramo da ciência econômica que estuda o comportamento de uma economia como um todo. Dessa forma, os macroeconomistas buscam entender os fenômenos econômicos formulando modelos agredados (representações simplificadas da realidade), eles são agregados, porque parte-se do pressuposto de que o todo é mais complexo do que a soma das partes, não sendo possível descrever uma economia por meio de modelos para todas as empresas e indivíduos inseridos nela. Sendo assim, sua preocupação sempre será em analisar indicadores agregados, como: PIB, taxa de desemprego, índices de preços e entre outros.
 
 ### Referências bibliográficas do Repositório:
+- BCB - BANCO CENTRAL DO BRASIL. Índices de Preços. Diretoria de Política Econômica. Brasília, 2006. (Série Perguntas Mais Frequentes)
+- Hyndman, R. J., & Athanasopoulos, G. (2021) Forecasting: principles and practice, 3rd edition, OTexts: Melbourne, Australia. OTexts.com/fpp3. Accessed on 2022-04-01.
+- Shikida, C. D., Monasterio, L., & Nery, P. F. (2021). Guia brasileiro de análise de dados: armadilhas & soluções.
+
+
+---------
+
+
 - Robet E. Lucas, Models of Business Cycle, 1991
 - W.H. Greene. Econometric Analysis. Pearson Education, 2003.
 - C. A. Sims. Macroeconometrics and reality. Econometrica.
