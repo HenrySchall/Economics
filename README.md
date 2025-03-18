@@ -2,7 +2,7 @@
 
 ![Macroeconomia](https://github.com/user-attachments/assets/c8b70add-e0c8-41df-99e2-31297301d269)
 
-> A macroeconomia é um ramo da ciência econômica que estuda o comportamento de uma economia como um todo. Dessa forma, os macroeconomistas buscam entender os fenômenos econômicos formulando modelos agredados (representações simplificadas da realidade), eles são agregados, porque parte-se do pressuposto de que o todo é mais complexo do que a soma das partes, não sendo possível descrever uma economia por meio de modelos para todas as empresas e indivíduos inseridos nela. Sendo assim, sua preocupação sempre será em analisar indicadores agregados, como: PIB, taxa de desemprego, índices de preços e entre outros.
+> Macroeconomics is a branch of economic science that studies the behavior of an economy as a whole. Thus, macroeconomists seek to understand economic phenomena by formulating aggregated models (simplified representations of reality). They are aggregated because they assume that the whole is more complex than the sum of its parts, and it is not possible to describe an economy through models for all the companies and individuals within it. Therefore, their concern will always be to analyze aggregated indicators, such as: GDP, unemployment rate, price indexes, among others.
 
 ### Initial Concepts
 - Ceteris paribus -> "all else is constant", that is, nothing changes except the factor or factors being studied
