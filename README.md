@@ -2,43 +2,25 @@
 
 ![Macroeconomia](https://github.com/user-attachments/assets/c8b70add-e0c8-41df-99e2-31297301d269)
 
-### Conceitos Iniciais
-- Ceteris paribus -> "todo o mais é constante", ou seja, nada muda, exceto o fator ou fatores que estão sendo estudados
-- Variável endógena ->  também chamada de dependente, é a variável cujos valores são determinados no modelo
-- Variável exógena ->  também chamada de independente, é a variável cujos valores são determinados fora do modelo
-- Preços flexíveis ->  Suposição de que os preços se ajustam para igualar oferta e demanda (longo prazo)
-- Preços rígidos ->  Suposição de que no curto prazo, muitos preços são rígidos, ou seja, se ajustam lentamente em resposta a mudanças na oferta ou na demanda
-- Fluxo -> Magnitude econômica de um intervalo de tempo. EX: PIB (taxa mensal)
-- Estoque -> Magnitude medida de um determinado ponto específico no tempo. EX: dívida externa do país
-- Variável Exógena -> O valor é determinado fora do modelo, ou seja, não é influenciada pelas variáveis do próprio modelo (independente). Exemplo: Num modelo de oferta e demanda, o preço de um insumo importado é uma variável exógena, porque é determinado por externos,  e não fatores internos. 
-- Variável Endógena -> O valor é determinado dentro do próprio modelo, ou seja, é influenciada por outras variáveis do sistema. Exemplo: Num modelo de oferta e demanda, o preço de equilíbrio é uma variável endógena porque é determinada pelas interações do modelo.
+> A macroeconomia é um ramo da ciência econômica que estuda o comportamento de uma economia como um todo. Dessa forma, os macroeconomistas buscam entender os fenômenos econômicos formulando modelos agredados (representações simplificadas da realidade), eles são agregados, porque parte-se do pressuposto de que o todo é mais complexo do que a soma das partes, não sendo possível descrever uma economia por meio de modelos para todas as empresas e indivíduos inseridos nela. Sendo assim, sua preocupação sempre será em analisar indicadores agregados, como: PIB, taxa de desemprego, índices de preços e entre outros.
 
-> Os economistas, por meio da chamada econométria (teoria econômica + matemática estatística) desenvolvem modelos econométricos para estudar os fenômenos econômico, buscando quantificar, testar hipóteses e prever comportamentos econômicos. Os dados econômicos utilizados para esses modelos apresentam-se em uma variedade de tipos, podendo ser:
+### Initial Concepts
+- Ceteris paribus -> "all else is constant", that is, nothing changes except the factor or factors being studied
+- Endogenous variable -> also called dependent, is the variable whose values ​​are determined in the model
+- Exogenous variable -> also called independent, is the variable whose values ​​are determined outside the model
+- Flexible prices -> Assumption that prices adjust to equalize supply and demand (long term)
+- Sticky prices -> Assumption that in the short term, many prices are sticky, that is, they adjust slowly in response to changes in supply or demand
+- Flow -> Economic magnitude of a time interval. EX: GDP (monthly rate)
+- Stock -> Magnitude measured at a specific point in time. EX: country's external debt
+- Exogenous Variable -> The value is determined outside the model, that is, it is not influenced by the variables of the model itself (independent). Example: In a supply and demand model, the price of an imported input is an exogenous variable because it is determined by external, not internal, factors.
+- Endogenous Variable -> The value is determined within the model itself, that is, it is influenced by other variables in the system. Example: In a supply and demand model, the equilibrium price is an endogenous variable because it is determined by the interactions of the model.
+  
+> Economists, through econometrics (economic theory + statistical mathematics) develop econometric models to study economic phenomena, seeking to quantify, test hypotheses and predict economic behaviors. The economic data used for these models come in a variety of types, and can be:
 
-- Cortes Transversais -> Consiste em uma amostra de indivíduos, empresas, países, entre outros, tomadas em um determinado ponto no tempo. Sendo assim eles não são obtidos por uma amostra aleatória, os dados das unidades não precisam corresponder ao mesmo período e a ordenação dos dados não importa para a análise econométrica.
+- Cross-Sections -> Consists of a sample of individuals, companies, countries, among others, taken at a given point in time. Therefore, they are not obtained by a random sample, the data from the units does not need to correspond to the same period and the ordering of the data does not matter for the econometric analysis.
 
-- Séries Temporais -> Observações sobre uma variável ou muitas variáveis ao longo do tempo, (Ex: preços de ações). Essa estrutura permite auferir que eventos passados podem influenciar eventos futuros e a ordenação cronológica das observações transmite informações relevantes de um período para o outro.
+- Time Series -> Observations on a variable or many variables over time (e.g.: stock prices). This structure allows us to determine that past events can influence future events and the chronological ordering of the observations conveys relevant information from one period to another.
 
-- Dados em Painel -> Consiste em uma série temporal para cada registro de um corte transversal, ou seja, uma amostra para cada conjunto de indivíduos ao longo de um período de tempo, (Ex: histórico de salário). Sendo assim por construção, as unidades (indivíduos) de um corte transversal são as mesmas para o período determinado.
+- Panel Data -> Consists of a time series for each record of a cross-section, that is, a sample for each set of individuals over a period of time, (Ex: salary history). Therefore, by construction, the units (individuals) of a cross-section are the same for the given period.
 
-> Nesse repositório o foco principal será a macroeconomia, essa que é um ramo da ciência econômica que estuda o comportamento de uma economia como um todo. Dessa forma, os macroeconomistas buscam entender os fenômenos econômicos formulando modelos agredados (representações simplificadas da realidade), eles são agregados, porque parte-se do pressuposto de que o todo é mais complexo do que a soma das partes, não sendo possível descrever uma economia por meio de modelos para todas as empresas e indivíduos inseridos nela. Sendo assim, sua preocupação sempre será em analisar indicadores agregados, como: PIB, taxa de desemprego, índices de preços e entre outros.
-
-### Referências bibliográficas do Repositório:
-- BCB - BANCO CENTRAL DO BRASIL. Índices de Preços. Diretoria de Política Econômica. Brasília, 2006. (Série Perguntas Mais Frequentes)
-- Hyndman, R. J., & Athanasopoulos, G. (2021) Forecasting: principles and practice, 3rd edition, OTexts: Melbourne, Australia. OTexts.com/fpp3. Accessed on 2022-04-01.
-- Shikida, C. D., Monasterio, L., & Nery, P. F. (2021). Guia brasileiro de análise de dados: armadilhas & soluções.
-
-
----------
-
-
-- Robet E. Lucas, Models of Business Cycle, 1991
-- W.H. Greene. Econometric Analysis. Pearson Education, 2003.
-- C. A. Sims. Macroeconometrics and reality. Econometrica.
-- P. M. Geraats. Central bank transparency. Economic Journal, 112
- (39), 2002.
-- Herbst, E. P., & Schorfheide, F. (2015). Bayesian estimation of DSGE models. In Bayesian Estimation of DSGE Models. Princeton University Press.
-- J. Hermann. Objeto, metodologia e conceitos básicos da análise macroeconômica: notas de aula. mimeo, 2004
-- E. J. A. Lima, F. Araujo, and J. R. Costa e Silva. Previsáo e Modelos Macroeconômicos no Banco Central do Brasil. Dez anos de metas para inflação no Brasil, 2010.
-- J. M. Wooldridge. Introductory Econometrics: A Modern Approach. Editora Cengage, 2013.
-- J. Bogdanski, A. A. Tombini, and S. R. Werlang. Implementing Inflation Targeting in Brazil. BCB Working Paper 01, 2000.
+### Repository Bibliographic References:
