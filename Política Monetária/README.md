@@ -152,3 +152,52 @@ Outro canal importante de transmissão da política monetária é o da taxa de c
 
 # Política Conjuntural
 
+
+American Economic Review (AER) – Publicado pela American Economic Association, é um dos periódicos mais influentes da economia.
+
+Quarterly Journal of Economics (QJE) – Publicado pela Oxford University Press para a Harvard University, tem alta seletividade e impacto.
+
+Journal of Political Economy (JPE) – Publicado pela University of Chicago, abrange uma ampla gama de tópicos econômicos.
+
+Econometrica – Focado em economia matemática e econometria, publicado pela Econometric Society.
+
+Review of Economic Studies (REStud) – Conhecido por publicar pesquisas inovadoras em economia teórica e aplicada.
+
+Outros Periódicos Relevantes
+Journal of Economic Theory (JET) – Voltado para a teoria econômica pura.
+
+Journal of Monetary Economics (JME) – Especializado em macroeconomia e política monetária.
+
+The Economic Journal (EJ) – Publicado pela Royal Economic Society, cobre diversas áreas da economia.
+
+Journal of Economic Perspectives (JEP) – Mais acessível e com artigos que discutem temas econômicos de forma menos técnica.
+
+Se você estiver procurando um periódico de uma área específica da economia, posso sugerir algo mais direcionado!
+
+
+
+
+
+
+
+Você disse:
+no brasil
+
+
+O ChatGPT disse:
+No Brasil, os principais periódicos de economia são aqueles com alto impacto acadêmico e reconhecimento internacional. Aqui estão alguns dos mais relevantes:
+
+Top Periódicos Brasileiros em Economia
+Revista Brasileira de Economia (RBE) – Publicada pela Fundação Getulio Vargas (FGV), é uma das mais tradicionais do país, abordando diversos temas de economia teórica e aplicada.
+
+Brazilian Review of Econometrics (BRE) – Focada em econometria e métodos quantitativos, publicada pela Sociedade Brasileira de Econometria (SBE).
+
+Estudos Econômicos (EECON) – Publicada pela USP, tem forte tradição acadêmica e abrange diversas áreas da economia.
+
+Revista de Economia Política (REP) – Também conhecida como Brazilian Journal of Political Economy, tem enfoque em economia política e desenvolvimento econômico.
+
+Economia Aplicada – Publicada pela USP, foca em estudos empíricos e aplicação de teoria econômica.
+
+Ensaios FEE – Publicada pela Fundação de Economia e Estatística (FEE), aborda temas de economia regional e desenvolvimento.
+
+Nova Economia – Publicada pela UFMG, cobre um amplo espectro de temas econômicos.
