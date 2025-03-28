@@ -1,4 +1,4 @@
-# Macroeconometria
+# Macroeconometrics
 
 ![img5](https://github.com/user-attachments/assets/3cba2325-c512-44c1-a413-5127a8e5e9b8)
 
