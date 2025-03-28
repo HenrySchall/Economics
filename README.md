@@ -1,6 +1,6 @@
 # Macroeconometria
 
-![Macroeconomia](https://github.com/user-attachments/assets/c8b70add-e0c8-41df-99e2-31297301d269)
+![img5](https://github.com/user-attachments/assets/3cba2325-c512-44c1-a413-5127a8e5e9b8)
 
 > Macroeconomics is a branch of economic science that studies the behavior of an economy as a whole. Thus, macroeconomists seek to understand economic phenomena by formulating aggregated models (simplified representations of reality). They are aggregated because they assume that the whole is more complex than the sum of its parts, and it is not possible to describe an economy through models for all the companies and individuals within it. Therefore, their concern will always be to analyze aggregated indicators, such as: GDP, unemployment rate, price indexes, among others.
 
