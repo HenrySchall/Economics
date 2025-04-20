@@ -1,23 +1,20 @@
-library(httpgd)
-library(languageserver)
-library(purrr)
-library(magrittr)
-library(rio)      
-library(timetk)   
-library(dplyr) 
-library(tidyverse)   
-library(tidyr)    
-library(ggplot2) 
-library(readr)
-library(readxl)
-library(forecast)
-library(zoo)
-library(lubridate)
-library(ipeadatar) 
-library(sidrar)
-library(GetBCBData) 
+#################################
+### Install and Load Packages ###
+#################################
 
-# if some packages weren't installed, run the commands in R Terminal -> https://github.com/HenrySchall/Data_Science/blob/main/R/Arquivos/Install_packages.r
+packages <- c("magrittr","httpgd","mFilter","BCDating","rio","timetk","pdftools","textdata","tm",
+"tidytext","dplyr","tidyverse","tidyr","ggplot2","readr","readxl","forecast","zoo","lubridate",
+"ipeadatar","sidrar","GetBCBData","PNADcIBGE","survey","dygraphs","tseries","quantmod",
+"Quandl","discreteRV","aTSA","fGarch","fUnitRoots","vars","MTS","seasonal","stats","nortest",
+"scales","urca","dlm","seasonalview","stringr","fma","languageserver","PerformanceAnalytics",
+"getSymbols","jsonlite","purrr","curl)")
+
+packages_install <- packages [!packages %in% installed.packages()[,"Package"]]
+if(length(packages_install) > 0)
+{install.packages(packages_install)} else {message("Todos os pacotes já estão instalados.")}
+
+# Load Packages
+lapply(pacotes, library, character.only = TRUE)
 
 dados <- import(file=" https://drive.google.com/uc?export=download&id=1rNo07TaQrh7237k7h_MEvMytza19mRHv",format = "csv",setclass = "tbl_df")
 View(dados)
