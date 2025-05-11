@@ -1,6 +1,6 @@
 # Examples
 
-![Sem Título-1](https://github.com/user-attachments/assets/827eb12e-4675-4ff4-8a38-a07d33705ebe)
+![436787885-827eb12e-4675-4ff4-8a38-a07d33705ebe](https://github.com/user-attachments/assets/4841bd79-f961-4ada-8b0a-83ff54e3c2f9)
 
 1. Programação Linear (PL)
 Objetivo: Maximizar ou minimizar uma função linear.
