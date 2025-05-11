@@ -1,4 +1,4 @@
-# Econometrics
+# Economic Behavior
 
 ![img5](https://github.com/user-attachments/assets/a4398284-414f-49fa-a568-c28fc1f41462)
 
