@@ -1,6 +1,6 @@
 # Panel Data
 
-![IMG_2672](https://github.com/user-attachments/assets/6ba074b6-270c-40b0-af7b-d787a13cf2d5)
+![430082900-6ba074b6-270c-40b0-af7b-d787a13cf2d5](https://github.com/user-attachments/assets/8b6c6725-3dfb-4cc5-88e4-7520dc802dbe)
 
 > Panel data estimation is the analysis of data that have a two-factor structure, i.e., we have one factor that represents different units (such as individuals, companies, countries, etc.) and another that represents different time periods. This repository demonstrates the process of estimating the panel data model.
 
