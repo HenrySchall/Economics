@@ -30,3 +30,11 @@ Macroeconomia na Prática
 - https://analisemacro.com.br/curso/ia-para-analise-de-dados-usando-python/
 - https://analisemacro.com.br/curso/previsao-macroeconomica-usando-python-ia/
 
+Modelos Macroeconômicos Quantitativos
+DSGE Bayesianos
+Modelos Factoriais Dinâmicos
+Modelos de Equilíbrio Geral Estocástico
+Modelos de Alta Frequência (HFT)
+Modelos de microestrutura de mercado
+Modelos de previsão de ordem-livro
+Market making algorítmico e arbitragem de latência
