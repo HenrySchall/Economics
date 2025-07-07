@@ -27,3 +27,6 @@
 
 Macroeconomia na Prática
 - https://hotmart.com/pt-br/marketplace/produtos/macro-fundamentos/S85849804K
+- https://analisemacro.com.br/curso/ia-para-analise-de-dados-usando-python/
+- https://analisemacro.com.br/curso/previsao-macroeconomica-usando-python-ia/
+
