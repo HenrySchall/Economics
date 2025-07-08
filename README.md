@@ -22,6 +22,25 @@
 
 ---
 
+## Table of Contents
+
+- [Overview](#overview)
+- [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [Testing](#testing)
+- [Features](#features)
+- [Project Structure](#project-structure)
+    - [Project Index](#project-index)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgment](#acknowledgment)
+
+---
+## Overview
+
 > Macroeconomics is a branch of economic science that studies the behavior of an economy as a whole. Thus, macroeconomists seek to understand economic phenomena by formulating aggregated models (simplified representations of reality). They are aggregated because they assume that the whole is more complex than the sum of its parts, and it is not possible to describe an economy through models for all the companies and individuals within it. Therefore, their concern will always be to analyze aggregated indicators, such as: GDP, unemployment rate, price indexes, among others.
 
 ### Initial Concepts
