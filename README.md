@@ -1,6 +1,26 @@
-# Economics
+<div id="top">
 
-![img5](https://github.com/user-attachments/assets/a4398284-414f-49fa-a568-c28fc1f41462)
+<!-- HEADER STYLE: CLASSIC -->
+<div align="center">
+
+# Economics
+![img1](https://github.com/user-attachments/assets/a4398284-414f-49fa-a568-c28fc1f41462)
+
+<!-- BADGES -->
+<img src="https://img.shields.io/github/license/HenrySchall/Artificial_Intelligence?style=flat&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
+<img src="https://img.shields.io/github/last-commit/HenrySchall/Artificial_Intelligence?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
+<img src="https://img.shields.io/github/languages/top/HenrySchall/Artificial_Intelligence?style=flat&color=0080ff" alt="repo-top-language">
+<img src="https://img.shields.io/github/languages/count/HenrySchall/Artificial_Intelligence?style=flat&color=0080ff" alt="repo-language-count">
+
+<em>Built with the tools and technologies:</em>
+
+<img src="https://img.shields.io/badge/Markdown-000000.svg?style=flat&logo=Markdown&logoColor=white" alt="Markdown">
+<img src="https://img.shields.io/badge/Python-3776AB.svg?style=flat&logo=Python&logoColor=white" alt="Python">
+
+</div>
+<br>
+
+---
 
 > Macroeconomics is a branch of economic science that studies the behavior of an economy as a whole. Thus, macroeconomists seek to understand economic phenomena by formulating aggregated models (simplified representations of reality). They are aggregated because they assume that the whole is more complex than the sum of its parts, and it is not possible to describe an economy through models for all the companies and individuals within it. Therefore, their concern will always be to analyze aggregated indicators, such as: GDP, unemployment rate, price indexes, among others.
 
@@ -24,17 +44,3 @@
 - Panel Data -> Consists of a time series for each record of a cross-section, that is, a sample for each set of individuals over a period of time, (Ex: salary history). Therefore, by construction, the units (individuals) of a cross-section are the same for the given period.
 
 ### Repository Bibliographic References:
-
-Macroeconomia na Prática
-- https://hotmart.com/pt-br/marketplace/produtos/macro-fundamentos/S85849804K
-- https://analisemacro.com.br/curso/ia-para-analise-de-dados-usando-python/
-- https://analisemacro.com.br/curso/previsao-macroeconomica-usando-python-ia/
-
-Modelos Macroeconômicos Quantitativos
-- DSGE Bayesianos
-- Modelos Factoriais Dinâmicos
-- Modelos de Equilíbrio Geral Estocástico
-- Modelos de Alta Frequência (HFT)
-- Modelos de microestrutura de mercado
-- Modelos de previsão de ordem-livro
-- Market making algorítmico e arbitragem de latência
