@@ -44,3 +44,5 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline, BitsAndB
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler, LabelEncoder, OneHotEncoder, MinMaxScaler
 from sklearn.naive_bayes import GaussianNB as GNB
+
+Sim, a Teoria dos Clubes foi proposta por James M. Buchanan. Ele desenvolveu essa teoria como uma forma de analisar bens que não são puramente públicos nem puramente privados, mas que possuem características de ambos. A teoria explora como a formação de grupos (clubes) pode afetar a provisão e o consumo desses bens, levando em conta fatores como custos, benefícios e tamanho ideal do grupo
