@@ -24,19 +24,8 @@
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Testing](#testing)
-- [Features](#features)
-- [Project Structure](#project-structure)
-    - [Project Index](#project-index)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgment](#acknowledgment)
+- []()
+    - []()
 
 ---
 ## Overview
@@ -63,3 +52,4 @@
 - Panel Data -> Consists of a time series for each record of a cross-section, that is, a sample for each set of individuals over a period of time, (Ex: salary history). Therefore, by construction, the units (individuals) of a cross-section are the same for the given period.
 
 ### Repository Bibliographic References:
+
