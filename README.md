@@ -1,9 +1,7 @@
-<div id="top">
+# Economics
 
-<!-- HEADER STYLE: CLASSIC -->
 <div align="center">
 
-# Economics
 ![img1](https://github.com/user-attachments/assets/a4398284-414f-49fa-a568-c28fc1f41462)
 
 <!-- BADGES -->
@@ -20,36 +18,36 @@
 </div>
 <br>
 
+> Macroeconomia é um ramo da ciência econômica que estuda o comportamento de uma economia como um todo. Assim, os macroeconomistas buscam compreender os fenômenos econômicos formulando modelos agregados (representações simplificadas da realidade). Eles são agregados porque assumem que o todo é mais complexo do que a soma de suas partes, e não é possível descrever uma economia por meio de modelos para todas as empresas e indivíduos que a compõem. Portanto, sua preocupação será sempre analisar indicadores agregados, como: PIB, taxa de desemprego, índices de preços, entre outros.
+
 ---
 
-## Table of Contents
+## Índice
 
 - []()
     - []()
 
 ---
-## Overview
 
-> Macroeconomics is a branch of economic science that studies the behavior of an economy as a whole. Thus, macroeconomists seek to understand economic phenomena by formulating aggregated models (simplified representations of reality). They are aggregated because they assume that the whole is more complex than the sum of its parts, and it is not possible to describe an economy through models for all the companies and individuals within it. Therefore, their concern will always be to analyze aggregated indicators, such as: GDP, unemployment rate, price indexes, among others.
+### Conceitos Iniciais
+- Ceteris paribus -> "tudo o mais é constante", ou seja, nada muda, exceto o fator ou fatores em estudo
+- Variável endógena -> também chamada de dependente, é a variável cujos valores são determinados no modelo
+- Variável exógena -> também chamada de independente, é a variável cujos valores são determinados fora do modelo
+- Preços flexíveis -> Suposição de que os preços se ajustam para equalizar a oferta e a demanda (longo prazo)
+- Preços rígidos -> Suposição de que, no curto prazo, muitos preços são rígidos, ou seja, se ajustam lentamente em resposta a mudanças na oferta ou na demanda
+- Fluxo -> Magnitude econômica de um intervalo de tempo. EX: PIB (taxa mensal)
+- Estoque -> Magnitude medida em um ponto específico no tempo. EX: dívida externa do país
+- Variável exógena -> O valor é determinado fora do modelo, ou seja, não é influenciado pelas variáveis do próprio modelo (independente). Exemplo: Em um modelo de oferta e demanda, o preço de um insumo importado é uma variável exógena porque é determinado por fatores externos, não internos. ... - Variável Endógena -> O valor é determinado dentro do próprio modelo, ou seja, é influenciado por outras variáveis do sistema. Exemplo: Em um modelo de oferta e demanda, o preço de equilíbrio é uma variável endógena, pois é determinado pelas interações do modelo.
 
-### Initial Concepts
-- Ceteris paribus -> "all else is constant", that is, nothing changes except the factor or factors being studied
-- Endogenous variable -> also called dependent, is the variable whose values ​​are determined in the model
-- Exogenous variable -> also called independent, is the variable whose values ​​are determined outside the model
-- Flexible prices -> Assumption that prices adjust to equalize supply and demand (long term)
-- Sticky prices -> Assumption that in the short term, many prices are sticky, that is, they adjust slowly in response to changes in supply or demand
-- Flow -> Economic magnitude of a time interval. EX: GDP (monthly rate)
-- Stock -> Magnitude measured at a specific point in time. EX: country's external debt
-- Exogenous Variable -> The value is determined outside the model, that is, it is not influenced by the variables of the model itself (independent). Example: In a supply and demand model, the price of an imported input is an exogenous variable because it is determined by external, not internal, factors.
-- Endogenous Variable -> The value is determined within the model itself, that is, it is influenced by other variables in the system. Example: In a supply and demand model, the equilibrium price is an endogenous variable because it is determined by the interactions of the model.
+> Economistas, por meio da econometria (teoria econômica + matemática estatística), desenvolvem modelos econométricos para estudar fenômenos econômicos, buscando quantificar, testar hipóteses e prever comportamentos econômicos. Os dados econômicos utilizados nesses modelos são de diversos tipos, podendo ser:
+
+- Cross-Sections -> Consistem em uma amostra de indivíduos, empresas, países, entre outros, tomada em um determinado momento. Portanto, não são obtidos por uma amostra aleatória, os dados das unidades não precisam corresponder ao mesmo período e a ordenação dos dados não importa para a análise econométrica.
+
+- Séries Temporais -> Observações sobre uma variável ou muitas variáveis ao longo do tempo (ex.: preços de ações). Essa estrutura nos permite determinar que eventos passados podem influenciar eventos futuros, e a ordem cronológica das observações transmite informações relevantes de um período para outro.
+
+- Dados em Painel -> Consiste em uma série temporal para cada registro de uma seção transversal, ou seja, uma amostra para cada conjunto de indivíduos ao longo de um período (ex.: histórico salarial). Portanto, por construção, as unidades (indivíduos) de uma seção transversal são as mesmas para o período determinado.
   
-> Economists, through econometrics (economic theory + statistical mathematics) develop econometric models to study economic phenomena, seeking to quantify, test hypotheses and predict economic behaviors. The economic data used for these models come in a variety of types, and can be:
+### Referências Biográficas:
+- 
 
-- Cross-Sections -> Consists of a sample of individuals, companies, countries, among others, taken at a given point in time. Therefore, they are not obtained by a random sample, the data from the units does not need to correspond to the same period and the ordering of the data does not matter for the econometric analysis.
-
-- Time Series -> Observations on a variable or many variables over time (e.g.: stock prices). This structure allows us to determine that past events can influence future events and the chronological ordering of the observations conveys relevant information from one period to another.
-
-- Panel Data -> Consists of a time series for each record of a cross-section, that is, a sample for each set of individuals over a period of time, (Ex: salary history). Therefore, by construction, the units (individuals) of a cross-section are the same for the given period.
-
-### Repository Bibliographic References:
 
